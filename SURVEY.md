@@ -113,6 +113,32 @@ Location: `design/nibbida-website-chatgpt-sketch/` (added to `main` at the root 
 - Pāli diacritics: the sketch's text uses ā in "Jhāna" and "nibbāna". I could not check whether EB Garamond covers the full set (ṭ ḍ ṇ ḷ ṃ ṅ ñ), because that needs a font tool I did not install. This should be tested before the font is chosen for good.
 - The sketch shows the title *Insight Is the End*, Ayya Khema's name, and a four-line verse. Jayadhamma says the verse is the Buddha's, and asked not to be consulted on small copyright matters for now. I have not raised it further.
 
+## 4. Static site generator
+
+**Recommendation: Eleventy (11ty).** This is my assessment from reading the old site and the Astra files. Nothing has been built or tested, and I have not checked current Eleventy or Astro versions.
+
+**What the site needs, from sections 1–3 and 5:**
+- About 10 pages of prose, kept as Markdown files.
+- A few data files: Links, Audio, the Archive catalogue, the Map highlights, and the Donate details in one place.
+- The Astra design, which is plain HTML and one CSS file with no framework and no client-side JavaScript.
+- Local fonts and assets, and automatic publishing when a file is edited on GitHub.
+- Edits to existing content from a phone through GitHub's editor.
+- Nobody maintaining the build from July 2027.
+
+**Why Eleventy fits:**
+- It turns Markdown files and JSON or YAML data files into plain HTML. That is nearly all of what this site needs.
+- The Astra HTML and CSS can become a shared layout, header and footer almost as they are. The output needs no JavaScript.
+- It has few dependencies. For a site that must run unattended for years, a small toolchain is the main advantage.
+
+**Why not Astro:** it would also work. It adds typed content collections, but it brings a larger toolchain and more frequent major versions, and the site's size does not call for either.
+
+**Why not no generator at all:** hand-written HTML would remove the build, but every page would repeat the header and footer, and Markdown editing from a phone would be lost.
+
+**Risks to settle before the build:**
+- **Automatic build.** GitHub has to run Eleventy when a file changes (GitHub Actions). If an action version is retired while Jayadhamma is away, publishing stops. The tool and action versions should be pinned and the lock file committed. A failed build should leave the last working site online; this should be confirmed in the test deployment.
+- **Front matter on a phone.** A Markdown page begins with a small block of settings (title and so on). A slip there can break the build, and a phone makes slips easier. Data files need the same care. A short editing guide in the repository, and a test edit from a phone (planned for May 2027), would cover this.
+- **GitHub Pages and visibility.** Whether Pages works from a private repository on the current plan is unconfirmed (section 5, handover section 8). The choice of generator does not depend on the answer.
+
 ## 5. Decisions received, and remaining questions
 
 **Decided by Jayadhamma, 22 October**
