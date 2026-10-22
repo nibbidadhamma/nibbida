@@ -12,6 +12,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{% if title %}{{ title }} — {{ site.name }}{% else %}{{ site.name }}{% endif %}</title>
 <meta name="description" content="{{ description or site.description }}">
+{% if env.noindex %}<meta name="robots" content="noindex, nofollow">{% endif %}
 <script>try{var t=localStorage.getItem("nibbida-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 <link rel="icon" href="{{ '/favicon.ico' | url }}" sizes="48x48">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/icons/favicon-32.png' | url }}">
