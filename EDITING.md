@@ -64,7 +64,8 @@ terms: Free distribution, not for sale
 
 ### Changes made when the archive text was converted from the old page
 
-- Left out: the sentence "Download or read directly by clicking in the window below!", the Google Drive links, the sharing images and short link, the folder walkthrough, and the e-book and format notes. The last two groups are not decided.
+- Left out: the sentence "Download or read directly by clicking in the window below!", the Google Drive links, the sharing images and short link, and the folder walkthrough (which described the Drive folders; not decided).
+- Added back at Jayadhamma's request: the format and e-book notes. The paragraph about the PDF and EPUB formats came from the old "quick walkthrough" section; it now opens the new "New to e-books?" section, in front of the two paragraphs that were already under that heading.
 - The upload-folder sentence was shortened to "You can send your favorites with an e-mail", and the e-mail address is now nibbidadhamma@gmail.com.
 
 ## Before editing from a phone

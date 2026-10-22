@@ -34,6 +34,14 @@ Special acknowledgements to the top contributors (please click to visit their we
 - [Ajahn Buddhadasa](https://www.suanmokkh.org/)
 - [Sayadaw U Tejaniya](https://ashintejaniya.org/)
 
+## New to e-books?
+
+The books included in the Dhamma-Dana Archive are either in the standard formats PDF or EPUB. The PDF's you can read on your computer or tablet, or print easily. The format EPUB are made especially with the intention to be read on an e-book reader, but can also be read on any other device.
+
+If you’re looking for an easy way to read books offline on your Android smartphone or tablet, you might want to download the free app [ReadEra](https://readera.org/). With this app you can read almost any book or document, and easily manage and sort your books. Here’s also [ten more apps](https://www.pcmag.com/how-to/free-ebook-reader-apps-for-smartphone-or-tablet) you can download and use, covering all formats.
+
+If you want to have the best possible experience reading these digital books, then get a proper e-book reader. Read about e-book readers [here](https://en.wikipedia.org/wiki/E-reader). To arrange a digital library on your computer, you can use a free application called [Calibre](https://calibre-ebook.com/). With this you can sort and get an overview of your books, and then easily send or convert them to the file-format you need for your e-book reader or Kindle. Calibre also has a built-in e-book viewer so you can read the books directly on the computer, and works with Mac OS, Windows and Linux.
+
 ## Any good book missing?
 
 New books to the archive are much appreciated! You can send your favorites with an [e-mail](mailto:nibbidadhamma@gmail.com). (If you by any chance would like any book *deleted* from the archive, use the same e-mail.)
