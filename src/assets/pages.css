@@ -1,6 +1,6 @@
 /* Inner pages (plain ground, one reading column) */
 .site.plain{background-image:none}
-.page{padding:60px 65px 40px;max-width:900px}
+.page{background:var(--bg);border:1px solid var(--line);max-width:940px;margin:56px auto;padding:58px 64px 48px}
 .eyebrow{font:13px/1.4 Arial,sans-serif;letter-spacing:.17em;text-transform:uppercase;color:var(--accent);margin:0 0 20px}
 .page h1{font-size:60px;margin:0 0 14px}
 .page .subtitle{font-size:26px;line-height:1.3;color:var(--secondary);margin:0 0 30px}
@@ -27,7 +27,7 @@
 .footer-links{display:flex;flex-wrap:wrap;gap:6px 26px}
 .footer-links .soon small{display:block;margin:0}
 @media(max-width:700px){
-  .page{padding:36px 25px 30px}
+  .page{margin:16px 12px;padding:32px 22px 28px}
   .page h1{font-size:42px}
   .page .subtitle{font-size:22px}
   .page p,.page li{font-size:20px}
@@ -36,20 +36,23 @@
   .toc{padding:18px 20px}
 }
 
-/* Ornaments: single-color shapes drawn with the current text color, so they follow the theme. */
-.orn{display:block;background-color:currentColor;color:var(--secondary);-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-position:left center;mask-position:left center;-webkit-mask-size:contain;mask-size:contain}
-.orn-c3b{width:54px;aspect-ratio:27/3.5;-webkit-mask-image:url(ornaments/C3-B.svg);mask-image:url(ornaments/C3-B.svg)}
-.orn-c4b{width:98px;aspect-ratio:43/4;-webkit-mask-image:url(ornaments/C4-B.svg);mask-image:url(ornaments/C4-B.svg)}
-.orn-d3b{width:116px;aspect-ratio:58/5;-webkit-mask-image:url(ornaments/D3-B.svg);mask-image:url(ornaments/D3-B.svg)}
-.orn-o2{width:96px;aspect-ratio:48/9;-webkit-mask-image:url(ornaments/O2.svg);mask-image:url(ornaments/O2.svg)}
-.orn-c5b{width:48px;aspect-ratio:17/30;color:var(--ink);opacity:.8;-webkit-mask-position:center;mask-position:center;-webkit-mask-image:url(ornaments/C5-B.svg);mask-image:url(ornaments/C5-B.svg)}
+/* Ornaments: inline SVG drawn in the current text color, so they follow the theme. */
+.orn{display:block;height:auto;flex:none;color:var(--secondary)}
+.orn-c3b{width:54px}
+.orn-c4b{width:98px}
+.orn-d3b{width:116px}
+.orn-o2{width:96px}
+.orn-c5b{width:48px;color:var(--ink);opacity:.8}
+.footer-orn{color:var(--ink)}
 .orn-title{margin:2px 0 30px}
 .orn-end{margin:56px 0 6px}
 .orn-between{margin:8px 0 26px}
-.footer-orn{color:var(--ink);flex:none;-webkit-mask-position:center;mask-position:center}
 
 /* Wallpaper on inner pages: the 16-band labyrinth, tiled so the pattern continues in every direction.
    Each theme has its own very faint file (wallpaper-dark.svg, wallpaper-light.svg); the strength is the
    fill-opacity inside those files. A plain background image is used because it works in every browser. */
 .site.plain{position:relative;isolation:isolate}
 .site.plain::before{content:"";position:absolute;top:0;right:0;bottom:0;left:0;z-index:-1;pointer-events:none;background:var(--wall-img) 0 0/760px 760px repeat}
+
+/* The footer of inner pages sits on a solid band, so the wallpaper never shows behind text. */
+.site.plain .footer{background:var(--bg);border-top:1px solid var(--line)}

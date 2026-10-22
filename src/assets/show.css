@@ -10,7 +10,7 @@
 .band a.btn{text-decoration:none}
 /* Audio */
 .tracks{padding-top:34px}
-.track{display:grid;grid-template-columns:150px minmax(0,1fr);gap:36px;padding:44px 0;border-top:1px solid var(--line)}
+.track{display:grid;grid-template-columns:230px minmax(0,1fr);gap:40px;padding:44px 0;border-top:1px solid var(--line)}
 .tracks .band-note{margin-bottom:14px}
 .track:first-of-type{border-top:0;padding-top:20px}
 .track .kicker{margin:0 0 10px}
@@ -43,7 +43,7 @@
   .band{padding:36px 27px}
   .band h2{font-size:30px}
   .track{grid-template-columns:1fr;gap:20px;padding:34px 0}
-  .track-cover .cv{font-size:8px}
+  .track-cover{max-width:280px}
   .track h2{font-size:32px}
   .link-grid{grid-template-columns:1fr;gap:26px}
   .donate-text p{font-size:20px}

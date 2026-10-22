@@ -63,7 +63,7 @@
 {{ content | safe }}
 </main>
 <footer class="footer" id="about">
-<span class="orn orn-c4b footer-orn" aria-hidden="true"></span>
+{{ "C4-B" | ornament("orn-c4b footer-orn") | safe }}
 <p>{{ site.name }}<br>{{ site.tagline }}</p>
 <div class="footer-links">
 {%- for f in site.footer %}

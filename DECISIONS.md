@@ -53,7 +53,8 @@ Recorded from conversations with Jayadhamma Bhikkhu, 22 October 2026. Only what 
 **Other**
 - License: Creative Commons CC BY-NC-ND 4.0 for the text, design and artwork, with the exclusions listed on the License page (`src/license.md`): the font, photographs, quotations, other people's books and tools, and the design study. The official legal text is in `LICENSE`. The copyright holder is written as "Nibbidā Dhamma (Jayadhamma Bhikkhu)"; Jayadhamma should confirm this.
 - Start page and About page: copied from the old nibbida.com (English part); the Swedish half goes to the Swedish site.
-- Wallpaper: the 16-band labyrinth tiles very faintly behind all inner pages.
+- Wallpaper: the 16-band labyrinth tiles very faintly behind all inner pages, with four-pointed stars (ornament C3-C) in the gaps between the labyrinths. The text of inner pages sits in a solid box, and the footer on a solid band, so the wallpaper never shows behind text.
+- Pictures from the old site (start page, project cards, About, Audio) are shown in two tones taken from the theme (shadows and highlights) inside a double-line frame. The Audio page uses the picture of each talk from the old Audio page instead of generated covers.
 
 ## Ideas (not decided, not started)
 

@@ -1,0 +1,4 @@
+{#- A picture in the site's own colors (a two-tone treatment) inside a double-line frame. -#}
+{%- macro frame(src, alt, w, h, cls) -%}
+<span class="frame{% if cls %} {{ cls }}{% endif %}"><span class="duo"><img src="{{ src | url }}" alt="{{ alt }}" width="{{ w }}" height="{{ h }}" loading="lazy"></span></span>
+{%- endmacro -%}

@@ -86,6 +86,10 @@ terms: Free distribution, not for sale
 - Links: "Meditation Map of the Dharma" became "...of the Dhamma", "Pali Resoure Guide" became "Pali Resource Guide", and the heading lines were rewritten for the new design ("Good places to read and listen", "Dhamma sites, publishers and podcasts."). The Swedish group of links was left out. "BuddhaDharma:" lost its colon.
 - Donate: the headline is the proverb. The intro no longer names the mother and the kappiya, and the bank, Swish and Revolut details are not on the page (see above).
 
+## Pictures
+
+Pictures from the old site get the two-tone treatment and the frame automatically when they are placed with the `frame` helper (see `src/about.md` for an example). The two tones for each theme are `--duo-dark` and `--duo-light` in `src/assets/theme.css`. Pictures are stored in `src/assets/images/`.
+
 ## Before editing from a phone
 
 A mistake in the top block of a file (between the `---` lines) can stop the site from building. Leave that block alone unless you are sure.

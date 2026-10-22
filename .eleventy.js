@@ -28,6 +28,16 @@ module.exports = function (eleventyConfig) {
   // "https://www.dhammawiki.com/path" -> "dhammawiki.com"
   eleventyConfig.addFilter("host", (u) => String(u).replace(/^https?:\/\//, "").replace(/^www\./, "").split("/")[0]);
 
+
+  // An ornament from src/assets/ornaments as inline SVG, drawn in the current text color.
+  // Inline SVG works in every browser, unlike CSS masks. Usage: {{ "C4-B" | ornament("orn-c4b") | safe }}
+  eleventyConfig.addFilter("ornament", (name, cls) => {
+    const svg = fs.readFileSync(`src/assets/ornaments/${name}.svg`, "utf8");
+    const viewBox = (svg.match(/viewBox="([^"]+)"/) || [])[1];
+    const inner = svg.replace(/^[\s\S]*?<svg[^>]*>/, "").replace(/<\/svg>[\s\S]*$/, "").replace(/<title>[\s\S]*?<\/title>/, "");
+    return `<svg class="orn ${cls || ""}" viewBox="${viewBox}" fill="currentColor" aria-hidden="true" focusable="false">${inner}</svg>`;
+  });
+
   // --- Dhamma-Dāna Archive -------------------------------------------------
   const folders = yaml.load(fs.readFileSync("src/_data/archive.yaml", "utf8")).folders;
 

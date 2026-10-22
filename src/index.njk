@@ -3,6 +3,7 @@ layout: base.njk
 permalink: /
 ---
 {#- Home page. Wording and layout are from the Astra design study (direction A), copied from design/. The text is placeholder and will be replaced. -#}
+{% from "frame.njk" import frame %}
 {#- Start page: the text and images are copied from the old nibbida.com start page (English part). The sections after "Placeholder" are from the design study. -#}
 <section class="hero start-hero">
 <h1>There is a crack in everything,<br>that's how the light gets in.</h1>
@@ -18,14 +19,14 @@ permalink: /
 <p>Warmly welcome!</p>
 <p class="sign"><em>/Jayadhamma Bhikkhu</em></p>
 </div>
-<figure class="letter-fig"><img src="{{ '/assets/images/start-cat.jpg' | url }}" width="1208" height="1133" alt="A long-haired cat with closed eyes, rainbow light falling across its face and body" loading="lazy"></figure>
+<figure class="letter-fig">{{ frame('/assets/images/start-cat.jpg', 'A long-haired cat with closed eyes, rainbow light falling across its face and body', 1208, 1133) }}</figure>
 </section>
 <section class="projects" id="projects">
 <h2>Dhamma projects</h2>
 <div class="proj-grid">
 {% for p in projects.projects %}
 <article class="proj">
-{% if p.ready %}<a class="proj-img" href="{{ p.url | url }}" tabindex="-1" aria-hidden="true">{% endif %}<img src="{{ ('/assets/images/' ~ p.image) | url }}" alt="{{ p.alt }}" loading="lazy">{% if p.ready %}</a>{% endif %}
+{% if p.ready %}<a class="proj-img" href="{{ p.url | url }}" tabindex="-1" aria-hidden="true">{% endif %}{{ frame(('/assets/images/' ~ p.image), p.alt, 1200, 675, 'wide') }}{% if p.ready %}</a>{% endif %}
 <p class="tag">{{ p.tagline }}</p>
 <h3>{{ p.title }}</h3>
 <p>{{ p.text | mdInline | safe }}</p>
@@ -94,7 +95,7 @@ permalink: /
 </div>
 <div class="quote">
 <p class="verse">No jhāna without wisdom,<br>no wisdom without jhāna.<br>One who has both<br>stands close to nibbāna.</p>
-<span class="orn orn-c5b corner" aria-hidden="true"></span>
+{{ "C5-B" | ornament("orn-c5b corner") | safe }}
 </div>
 <p class="note">A little space before the next passage.</p>
 <div class="passages">

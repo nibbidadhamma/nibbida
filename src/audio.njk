@@ -7,12 +7,12 @@ kicker: Audio Dhamma
 headline: Talks and guided<br>meditations
 intro: By Jayadhamma Bhikkhu.
 ---
-{% from "cover.njk" import cover %}
+{% from "frame.njk" import frame %}
 <section class="band tracks">
 <p class="band-note">Press play to listen here, or download a recording. The recordings are stored on archive.org.</p>
 {%- for t in audio.items %}
 <article class="track">
-<div class="track-cover">{{ cover(t.title, "Jayadhamma Bhikkhu", t.tone, "", "AUDIO DHAMMA") }}</div>
+<div class="track-cover">{{ frame(('/assets/images/' ~ t.image), t.title ~ " (" ~ t.kind ~ ")", 1200, 1200) }}</div>
 <div class="track-body">
 <p class="kicker">{{ t.kind }}{% if t.length %} · {{ t.length }}{% endif %}</p>
 <h2>{{ t.title }}</h2>

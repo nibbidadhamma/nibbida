@@ -16,7 +16,7 @@ The books are either from modern meditation teachers and scholars, or translatio
 
 <!--shelf-->
 
-<div class="orn orn-c3b orn-between" aria-hidden="true"></div>
+{{ "C3-B" | ornament("orn-c3b orn-between") | safe }}
 
 ## Blessings to all the contributors to the archive!
 

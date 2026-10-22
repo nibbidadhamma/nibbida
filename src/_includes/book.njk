@@ -9,7 +9,7 @@ plain: true
 {% if sample %}<p class="sample">SAMPLE ENTRY — not a real book. Delete before publishing.</p>{% endif %}
 <h1>{{ title }}</h1>
 <p class="subtitle">{{ author }}</p>
-<div class="orn orn-d3b orn-title" aria-hidden="true"></div>
+{{ "D3-B" | ornament("orn-d3b orn-title") | safe }}
 <div class="detail">
 <div class="detail-cover">{{ cover(title, author, fo.tone, "lg") }}</div>
 <div class="detail-info">
@@ -33,5 +33,5 @@ plain: true
 </div>
 </div>
 <p><a href="{{ '/resources/archive/' | url }}">← Back to the archive</a></p>
-<div class="orn orn-o2 orn-end" aria-hidden="true"></div>
+{{ "O2" | ornament("orn-o2 orn-end") | safe }}
 </div>
