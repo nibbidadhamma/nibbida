@@ -1,0 +1,55 @@
+{
+  "source_sha256": {
+    "nibbida-small-06A-white-on-black.svg": "12ee6c56cefb7a0b6aa43e0eb2fe0b61758afcacd1111e3d7a5bcaae876cd7c8",
+    "labyrinth-white.svg": "72256f48fea270955c7dd1f86e2c43f781173981373e6eff1c5cd1d39069db58"
+  },
+  "directions": {
+    "A": {
+      "name": "The expanded labyrinth",
+      "bg": "#1b1917",
+      "ink": "#eee7da",
+      "secondary": "#bbb4a8",
+      "accent": "#cab795",
+      "maze": "#24211e",
+      "cover": "#b7a685",
+      "small": 2350,
+      "large": 3000,
+      "x": -125,
+      "y": -775,
+      "mx": -650,
+      "my": -900
+    },
+    "B": {
+      "name": "The quiet center",
+      "bg": "#131b20",
+      "ink": "#e9e9df",
+      "secondary": "#afb9bd",
+      "accent": "#adc4c4",
+      "maze": "#1b242a",
+      "cover": "#6b8184",
+      "small": 1900,
+      "large": 2500,
+      "x": -390,
+      "y": -540,
+      "mx": -755,
+      "my": -620
+    },
+    "C": {
+      "name": "The edge of the page",
+      "bg": "#151c18",
+      "ink": "#ece9dc",
+      "secondary": "#b0bbae",
+      "accent": "#bdc6a4",
+      "maze": "#1e2821",
+      "cover": "#aab294",
+      "small": 2000,
+      "large": 2700,
+      "x": -1200,
+      "y": -450,
+      "mx": -1150,
+      "my": -550
+    }
+  },
+  "background_geometry": "Exact source paths and transforms. Color and display scale only; no topology edits.",
+  "emblem": "All 14 paths and the background rectangle retained; nine opaque black detail paths recolored to each ground, not removed."
+}

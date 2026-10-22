@@ -1,0 +1,103 @@
+{
+  "source_reference_checksums": "pass",
+  "all_source_geometry_preserved": "pass",
+  "contrast": {
+    "A": {
+      "ink": 13.02,
+      "secondary": 7.78,
+      "accent": 8.17,
+      "maze_to_ground": 1.09
+    },
+    "B": {
+      "ink": 12.9,
+      "secondary": 7.88,
+      "accent": 8.61,
+      "maze_to_ground": 1.11
+    },
+    "C": {
+      "ink": 12.5,
+      "secondary": 7.65,
+      "accent": 8.53,
+      "maze_to_ground": 1.14
+    }
+  },
+  "browser_checks": {
+    "errors": [],
+    "checks": [
+      {
+        "id": "a",
+        "width": 1440,
+        "overflow": false,
+        "missing": 0
+      },
+      {
+        "id": "a",
+        "width": 1120,
+        "overflow": false,
+        "missing": 0
+      },
+      {
+        "id": "a",
+        "width": 390,
+        "overflow": false,
+        "missing": 0
+      },
+      {
+        "id": "a",
+        "width": 320,
+        "overflow": false,
+        "missing": 0
+      },
+      {
+        "id": "b",
+        "width": 1440,
+        "overflow": false,
+        "missing": 0
+      },
+      {
+        "id": "b",
+        "width": 1120,
+        "overflow": false,
+        "missing": 0
+      },
+      {
+        "id": "b",
+        "width": 390,
+        "overflow": false,
+        "missing": 0
+      },
+      {
+        "id": "b",
+        "width": 320,
+        "overflow": false,
+        "missing": 0
+      },
+      {
+        "id": "c",
+        "width": 1440,
+        "overflow": false,
+        "missing": 0
+      },
+      {
+        "id": "c",
+        "width": 1120,
+        "overflow": false,
+        "missing": 0
+      },
+      {
+        "id": "c",
+        "width": 390,
+        "overflow": false,
+        "missing": 0
+      },
+      {
+        "id": "c",
+        "width": 320,
+        "overflow": false,
+        "missing": 0
+      }
+    ]
+  },
+  "pdf_visual_inspection": "Both one-page PDF boards rendered and inspected; no clipping or missing artwork.",
+  "quote": "Supplied four-line verse preserved; no footnote."
+}
