@@ -57,3 +57,11 @@
 .credit-note{font-size:15px}
 .verse.long{font-size:26px;line-height:1.5;margin-bottom:44px}
 @media(max-width:700px){.verse.long{font-size:20px}}
+
+/* Second large heading on the start page (a level-2 heading that looks like the first) */
+.hero h2.display{font-weight:400;font-size:68px;line-height:1.02;letter-spacing:-.02em;margin-bottom:26px;max-width:790px}
+@media(max-width:700px){
+  .hero h2.display{font-size:43px}
+  /* Larger tap targets for links that stand alone */
+  .quiet-link,.library-list article>a,.rail-title a,.detail-row .actions a,.footer>a{display:inline-flex;align-items:center;min-height:44px}
+}

@@ -56,3 +56,12 @@
 
 /* The footer of inner pages sits on a solid band, so the wallpaper never shows behind text. */
 .site.plain .footer{background:var(--bg);border-top:1px solid var(--line)}
+
+/* Resources overview: each entry is a level-2 heading that looks like the "###" headings on other pages */
+.page.entries h2{font-size:27px;margin:34px 0 14px;padding-top:24px;border-top:1px solid var(--line);max-width:680px}
+.page.entries .page-body>p:first-child+h2{margin-top:26px}
+.page.entries h2 small{font:italic 18px EB,Georgia,serif;color:var(--secondary);margin-left:8px;white-space:nowrap}
+@media(max-width:700px){
+  .page.entries h2{font-size:24px}
+  .footer-links a,.footer-links .soon{display:inline-flex;align-items:center;min-height:44px}
+}
