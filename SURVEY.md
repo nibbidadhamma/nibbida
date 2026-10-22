@@ -121,18 +121,19 @@ Location: `design/nibbida-website-chatgpt-sketch/` (added to `main` at the root 
 - The site is republished around the Dhamma projects, focusing on Resources and the English material.
 - The Swedish material moves to the new dhammadana.se site. That covers Texter, Poesi, and the Swedish parts of the mixed pages (home, Reboot, About, Donate). "Jag erkänner!" is a poem and goes with the Swedish poems.
 - Small copyright questions are set aside for now.
+- A Donate page stays, with bank transfer details, so people can donate by bank. I will keep the details in one data file, separate from the page text, so they can be changed in one place. Nothing has been copied yet.
+- The home page leads as a publisher, as in the sketch. The Dhamma projects (Resources, Audio, and so on) are what people already know Nibbidā for, so they get a prominent place on the home page and in the navigation, not a small link.
 
 **What this leaves for nibbida.com** (my reading of the decisions; please correct): Home (English part), Resources (Archive, Map, Pali guide, Reboot English part, Myanmar visa guide), Audio, Blog, Links, About (English part), and Donate if kept. That is about 11 pages instead of 24. Pages 2–13 are out of scope here, and the English halves of pages 1, 18, 22, and 24 would need to be separated from the Swedish.
 
 **Still open**
-1. **Donate page.** It has a private person's bank details (IBAN, account, address) and a phone number. If the repository becomes public, these become public and stay in the history. Keep them in the repository, or link to something else?
+1. **Donate page, details.** The account holder on the old page is your mother, not you. Public GitHub history is permanent, so please confirm that she agrees to her IBAN, address, and phone number being on a public site once the repository is public. Until you say so, I will not copy them in.
 2. **Images.** The About page says a few images have no known copyright holder. I will list images per page with their sources if you want to review them; otherwise I will not act on this.
 3. **Audio.** Keep the archive.org embeds, or use a plain audio element with a download link (section 2)?
 4. **Blog.** Is the single post the whole blog, and are new posts to be added as separate files?
 5. **Analytics.** I would not carry over Google Analytics. Correct?
 6. **Archive count.** "300+" on the home and archive pages, "250" on the Resources index. Use the real count from the catalogue?
-7. **Home page content.** The sketch presents Nibbidā as a publisher (Books / Read / About). The old home page introduces the Dhamma projects. Which should the new home page lead with, and where do the projects go in the navigation?
-8. **Bare domain.** `nibbida.com` was blocked here, so I haven't seen what it does. No action needed now.
+7. **Bare domain.** `nibbida.com` was blocked here, so I haven't seen what it does. No action needed now.
 
 ## 6. Not done
 
