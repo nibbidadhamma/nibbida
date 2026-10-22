@@ -1,11 +1,11 @@
 # Survey of nibbida.com and the Astra design files
 
-Written 22 October 2026, following section 1 of `nibbida-handover.md`. Survey only: nothing was built, installed, or changed except the addition of this file.
+Written 22 October 2026, following section 1 of `nibbida-handover.md`. Survey only: nothing was built, installed, or changed except this file.
 
 ## 0. Summary
 
 - **nibbida.com is reachable** from this environment, through the host `www.nibbida.com`. The bare host `nibbida.com` was refused by the egress proxy (it is probably only a redirect). All 24 pages in the site menu were fetched and read as HTML.
-- **The Astra files are not in the repository.** The branch contains only `README.md` and `nibbida-handover.md` (commits `f57ff55`, `8218af9`; no other branches). There is no `design/` folder. Section 3 below is therefore empty, and section 4 is provisional. This is the first blocking question.
+- **The Astra files were not on my branch when I started**, so my first version of this file said they were missing. They were added to `main` (commit `e7ef89e`, "Astra made website draft") as the folder `nibbida-website-chatgpt-sketch/`. I have now inspected them without merging or moving anything; section 3 is based on that. The folder is at the repository root, not in `design/` as the handover says.
 - The old site is small: 24 pages, about 18,000 words, almost all plain text with images. Only a few pages depend on something outside the page itself (see section 2).
 - Facts below come from the fetched HTML. Where I could not see something (for example the contents of embedded Google Docs), I say so.
 
@@ -85,56 +85,58 @@ The PDF and EPUB of "Mindfulness rötter" and the Drive file on "Sömnbubbla" ar
 
 ## 3. Astra design files
 
-**Not found.** The repository contains no HTML, CSS, images, SVGs, fonts, or scripts. Only these files exist:
+Location: `nibbida-website-chatgpt-sketch/` on `main` (commit `e7ef89e`). I read it from `origin/main` and did not merge it into this branch. Its own `MANIFEST.sha256` verified without errors.
 
-```
-README.md
-nibbida-handover.md
-```
+**What it is.** A design study for one page, in three directions (A "expanded labyrinth", B "quiet center", C "edge of the page") with A recommended. It is a mockup: the copy is illustrative (its README says so), the links are in-page anchors only, and nothing is a real catalogue or reading page. It is a working HTML page that opens offline, but not a site.
 
-I did not search outside the repository. I could not therefore check whether the design runs as a mockup or as a working page, nor what it loads from outside the repository. Please see question 1.
+**Inventory** (about 13 MB in total; about 12 MB of that is review images and PDFs that the site would not need):
 
-## 4. Static site generator: provisional recommendation
+| Kind | Files | Notes |
+|------|-------|-------|
+| HTML | `direction-a.html`, `direction-b.html`, `direction-c.html`, `recommended.html`, `index.html`, `comparison.html`, `refined-sheet.html` | `recommended.html` is byte-identical to `direction-a.html`, and `index.html` to `comparison.html`. The three direction pages are the actual page designs (about 4 KB each). `comparison.html` and `refined-sheet.html` are presentation boards for reviewing the designs, not site pages. |
+| CSS | `assets/site.css` (9 KB), `board.css` (2 KB, boards only) | Plain CSS, one breakpoint (`max-width:700px`), mostly fixed pixel sizes. Colors are set as custom properties in an inline `style` on `<html>`. |
+| JavaScript | One small inline script in each direction page | It only reads `?scale=large` and `?swatch` from the address, to preview alternatives. The site does not need it. |
+| Fonts | `assets/EBGaramond.ttf`, `assets/EBGaramond-Italic.ttf`, `assets/FONT-LICENSE.txt` | EB Garamond, SIL Open Font License 1.1, already stored locally (1.1 MB). |
+| SVG | `assets/emblem-A/B/C.svg` (70 KB each), `assets/maze-A/B/C.svg`, `labyrinth-white.svg`, `maze-explanation.svg` (9.5 KB each), `assets/C5-B.svg`, `assets/E2.svg` (ornaments), `assets/crop-diagram.svg`, plus `reference/` holding the two supplied originals | The emblem and maze are recolored copies of the supplied originals. Their README says the geometry is unchanged and that checksums of the originals were verified. |
+| Images | `previews/*.png` (21 files), `comparison*.png`, `refined-sheet*.png`, `comparison.pdf`, `refined-sheet.pdf` | Screenshots and boards for review. Not used by the site. |
+| Data | `specifications.json`, `verification.json`, `browser-checks.json`, `sheet-checks.json` | Colors, positions, and the designer's own checks. Not used by the site. |
 
-This is provisional because the Astra files were not available. I based it on the old site and the decisions in the handover.
+**Loaded from outside the repository: nothing found.** I searched all HTML, CSS, and SVG for `http(s)://`, `//`, `@import`, `url(…)`, `<script src>`, `<link>`, and embedded images. The only URL is the SVG namespace string `http://www.w3.org/2000/svg`, which is not fetched. Fonts, SVGs, and CSS are all local. Two small caveats:
+- Small labels and buttons use `Arial, sans-serif`, which is a system font and is not shipped. It will render as a different font on different devices.
+- The CSS declares the font three times with different paths (`EBGaramond.ttf` and `assets/EBGaramond.ttf`, in `site.css` and `board.css`). They work from their own location, but the paths would need checking if the files move.
 
-**Recommendation: Eleventy (11ty), unless the Astra files turn out to need component-style interactivity.**
-
-Reasons, from what I read:
-
-1. **The content is text.** Of 24 pages, about 20 are Markdown prose. Eleventy treats Markdown plus front matter as its main input and leaves the HTML you supply alone, so the Astra home page can be used as a template almost as it stands. This keeps the existing design intact rather than rewriting it into another framework.
-2. **Data files are first-class.** Eleventy reads YAML, JSON, and CSV from a data folder and exposes them to templates, which is what the Links, Audio, Archive catalogue, and Map pages need.
-3. **Phone editing.** Content files are plain `.md` and `.yml`, and the layout is separate, so an edit in GitHub's web or mobile editor cannot break the design.
-4. **Small footprint and long life.** Eleventy has few dependencies and outputs ordinary HTML and CSS with no client-side JavaScript by default. That suits the requirement that the site keeps working for years without maintenance.
-5. **No build step for you.** Both Eleventy and Astro build in GitHub Actions on each change, so you never run a build. This is the same for both.
-
-Astro would be the better choice if the Astra home page contains interactive components that you want to keep as components, or if you expect many more interactive features. Astro has more dependencies and more frequent major versions, which is a maintenance risk for a site left alone for a long time. I have not verified this against current release notes; it is my judgment from general knowledge, so please treat it as an opinion.
-
-What would change my recommendation: the contents of the Astra files, and the answer to whether GitHub Pages is available for a private repository on your plan (GitHub Actions deployment is assumed but not verified; I have not checked current terms).
+**What I noticed about the design itself** (observations, not decisions):
+- Structure: header (emblem, name, three links: Books / Read / About), hero, one featured book, three "ways into the reading", one quoted passage, a book detail section, and a footer. It presents Nibbidā as a small publisher.
+- It does **not** match the old site's content. The navigation has none of Texter, Poesi, Resources, Audio, Blog, Donate, or Links. How those fit is a design question that the sketch does not answer.
+- The labyrinth is one 2,350 px SVG used as a background, positioned by fixed pixel offsets (a different offset for phones). It stays 2,350 px wide on a phone and is cropped. It is a very low-contrast background (the designer's figure is about 1.09:1 against the ground), by intent.
+- Some text is very small: 10 px labels, and 7 px text on the book cover. Body text is 21 px. The README says its contrast numbers are computed checks and not a full accessibility audit.
+- Pāli diacritics: the sketch's text uses ā in "Jhāna" and "nibbāna". I could not check whether EB Garamond covers the full set (ṭ ḍ ṇ ḷ ṃ ṅ ñ), because that needs a font tool I did not install. This should be tested before the font is chosen for good.
+- **Content that may touch the handover's rules.** The sketch contains the title *Insight Is the End*, "Ayya Khema", and a four-line verse ("No jhāna without wisdom, no wisdom without jhāna. One who has both stands close to nibbāna."), shown in the HTML and in the preview images and PDFs. The README calls the verse "supplied" and says no attribution was invented. I do not know whether the verse comes from ITE or from Ayya Khema's texts. The handover says such material must not go into either repository, and the repository is private for now. See question 2.
 
 ## 5. Questions for Jayadhamma that block the next step
 
 **Blocking**
 
-1. **Where are the Astra files?** They are not in the `nibbida` repository, on any branch. Could you add them (to `design/`, untouched, as the handover says), or tell me where they are?
-2. **Google Docs for "Mindfulness i korthet" and "Ratana Sutta".** Do you want these converted to Markdown? If so, please export the two Docs (Markdown or .docx) and add them to the repository, or paste the text. I cannot read them from the page.
-3. **Which texts are yours to publish?** "Mindfulness i korthet" is a translation of a text by Sayadaw U Tejaniya, and "Reboot" quotes instructions from James Kingsland's book and the Dhammapada translation by Eknath Easwaran. Is the translation permitted? This matters if the repository becomes public.
-4. **Swedish material.** Should I move the Swedish pages into a staging folder now (to go to `dhammadana.se`), or leave them out of this repository until that site exists? Pages 1, 18, 22, and 24 mix both languages.
-5. **"Jag erkänner!"** The interactive poem uses a Google Form. Keep the embed, link to it, or keep the poem text only?
+1. **Where should the Astra files live?** They are in `nibbida-website-chatgpt-sketch/` on `main`. The handover says `design/`. May I move them there with `git mv` (history is kept), or should they stay as they are?
+2. **The verse and book title in the sketch.** Is the verse "No jhāna without wisdom…" from ITE or Ayya Khema? If it is, should it be replaced with neutral placeholder text in the working copy? Nothing has been changed. The original is in the private repository history already.
+3. **Google Docs for "Mindfulness i korthet" and "Ratana Sutta".** Do you want these converted to Markdown? If so, please export the two Docs (Markdown or .docx) and add them to the repository, or paste the text. I cannot read them from the page.
+4. **Which texts are yours to publish?** "Mindfulness i korthet" is a translation of a text by Sayadaw U Tejaniya, and "Reboot" quotes instructions from James Kingsland's book and the Dhammapada translation by Eknath Easwaran. Is the translation permitted? This matters if the repository becomes public.
+5. **Swedish material.** Should I move the Swedish pages into a staging folder now (to go to `dhammadana.se`), or leave them out of this repository until that site exists? Pages 1, 18, 22, and 24 mix both languages.
+6. **"Jag erkänner!"** The interactive poem uses a Google Form. Keep the embed, link to it, or keep the poem text only?
 
 **Needed soon, not blocking this step**
 
-6. **Donate page.** It contains a private person's bank details (IBAN, account, address), a phone number for Swish, and a Revolut link. I have not copied any of it into this file. If the repository becomes public, these details become public, and remain in the history. Do you want them in the repository at all, and does the person concerned agree?
-7. **Images.** The About page says that for a few images no copyright holder could be found. Which images are those? Should unlicensed images be left out of the repository? Should I list the images per page with their sources for you to review?
-8. **Audio.** Keep the archive.org embeds, or use a plain audio element with a download link (see section 2)?
-9. **Blog.** Is the single post the whole blog, and will new posts be added later as separate files?
-10. **Analytics.** The old site uses Google Analytics. I would not carry it over. Is that correct?
-11. **Inconsistent counts.** The archive is described as "300+" books on the home page and archive page, and "250" on the Resources index. Should the new text say 300+ or use the real number from the catalogue?
-12. **Bare domain.** `nibbida.com` was blocked for this session while `www.nibbida.com` worked. Nothing is needed from you, but it means I have not seen what the bare domain does. The redirect behavior will matter at the domain switch.
+7. **Donate page.** It contains a private person's bank details (IBAN, account, address), a phone number for Swish, and a Revolut link. I have not copied any of it into this file. If the repository becomes public, these details become public, and remain in the history. Do you want them in the repository at all, and does the person concerned agree?
+8. **Images.** The About page says that for a few images no copyright holder could be found. Which images are those? Should unlicensed images be left out of the repository? Should I list the images per page with their sources for you to review?
+9. **Audio.** Keep the archive.org embeds, or use a plain audio element with a download link (see section 2)?
+10. **Blog.** Is the single post the whole blog, and will new posts be added later as separate files?
+11. **Analytics.** The old site uses Google Analytics. I would not carry it over. Is that correct?
+12. **Inconsistent counts.** The archive is described as "300+" books on the home page and archive page, and "250" on the Resources index. Should the new text say 300+ or use the real number from the catalogue?
+13. **Bare domain.** `nibbida.com` was blocked for this session while `www.nibbida.com` worked. Nothing is needed from you, but it means I have not seen what the bare domain does. The redirect behavior will matter at the domain switch.
 
 ## 6. Not done
 
-- No files were downloaded into the repository, and no images were saved.
+- No files were downloaded into the repository, and no images were saved. The Astra files were inspected in a temporary folder outside the repository.
 - I did not read the Google Drive archive, the Google Maps list, or the embedded Google Docs, and did not use any credentials.
 - I did not check GitHub Pages terms, Leaflet, or the OpenStreetMap tile policy; the handover marks those for later steps.
 - The raw copies of the pages I fetched are in a temporary scratch folder outside the repository and are not committed.
