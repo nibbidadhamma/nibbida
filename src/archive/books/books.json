@@ -1,0 +1,5 @@
+{
+  "layout": "book.njk",
+  "tags": "book",
+  "permalink": "/resources/archive/{{ page.fileSlug }}/"
+}

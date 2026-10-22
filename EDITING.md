@@ -33,6 +33,40 @@ A description of the resource.
 
 In `src/_data/site.yaml`, each page has `ready: false` until it exists. Greyed items show "coming soon". Change it to `ready: true` when the page is built.
 
+## The Dhamma-Dana Archive
+
+Each book is one small file in `src/archive/books/`. The file name becomes the book's web address, so use lowercase words with dashes, for example `ajahn-chah-a-still-forest-pool.md`. To add a book, copy an existing file, change the words, and save it under a new name.
+
+```
+---
+title: A Sample Book Title
+author: Sample Author
+folder: various
+language: English
+formats:
+  - name: PDF
+    url: https://publisher.example/book.pdf
+  - name: EPUB
+    url: https://publisher.example/book.epub
+source: Sample Publisher
+source_url: https://publisher.example/
+terms: Free distribution, not for sale
+---
+```
+
+- `folder` is one of: `various`, `canon`, `chanting`, `dictionaries`, `swedish`, `german`. The folders and their cover colors are in `src/_data/archive.yaml`.
+- Keep the two lines of three dashes (`---`) and the spaces at the start of the `formats` lines exactly as they are.
+- The cover is drawn automatically from the title, author and folder.
+- A book hosted on this site also has `hosted: true` and a `permission:` line (the publisher's name, the date, and a short reference; no email addresses). Its `url` lines then start with `/archive/files/` and the file itself goes in `src/archive/files/`.
+- Cards with `sample: true` are fake examples. Delete them before publishing. The build prints a warning while any remain, and a warning for any card with missing fields or an unknown folder.
+- The search box and folder buttons need JavaScript. Without it, the page shows every book.
+- The page text above and below the shelf is in `src/resources/archive.md`.
+
+### Changes made when the archive text was converted from the old page
+
+- Left out: the sentence "Download or read directly by clicking in the window below!", the Google Drive links, the sharing images and short link, the folder walkthrough, and the e-book and format notes. The last two groups are not decided.
+- The upload-folder sentence was shortened to "You can send your favorites with an e-mail", and the e-mail address is now nibbidadhamma@gmail.com.
+
 ## Before editing from a phone
 
 A mistake in the top block of a file (between the `---` lines) can stop the site from building. Leave that block alone unless you are sure.

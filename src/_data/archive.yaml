@@ -1,0 +1,20 @@
+# Folders of the Dhamma-Dana Archive. "tone" is the cover color of books in the folder.
+folders:
+  - slug: various
+    title: Various Authors
+    tone: "#b7a685"
+  - slug: canon
+    title: Buddhist Canon & Tipitaka
+    tone: "#a5ad92"
+  - slug: chanting
+    title: Chanting Books
+    tone: "#b79d8a"
+  - slug: dictionaries
+    title: Dictionaries & Guides
+    tone: "#93a0a8"
+  - slug: swedish
+    title: Swedish
+    tone: "#c0a96f"
+  - slug: german
+    title: German
+    tone: "#aa9aa0"

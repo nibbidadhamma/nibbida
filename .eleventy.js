@@ -1,3 +1,4 @@
+const fs = require("fs");
 const yaml = require("js-yaml");
 
 // Turns "Some Title: A.K. Warder" into "some-title-a-k-warder" for page anchors.
@@ -14,6 +15,47 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
 
   eleventyConfig.addPassthroughCopy("src/assets");
+  // Books hosted on this site are kept in src/archive/files and published at /archive/files/.
+  eleventyConfig.addPassthroughCopy("src/archive/files");
+
+  // --- Dhamma-Dana Archive -------------------------------------------------
+  const folders = yaml.load(fs.readFileSync("src/_data/archive.yaml", "utf8")).folders;
+
+  // Folder name and cover color from a card's "folder" word.
+  eleventyConfig.addFilter("folderInfo", (key, list) =>
+    (list || folders).find((f) => f.slug === key) || { title: key, tone: "#b7a685" }
+  );
+
+  // Cover title size in em, smaller for longer titles.
+  eleventyConfig.addFilter("coverSize", (t) => {
+    const n = String(t).length;
+    return n <= 22 ? 2.4 : n <= 40 ? 2.1 : n <= 64 ? 1.8 : 1.5;
+  });
+
+  // Lower case without accents, for the search box ("dhammadana" finds "Dhammadāna").
+  eleventyConfig.addFilter("plain", (s) =>
+    String(s).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase()
+  );
+
+  // All book cards, sorted by title. Prints a warning for cards with missing or unknown fields.
+  eleventyConfig.addCollection("books", (api) => {
+    const books = api.getFilteredByTag("book");
+    const known = folders.map((f) => f.slug);
+    let samples = 0;
+    books.forEach((b) => {
+      const d = b.data;
+      const missing = ["title", "author", "folder", "formats"].filter((k) => !d[k] || (k === "formats" && !d.formats.length));
+      if (missing.length) console.warn(`[archive] WARNING ${b.inputPath}: missing ${missing.join(", ")}`);
+      if (d.folder && !known.includes(d.folder)) console.warn(`[archive] WARNING ${b.inputPath}: unknown folder "${d.folder}" (use one of: ${known.join(", ")})`);
+      (d.formats || []).forEach((f) => {
+        if (!f.name || !f.url) console.warn(`[archive] WARNING ${b.inputPath}: a format needs both name and url`);
+      });
+      if (d.hosted && !d.permission) console.warn(`[archive] WARNING ${b.inputPath}: hosted book without a permission note`);
+      if (d.sample) samples++;
+    });
+    if (samples) console.warn(`[archive] NOTE: ${samples} sample entries are still present. Delete the files marked "sample: true" before publishing.`);
+    return books.sort((a, b) => String(a.data.title).localeCompare(String(b.data.title), "en", { sensitivity: "base" }));
+  });
 
   eleventyConfig.amendLibrary("md", (md) => {
     md.core.ruler.push("nibbida_rules", (state) => {

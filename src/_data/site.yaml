@@ -10,7 +10,7 @@ overview:
 resources:
   - title: Dhamma-Dana Archive
     url: /resources/archive/
-    ready: false
+    ready: true
   - title: Meditation Map of the Dhamma
     url: /resources/map/
     ready: false
