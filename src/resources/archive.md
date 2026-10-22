@@ -34,6 +34,12 @@ Special acknowledgements to the top contributors (please click to visit their we
 - [Ajahn Buddhadasa](https://www.suanmokkh.org/)
 - [Sayadaw U Tejaniya](https://ashintejaniya.org/)
 
+## A quick walkthrough of the archive
+
+All the books by modern writers are put in the folder Various Authors. In Buddhist Canon & Tipitaka you find translations of old scriptures that all Buddhists consider sacred and important, plus some commentaries. In the folder Chanting Books you find different compilations of holy texts meant to be used for chanting aloud and to do ceremonial practice. In Dictionaries, Guides etc. you find helpful books about the Pali language or books that tries to explain a certain topic. In Swedish Dhamma Writings you find books and translations in the Swedish language. Same with German Dhamma Writings.
+
+The books are shown in alphabetical order by title. Use the folder buttons above the shelf to see one folder at a time.
+
 ## New to e-books?
 
 The books included in the Dhamma-Dana Archive are either in the standard formats PDF or EPUB. The PDF's you can read on your computer or tablet, or print easily. The format EPUB are made especially with the intention to be read on an e-book reader, but can also be read on any other device.

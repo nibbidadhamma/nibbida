@@ -31,7 +31,7 @@ Recorded from conversations with Jayadhamma Bhikkhu, 22 October 2026. Only what 
 - A bookshelf with generated covers in the site's own style. Each book has a title, author and download button.
 - Shelf look: covers colored by folder (option B in `previews/bookshelf/`), with a search box and folder buttons. Cover imprint: DHAMMA-DĀNA.
 - Built (with fake sample entries to delete before publishing): the shelf at `/resources/archive/`, generated covers, a page per book, search and folder buttons, and one card file per book. See `EDITING.md`.
-- On the archive page: the quotation and the acknowledgements are kept; the format and e-book notes are kept (under "New to e-books?"); the Drive-specific text and the folder walkthrough are left out for now.
+- On the archive page: the quotation and the acknowledgements are kept; the format and e-book notes are kept (under "New to e-books?"); the folder walkthrough is back with the old wording adapted to the new shelf (the draft was shown; Jayadhamma said "sure" and left the folder names to Claude, who chose the names from the old text); the Drive-specific text is left out.
 - Book data: one small text file per book. The real list of books is to be solved later (the handover suggests listing a synced Drive folder on Jayadhamma's computer).
 - Most buttons link to the original publisher. A book is hosted on this site only after its terms are confirmed.
 - Root texts may be stored in a DDA folder in the repository, but only texts whose source and license are known. A public repository's history stays public after a file is deleted.
