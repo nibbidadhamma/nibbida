@@ -1,4 +1,4 @@
-{#- A picture in the site's own colors (a two-tone treatment) inside an open frame with corner brackets. -#}
+{#- A picture in the site's own colors (a two-tone treatment) inside a mat with a hairline. -#}
 {%- macro frame(src, alt, w, h, cls) -%}
-<span class="frame{% if cls %} {{ cls }}{% endif %}"><svg class="fc tl" viewBox="0 0 110 80" aria-hidden="true" focusable="false"><use href="#f3o"/></svg><svg class="fc tr" viewBox="0 0 110 80" aria-hidden="true" focusable="false"><use href="#f3o"/></svg><svg class="fc bl" viewBox="0 0 110 80" aria-hidden="true" focusable="false"><use href="#f3o"/></svg><svg class="fc br" viewBox="0 0 110 80" aria-hidden="true" focusable="false"><use href="#f3o"/></svg><span class="duo"><img src="{{ src | url }}" alt="{{ alt }}" width="{{ w }}" height="{{ h }}" loading="lazy"></span></span>
+<span class="frame{% if cls %} {{ cls }}{% endif %}"><span class="duo"><img src="{{ src | url }}" alt="{{ alt }}" width="{{ w }}" height="{{ h }}" loading="lazy"></span></span>
 {%- endmacro -%}
