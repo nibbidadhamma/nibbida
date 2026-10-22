@@ -19,7 +19,7 @@ groups:
     short: "Texts"
     id: canonical
     subgroups:
-      - title: "Translations (Pāli Nikāyas & related)"
+      - title: "Translations (Pali Nikāyas & related)"
         items:
           - {name: "SuttaCentral", url: "https://suttacentral.net/", text: "Main hub for early Buddhist texts with multiple translations, parallels, segmented Pāli, and tools."}
           - {name: "The Buddha’s Words", url: "https://thebuddhaswords.net/", text: "Clean HTML versions of many Pāli suttas in English and Pāli, organised by Nikāya."}
@@ -35,7 +35,7 @@ groups:
           - {name: "ReadingFaithfully.org", url: "https://readingfaithfully.org/", text: "Resources to build a regular sutta reading practice: guides, reading plans, and study tips."}
           - {name: "Buddha Dust", url: "https://buddhadust.net/backmatter/indexes/sutta/sutta_toc.htm", text: "Extensive index pointing to sutta translations across several websites and collections."}
           - {name: "A Buddhist View", url: "https://abuddhistview.com/", text: "Essays and reflections grounded in early Buddhist teachings and practice."}
-      - title: "Pāli texts & study tools (original language, dictionaries)"
+      - title: "Pali texts & study tools (original language, dictionaries)"
         items:
           - {name: "BuddhaNexus – Pāli", url: "https://buddhanexus.net/pli/", text: "Pāli text viewer with powerful parallel search across Pāli Nikāyas and Chinese Āgamas."}
           - {name: "Tipitaka.org", url: "https://www.tipitaka.org", text: "Online Pāli Canon in multiple scripts, with line-by-line text navigation."}
@@ -56,7 +56,7 @@ groups:
         items:
           - {name: "PaliAudio.com", url: "https://www.paliaudio.com/", text: "Professional readings of Pāli Nikāya suttas (often based on SuttaCentral translations)."}
           - {name: "Sutta Readings", url: "https://www.suttareadings.net/", text: "Curated audio readings of suttas from various translators and sources."}
-          - {name: "SuttaCentral Voice", url: "https://www.sc-voice.net/?src=sc#/wiki/toc", text: "SuttaCentral's audio front-end: listen to Pāli and translations with navigation synced to segments."}
+          - {name: "SuttaCentral Voice", url: "https://www.sc-voice.net/?src=sc#/wiki/toc", text: "SuttaCentral’s audio front-end: listen to Pāli and translations with navigation synced to segments."}
           - {name: "Audio Tipitaka (Audtip)", url: "https://audtip.org/", text: "Long-term project offering audio versions of sutta translations; open to volunteers."}
           - {name: "Dharma Audiobooks", url: "http://dharmaaudiobooks.com/", text: "Professionally produced audiobooks of suttas, talks, and classic Buddhist writings."}
       - title: "Apps & research tools (readers, search, developer tools)"
@@ -100,7 +100,7 @@ groups:
       - {name: "Pali Translation Project", url: "https://palitranslation.org/", text: "Project aiming to produce and host high-quality, searchable English translations of the Pāli Canon."}
       - {name: "Pariyatti", url: "https://pariyatti.org/", text: "Non-profit bookstore and resource hub for Theravāda literature and Vipassana teachings."}
       - {name: "Pitaka.lk", url: "https://pitaka.lk/main/", text: "The Pāli Tipiṭaka available online with parallel Sinhala translations."}
-      - {name: "Stanford Encyclopedia: Buddha", url: "https://plato.stanford.edu/entries/buddha/", text: "Peer-reviewed philosophical article covering the Buddha's life, metaphysics, and epistemology."}
+      - {name: "Stanford Encyclopedia: Buddha", url: "https://plato.stanford.edu/entries/buddha/", text: "Peer-reviewed philosophical article covering the Buddha’s life, metaphysics, and epistemology."}
       - {name: "Schatztruhe Pali-Kanon", url: "https://schatztruhe-palikanon.net/", text: "German website providing structured explanations and study resources for the Pāli Canon."}
       - {name: "Sobhana.net", url: "https://sobhana.net/", text: "Audio-visual library of Dhamma talks, sutta chants, and texts in Pāli and English."}
       - {name: "TipitakaPali.org", url: "https://tipitakapali.org/", text: "Platform for the Chaṭṭha Saṅgāyana Tipiṭaka with integrated dictionaries and search tools."}
@@ -139,11 +139,11 @@ groups:
     id: google
     intro: "The links in this group open on Google and need a Google account."
     items:
-      - {name: "Wolf's Guide to Dharma Books & Practice", url: "https://docs.google.com/document/d/1hlk6x2XJy8ZQfdYYTibCx2ADRtZDLPqJifQrggic47k/", text: "A perhaps not 100% legal document, filled with useful information about Buddhist meditation and beyond.", google: true}
+      - {name: "Wolf’s Guide to Dharma Books & Practice", url: "https://docs.google.com/document/d/1hlk6x2XJy8ZQfdYYTibCx2ADRtZDLPqJifQrggic47k/", text: "A perhaps not 100% legal document, filled with useful information about Buddhist meditation and beyond.", google: true}
     subgroups:
       - title: "NotebookLM (AI notebooks on selected texts)"
         url: "https://notebooklm.google/"
-        intro: "It is a great AI tool that is limited only by the selected resources. It's good for finding needed references. There are a few useful collections available:"
+        intro: "It is a great AI tool that is limited only by the selected resources. It’s good for finding needed references. There are a few useful collections available:"
         items:
           - {name: "Early Suttas", url: "https://notebooklm.google.com/notebook/6a9818aa-3045-4f35-8afb-ec5f13571d40", text: "mūla of EBT", google: true}
           - {name: "Sutta Piṭaka + Commentaries", url: "https://notebooklm.google.com/notebook/68815e7f-c5b6-4b12-a66e-9f80729b9015", text: "Second basket of the Tipiṭaka, mūla + atthakathā", google: true}

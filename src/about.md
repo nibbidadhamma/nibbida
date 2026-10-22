@@ -25,7 +25,7 @@ The wish to spread information about how and where to meditate was the main reas
 I hope this work is of use. May it support your own exploration of meditation and Dhamma, and perhaps make it more fruitful.
 
 *With mettā,*  
-/[Jayadhamma Bhikkhu (Hampus Haraldssson)](mailto:nibbidadhamma@gmail.com)
+/[Jayadhamma Bhikkhu (Hampus Haraldsson)](mailto:nibbidadhamma@gmail.com)
 
 ## Background
 

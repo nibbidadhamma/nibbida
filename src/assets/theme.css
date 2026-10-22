@@ -55,6 +55,7 @@
 }
 
 html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
 /* The header emblem has one file per theme. */
 .brand img.logo-dark { display: var(--ld); }

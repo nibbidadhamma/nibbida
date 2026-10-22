@@ -34,3 +34,6 @@ footer:
   - title: License
     url: /license/
     ready: true
+  - title: Contact
+    url: mailto:nibbidadhamma@gmail.com
+    ready: true

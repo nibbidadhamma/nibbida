@@ -122,3 +122,13 @@ The page text was copied unchanged, except for these points:
 - The featured slot "The first Nibbidā editions" is a placeholder until real books are ready.
 - Text changes in About: "It blew my mind" became "It changed how I saw my own mind"; the robes sentence and the closing wish were shortened; "The informative part" became "Background". A paragraph about Nibbidā as a publisher was added at the top.
 - "Pali" is written without the diacritic in titles, by choice.
+
+## Audit fixes
+
+- Headings: the start page has one main heading; the Resources overview uses level-2 headings (page option `pageclass: entries`, `notoc: true`).
+- "Pali" is written without the diacritic in the site's own headings and text. Names of other people's works ("Digital Pāli Reader", "Pāli Text Society") and the descriptions in the shared links list keep their original spelling.
+- Apostrophes in the site's own text are curly. Quotations keep their original characters.
+- Menu item "Books" opens the Dhamma-Dāna Archive. The footer has a "Contact" link (email).
+- Donate page: one email invitation (the second sentence of the intro moved into "Ways to give").
+- Fonts use `font-display: swap`. Smooth scrolling is off for visitors who ask for reduced motion. Stand-alone links on phones have a 44 px tap area.
+- The signature on the About page is spelled "Haraldsson".

@@ -27,7 +27,7 @@ These links will help you type Pali in Roman script with all the necessary diacr
 
 [Download](https://americanmonk.org/tipitaka-pali-reader/)
 
-Among the most useful tools available today for anyone studying Pali, the Tipiṭaka Pāli Reader (TPR) stands out. It's a free, multi-platform offline app that makes reading and exploring the Pali Canon straightforward and efficient. It includes a built-in dictionary system that draws from multiple Pali dictionaries at once, allowing instant word lookups, and also offers optional AI-based context support for quick explanations of phrases or grammatical constructions. With fast full-text search and a clean, responsive interface, it's currently the go-to user-friendly app for reading Pali. Available in many app stores.
+Among the most useful tools available today for anyone studying Pali, the Tipiṭaka Pāli Reader (TPR) stands out. It’s a free, multi-platform offline app that makes reading and exploring the Pali Canon straightforward and efficient. It includes a built-in dictionary system that draws from multiple Pali dictionaries at once, allowing instant word lookups, and also offers optional AI-based context support for quick explanations of phrases or grammatical constructions. With fast full-text search and a clean, responsive interface, it’s currently the go-to user-friendly app for reading Pali. Available in many app stores.
 
 ### Digital Pali Dictionary (DPD)
 
@@ -45,63 +45,63 @@ Simsapa Dhamma Reader is one of the most ambitious Buddhist study applications c
 
 [Download](https://apps.ankiweb.net/)
 
-Flashcards are a simple and effective way to learn and memorize vocabulary, grammar, or any other information by testing yourself repeatedly over time. The Anki app provides a flexible platform for digital flashcards using a spaced-repetition system that shows difficult items more often and spaces out those you've already mastered. Anki is easy to install on a computer or phone for offline use and can sync across devices with a free AnkiWeb account. Many pre-made decks are available, covering Pali vocabulary, grammar, and canonical examples, and you can create your own custom cards.
+Flashcards are a simple and effective way to learn and memorize vocabulary, grammar, or any other information by testing yourself repeatedly over time. The Anki app provides a flexible platform for digital flashcards using a spaced-repetition system that shows difficult items more often and spaces out those you’ve already mastered. Anki is easy to install on a computer or phone for offline use and can sync across devices with a free AnkiWeb account. Many pre-made decks are available, covering Pali vocabulary, grammar, and canonical examples, and you can create your own custom cards.
 
 ## Pali Course 1: A.K. Warder
 
-Based on A.K. Warder's foundational textbook "Introduction to Pali," this collection of learning resources provides multiple pathways for studying the language of the early Buddhist scriptures. Each resource complements Warder's systematic approach, helping you memorize and understand the material.
+Based on A.K. Warder’s foundational textbook "Introduction to Pali," this collection of learning resources provides multiple pathways for studying the language of the early Buddhist scriptures. Each resource complements Warder’s systematic approach, helping you memorize and understand the material.
 
 ### A.K. Warder – Introduction to Pali (2001)
 
 [Download PDF](https://audiobuddha.org/wp-content/uploads/2022/03/Introduction-to-Pali_Warder.pdf)
 
-Warder's textbook from 1963 is still the go-to starting point for anyone wanting a solid entry into the language of the early Buddhist texts. It leads the reader through 27 carefully structured lessons, beginning with the basics and gradually building toward more complex patterns of Pali grammar. One of the book's strengths is its use of authentic passages from the Canon right from the beginning, giving learners a feel for how the language works in real scriptural contexts. Warder's book remains the nucleus of much modern Pali study and is the central point around which other resources in this guide revolve.
+Warder’s textbook from 1963 is still the go-to starting point for anyone wanting a solid entry into the language of the early Buddhist texts. It leads the reader through 27 carefully structured lessons, beginning with the basics and gradually building toward more complex patterns of Pali grammar. One of the book’s strengths is its use of authentic passages from the Canon right from the beginning, giving learners a feel for how the language works in real scriptural contexts. Warder’s book remains the nucleus of much modern Pali study and is the central point around which other resources in this guide revolve.
 
 ### Wisdom & Wonders: Introduction to Pali course (24 lessons)
 
 [Download or use online](https://wiswo.org/itp/) *(This link might be flagged as dangerous for some reason)*
 
-This course by Ajahn Brahmali transforms Warder's textbook into an accessible audio-visual learning experience spanning 24 lessons with approximately 20 hours of content. It covers Warder's first 16 chapters, encompassing about 90% of essential grammatical topics. Each lesson features recorded explanations with integrated audio, downloadable PDFs, and interactive exercises. The course is also available for easy offline study.
+This course by Ajahn Brahmali transforms Warder’s textbook into an accessible audio-visual learning experience spanning 24 lessons with approximately 20 hours of content. It covers Warder’s first 16 chapters, encompassing about 90% of essential grammatical topics. Each lesson features recorded explanations with integrated audio, downloadable PDFs, and interactive exercises. The course is also available for easy offline study.
 
 ### John Kelly: Answer Key for Warder (2005)
 
 [Download PDF](https://audiobuddha.org/wp-content/uploads/2022/03/Answers.pdf)
 
-John Kelly's answer key provides worked solutions to the exercises in Warder's book, offering literal translations and notes that clarify common grammatical difficulties. It is especially useful for self-study students.
+John Kelly’s answer key provides worked solutions to the exercises in Warder’s book, offering literal translations and notes that clarify common grammatical difficulties. It is especially useful for self-study students.
 
 ### Ajahn Brahmali: A Key to the Exercises (2003)
 
 [Download PDF](https://wiswo.org/wp-content/uploads/2016/08/Key-to-the-Exercises-in-AK-Warders-Intro-to-Pali-A-Ven.-Brahmali.pdf) [](https://discourse.suttacentral.net/uploads/short-url/llM1mQDyL7Bvka61m7z2GHudIYZ.pdf)
 
-This PDF gives worked solutions to Warder's exercises, along with literal translations and grammatical notes. Reference links allow tracing each example to its original scriptural or grammatical context, deepening comprehension and familiarity with canonical Pāli style.
+This PDF gives worked solutions to Warder’s exercises, along with literal translations and grammatical notes. Reference links allow tracing each example to its original scriptural or grammatical context, deepening comprehension and familiarity with canonical Pāli style.
 
 ### Learn Pali Channel: Introduction to Pali Series
 
 [Watch](https://youtube.com/playlist?list=PLf6RXFuRpeLTvIFPAE29Ev5bjoFf8mVVY&si=ECAMwnMG4qYhxTPB)
 
-This YouTube playlist provides video instruction following Warder's textbook, offering visual and auditory reinforcement of grammar. Visit the Learn Pali Channel: [https://www.youtube.com/@LearnPali](https://www.youtube.com/@LearnPali)
+This YouTube playlist provides video instruction following Warder’s textbook, offering visual and auditory reinforcement of grammar. Visit the Learn Pali Channel: [https://www.youtube.com/@LearnPali](https://www.youtube.com/@LearnPali)
 
-### Anki Flashcards: Deck based on A.K. Warder's book
+### Anki Flashcards: Deck based on A.K. Warder’s book
 
 [Download](https://ankiweb.net/shared/info/189368187)
 
-This deck covers vocabulary and grammatical forms presented in Warder's textbook up to chapter 10, enabling spaced-repetition learning.
+This deck covers vocabulary and grammatical forms presented in Warder’s textbook up to chapter 10, enabling spaced-repetition learning.
 
 ### Justin Meiland: Warder additions (2010)
 
 [Download PDF](https://discourse.suttacentral.net/uploads/short-url/n3ssRievgRQKfvTzqfKhNT3RDh7.pdf)
 
-Created for a university Pali course, Meiland's supplement addresses the technical complexity of Warder's explanations by providing basic overviews of main grammatical points, additional cultural context for Buddhist terms, and detailed analysis of traditional Pali chants.
+Created for a university Pali course, Meiland’s supplement addresses the technical complexity of Warder’s explanations by providing basic overviews of main grammatical points, additional cultural context for Buddhist terms, and detailed analysis of traditional Pali chants.
 
 ## Pali Course 2: Lily de Silva
 
-This course centers on Lily de Silva's "Pali Primer", a well-known beginner textbook praised for its clarity and simplicity. It provides an easy entry into Pali with gentle, step-by-step lessons, without the heavy grammar load found in Warder or the quicker reading-based style of Gair & Karunatillake.
+This course centers on Lily de Silva’s "Pali Primer", a well-known beginner textbook praised for its clarity and simplicity. It provides an easy entry into Pali with gentle, step-by-step lessons, without the heavy grammar load found in Warder or the quicker reading-based style of Gair & Karunatillake.
 
 ### Lily de Silva – Pali Primer (2008)
 
 [Download PDF](https://www.baus.org/en/wp-content/uploads/2020/06/DeSilvaPaliPrimer.pdf)
 
-The textbook introduces basic grammar, vocabulary, and pronunciation step by step. Unlike Gair & Karunatillake or Warder, the de Silva Primer doesn't include sutta examples, focusing instead on clear explanations and exercises.
+The textbook introduces basic grammar, vocabulary, and pronunciation step by step. Unlike Gair & Karunatillake or Warder, the de Silva Primer doesn’t include sutta examples, focusing instead on clear explanations and exercises.
 
 ### Open Buddhist University: The Pali Language (2020)
 
@@ -163,11 +163,11 @@ Paliverse is an AI-powered platform for studying the complete Tipiṭaka togethe
 
 Sāsanārakkha offers a curated set of Google Notebook LM projects that combine key Buddhist texts with integrated English translations and powerful search features. Each notebook lets you browse suttas or Vinaya passages, compare sections, jump between related teachings, and quickly look up specific terms or themes across the canon. Beyond text study, Notebook LM also allows you to generate summaries, create study notes, draft teaching outlines, and even produce podcast-style audio explanations of selected material. With these tools gathered in one place, the collection provides an easy, modern way to explore the source texts while also helping you create your own learning resources along the way.
 
-### The Buddha's Words
+### The Buddha’s Words
 
 [Read online](https://thebuddhaswords.net/)
 
-This site allows you to read much of the Tipitaka in Pali or translations by Bhikkhu Bodhi and other well-known translators. Pali text can be displayed alongside translations, with hover-over dictionary explanations for words. Bhikkhu Bodhi's translations are mostly not on SuttaCentral due to copyright restrictions, making this site a unique way to access his work.
+This site allows you to read much of the Tipitaka in Pali or translations by Bhikkhu Bodhi and other well-known translators. Pali text can be displayed alongside translations, with hover-over dictionary explanations for words. Bhikkhu Bodhi’s translations are mostly not on SuttaCentral due to copyright restrictions, making this site a unique way to access his work.
 
 ### Tipiṭaka.org: Pali Canon in Roman script
 

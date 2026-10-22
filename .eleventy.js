@@ -85,13 +85,13 @@ module.exports = function (eleventyConfig) {
         if (t[i].type === "heading_open" && t[i].tag === "h2") {
           t[i].attrSet("id", slug(t[i + 1].content));
         }
-        // A paragraph that follows a "###" heading and starts with a link is a row of buttons.
+        // A paragraph that follows a "###" (or, on the Resources page, "##") heading and starts with a link is a row of buttons.
         if (
           t[i].type === "paragraph_open" &&
           i >= 3 &&
           t[i - 1].type === "heading_close" &&
           t[i - 3].type === "heading_open" &&
-          t[i - 3].tag === "h3" &&
+          (t[i - 3].tag === "h3" || t[i - 3].tag === "h2") &&
           t[i + 1].children &&
           t[i + 1].children[0] &&
           t[i + 1].children[0].type === "link_open"

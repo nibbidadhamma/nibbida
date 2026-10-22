@@ -2,13 +2,13 @@
 layout: base.njk
 plain: true
 ---
-<div class="page">
+<div class="page{% if pageclass %} {{ pageclass }}{% endif %}">
 {% if eyebrow %}<p class="eyebrow">{{ eyebrow }}</p>{% endif %}
 <h1>{{ title }}</h1>
 {% if subtitle %}<p class="subtitle">{{ subtitle }}</p>{% endif %}
 {{ "D3-B" | ornament("orn-d3b orn-title") | safe }}
 <div class="page-body">
-{{ content | withToc("On this page") | safe }}
+{% if notoc %}{{ content | safe }}{% else %}{{ content | withToc("On this page") | safe }}{% endif %}
 </div>
 {{ "O2" | ornament("orn-o2 orn-end") | safe }}
 </div>
