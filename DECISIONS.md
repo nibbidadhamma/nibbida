@@ -9,7 +9,9 @@ Recorded from conversations with Jayadhamma Bhikkhu, 22 October 2026. Only what 
 - Home page: Astra direction A, with the smallest text enlarged ("larger" version).
 - Menu: Books, Resources and About are the main links. Resources opens a list of its pages. Audio, Links and Donate are in the footer. Pages not built yet appear greyed out as "coming soon".
 - Inner pages: a narrow reading column, a small label above the title ("Resources"), and an "On this page" box on long pages. Links appear as buttons, not as raw addresses.
-- A light option will be added. Pictures made; the choice of how visitors get it (device setting, button, or both) is open.
+- A light option will be added. Visitors get it both ways: the site follows the device's light or dark setting by default, and a small Light / Dark button lets them choose and remembers the choice.
+- Light colors: to follow the light color scheme already made for dhammadana.se, or one of its alternative schemes, instead of the colors in `previews/light-option/`. Not yet seen.
+- Light artwork: Jayadhamma has inverted versions of all logos and ornaments and will supply them, to replace the recolors.
 - Ornaments and logos: Jayadhamma has many sizes and will supply them.
 
 **Structure**
@@ -22,6 +24,7 @@ Recorded from conversations with Jayadhamma Bhikkhu, 22 October 2026. Only what 
 
 **Dhamma-Dana Archive (DDA)**
 - Rebuilt on this site, no Google Drive.
+- Links between nibbida.com and dhammadana.se (for example to hosted books) are acceptable.
 - Hosting only the books that are allowed. Jayadhamma is considering keeping the hosted books in the `dhammadana` repository, because of the planned Swedish translation of the resources.
 - A bookshelf with generated covers in the site's own style. Each book has a title, author and download button.
 - Most buttons link to the original publisher. A book is hosted on this site only after its terms are confirmed.
