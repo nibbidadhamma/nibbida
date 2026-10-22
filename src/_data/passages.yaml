@@ -1,15 +1,26 @@
-# Passages for "A passage to sit with" on the start page. They are shown one at a time,
+# Quotes for "A passage to sit with" on the start page. They are shown one at a time,
 # with Previous / Next buttons. Without JavaScript all of them are listed.
 # While "items" is empty the whole section is hidden.
-# Each passage needs the exact wording of its translation, its source, and a credit.
-# Do not change the wording of a translation. Check the translator's permission to quote.
-#
-# Example (copy it under "items:" and remove the leading "# "):
-# items:
-#   - ref: "Sutta reference"
-#     topic: "A few words on the theme"
-#     credit: "Translation by Name, from Source"
-#     text: |
-#       First line,
-#       second line.
-items: []
+# Keep the wording of a quote exactly as in the source. Lines are joined into one paragraph.
+# Fields: ref (who), topic (title and source shown under the quote), credit (optional line).
+items:
+  - ref: "Ayya Khema"
+    topic: "Chapter beginning quote (BNGN p. 33)"
+    credit: "Quoted with permission."
+    text: >-
+      Insight is the goal. Calm is the means. As long as there is no calm in the mind, there are waves, waves of like and dislike. The waves obscure our vision.
+  - ref: "Ayya Khema"
+    topic: "The capacity to think differently (BAI p. 35)"
+    credit: "Quoted with permission."
+    text: >-
+      Only when we experience something entirely new do we understand that the mind has the capacity to think differently.
+  - ref: "Ayya Khema"
+    topic: "A useful key (WOOH p. 106)"
+    credit: "Quoted with permission."
+    text: >-
+      There is no need for fear; as long as there is life, there is breath. As the breath becomes shallow and quiet, a pleasant physical feeling arises.
+  - ref: "Ayya Khema"
+    topic: "When the waves subside (MM p. 14)"
+    credit: "Quoted with permission."
+    text: >-
+      In order to understand the Buddha’s teaching, we have to get below the surface, otherwise our insights will be superficial. The calm mind is the means for delving below relative reality. While we are trying to become calm, at the same time we are objectively examining all that arises, so that there is more and more support for letting go of the thinking.

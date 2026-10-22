@@ -55,3 +55,5 @@
 .passage-btn[hidden]{display:none}
 .reading .passages{flex-wrap:wrap;gap:14px}
 .credit-note{font-size:15px}
+.verse.long{font-size:26px;line-height:1.5;margin-bottom:44px}
+@media(max-width:700px){.verse.long{font-size:20px}}

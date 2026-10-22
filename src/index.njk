@@ -94,7 +94,7 @@ permalink: /
 {%- for q in passages.items %}
 <div class="passage{% if loop.first %} on{% endif %}">
 <div class="quote">
-<p class="verse">{{ q.text | trim | replace("\n", "<br>") | safe }}</p>
+<p class="verse{% if q.text | length > 160 %} long{% endif %}">{{ q.text | trim | replace("\n", "<br>") | safe }}</p>
 {{ "C5-B" | ornament("orn-c5b corner") | safe }}
 </div>
 <p class="note">{{ q.ref }} · {{ q.topic }}</p>

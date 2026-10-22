@@ -66,3 +66,5 @@ Recorded from conversations with Jayadhamma Bhikkhu, 22 October 2026. Only what 
 - DDA: which books to host, and the real list of books.
 - Whether GitHub Pages works from a private repository, or the repositories must become public.
 - Remaining questions in `SURVEY.md`, section 5 (for example the Swedish page split, the "Jag erkänner!" form, image licenses, and audio hosting).
+
+- Ayya Khema quotes: the handover note said not to put her texts in the repositories. Jayadhamma lifted this rule for short quotes: he has permission to publish a set of 139 short quotes. They appear in the start-page carousel ("A passage to sit with"), each with its source reference and the line "Quoted with permission." Only the quotes he supplies are added, and no longer texts. They stay in the public git history.
