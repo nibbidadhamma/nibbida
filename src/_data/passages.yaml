@@ -1,43 +1,15 @@
 # Passages for "A passage to sit with" on the start page. They are shown one at a time,
 # with Previous / Next buttons. Without JavaScript all of them are listed.
-# Translations are by Bhikkhu Sujato from SuttaCentral (dedicated to the public domain, CC0).
-# Keep the line breaks as they are ("|" keeps them); do not change the wording of a translation.
-credit: "Translation by Bhikkhu Sujato, from SuttaCentral"
-items:
-  - ref: "Dhammapada 372"
-    topic: "Absorption and wisdom"
-    text: |
-      No absorption for one without wisdom,
-      no wisdom for one without absorption.
-      But one with absorption and wisdom—
-      they have truly drawn near to extinguishment.
-  - ref: "Dhammapada 277"
-    topic: "Disillusionment"
-    text: |
-      All conditions are impermanent—
-      when this is seen with wisdom,
-      one grows disillusioned with suffering:
-      this is the path to purity.
-  - ref: "Dhammapada 276"
-    topic: "The work is ours"
-    text: |
-      You yourselves must do the work,
-      the Realized Ones just show the way.
-      Meditators practicing absorption
-      are released from Māra’s bonds.
-  - ref: "Dhammapada 183"
-    topic: "The instruction of the Buddhas"
-    text: |
-      Not to do any evil;
-      to embrace the good;
-      to purify one’s mind:
-      this is the instruction of the Buddhas.
-  - ref: "Dhammapada 2"
-    topic: "Intention"
-    text: |
-      Intention is the leader of things;
-      intention is first, they’re made by intention.
-      If with pure intent
-      you speak or act,
-      happiness follows you
-      like a shadow that never leaves.
+# While "items" is empty the whole section is hidden.
+# Each passage needs the exact wording of its translation, its source, and a credit.
+# Do not change the wording of a translation. Check the translator's permission to quote.
+#
+# Example (copy it under "items:" and remove the leading "# "):
+# items:
+#   - ref: "Sutta reference"
+#     topic: "A few words on the theme"
+#     credit: "Translation by Name, from Source"
+#     text: |
+#       First line,
+#       second line.
+items: []

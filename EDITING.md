@@ -118,7 +118,7 @@ The page text was copied unchanged, except for these points:
 ## Publisher text (start page and inner pages)
 
 - The start page, About, the Resources overview and the project cards were rewritten in a calmer, more formal publisher voice. Nibbidā is described as an independent Dhamma publisher; no book titles or authors are named as Nibbidā publications.
-- "A passage to sit with" on the start page is a small carousel. The passages are in `src/_data/passages.yaml` (translations by Bhikkhu Sujato from SuttaCentral, CC0). Add or remove passages there; keep the wording of a translation unchanged.
+- "A passage to sit with" on the start page is a small carousel. The passages are in `src/_data/passages.yaml` (currently empty, so the section is hidden). Each passage carries its own credit. Add passages there; keep the wording of a translation unchanged and check that the translator permits quoting.
 - The featured slot "The first Nibbidā editions" is a placeholder until real books are ready.
 - Text changes in About: "It blew my mind" became "It changed how I saw my own mind"; the robes sentence and the closing wish were shortened; "The informative part" became "Background". A paragraph about Nibbidā as a publisher was added at the top.
 - "Pali" is written without the diacritic in titles, by choice.

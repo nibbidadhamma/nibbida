@@ -84,6 +84,7 @@ permalink: /
 </article>
 </div>
 </section>
+{%- if passages.items and passages.items.length %}
 <section class="reading" id="reading">
 <div class="reading-head">
 <p class="kicker">A passage to sit with</p>
@@ -97,6 +98,7 @@ permalink: /
 {{ "C5-B" | ornament("orn-c5b corner") | safe }}
 </div>
 <p class="note">{{ q.ref }} · {{ q.topic }}</p>
+{%- if q.credit %}<p class="note credit-note">{{ q.credit }}</p>{% endif %}
 </div>
 {%- endfor %}
 </div>
@@ -104,8 +106,8 @@ permalink: /
 <button type="button" class="passage-btn" data-dir="-1" hidden>← Previous</button>
 <button type="button" class="passage-btn" data-dir="1" hidden>Next passage →</button>
 </div>
-<p class="note credit-note">{{ passages.credit }}.</p>
 </section>
+{%- endif %}
 <section class="book-detail" id="book-detail">
 <p class="kicker">About the publisher</p>
 <div class="detail-row">
