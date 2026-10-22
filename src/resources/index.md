@@ -7,7 +7,7 @@ description: Free resources for Buddhist study and practice.
 
 ### Dhamma Dana Archive (DDA) <small>coming soon</small>
 
-There's a lot of Buddhist books online given away online, so called *Dhamma-dana*. But where to find them, and which one to read? Here's a selection for you with more than 250 books in total, all distributed freely as gifts of Dhamma. The books are either from modern meditation teachers and scholars, or translations from the Buddhist canon and other old scriptures. All just one click away to read or download.
+There's a lot of Buddhist books online given away online, so called *Dhamma-dana*. But where to find them, and which one to read? Here's a selection for you with more than 300 books in total, all distributed freely as gifts of Dhamma. The books are either from modern meditation teachers and scholars, or translations from the Buddhist canon and other old scriptures. All just one click away to read or download.
 
 ### Meditation Map of the Dhamma (MMD) <small>coming soon</small>
 
@@ -18,10 +18,6 @@ This map will help you find nice meditation centers and monasteries around the w
 [Open the guide]({{ '/resources/pali/' | url }})
 
 A selection of resources for entering the world of the Pali language
-
-### Three-step Reboot: A guided meditation <small>coming soon</small>
-
-This mini-meditation is known as the Three-Minute Breathing Space, and got developed as part of Mindfulness-Based Cognitive Therapy (MBCT). It’s a handy way to drive out tension and to refocus your mind. You can take it with you wherever you go. The overall shape of the meditation has been compared to an hourglass: its focus is initially broad, then single-pointed, then broad again.
 
 ### How to make a Myanmar Meditation Visa <small>coming soon</small>
 

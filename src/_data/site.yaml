@@ -17,9 +17,6 @@ resources:
   - title: Pali Resource Guide
     url: /resources/pali/
     ready: true
-  - title: Three-step Reboot
-    url: /resources/reboot/
-    ready: false
   - title: Myanmar Meditation Visa guide
     url: /resources/visa/
     ready: false
