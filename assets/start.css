@@ -1,0 +1,42 @@
+/* Start page (home) sections and the About page pictures */
+.start-hero{min-height:0;padding:76px 65px 58px}
+.start-hero h1{max-width:1100px;font-size:62px}
+.letter,.projects{background:var(--bg);border-top:1px solid var(--line);padding:56px 65px}
+.letter{display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:56px;align-items:start}
+.letter-text{max-width:700px}
+.letter h2{font-size:36px;margin:0 0 12px}
+.letter h2:not(:first-child){margin-top:36px}
+.letter p{font-size:21px;line-height:1.55;max-width:680px;margin:0 0 18px}
+.letter .sign{margin-top:26px}
+.letter-fig{margin:0}
+.letter-fig img{display:block;width:100%;height:auto}
+.projects h2{font-size:40px;margin:0 0 34px}
+.proj-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:48px 32px}
+.proj-img{display:block}
+.proj img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;margin-bottom:16px}
+.proj .tag{font:italic 18px/1.35 EB,Georgia,serif;color:var(--accent);margin:0 0 6px}
+.proj h3{font-size:28px;margin:0 0 10px}
+.proj p:not(.tag){font-size:19px;line-height:1.5;color:var(--secondary);margin:0 0 14px}
+.proj .soon{font:italic 18px EB,Georgia,serif}
+.proj .quiet-link{display:inline-block;padding:8px 0}
+.placeholder-band{background:var(--bg);border-top:1px solid var(--line);padding:18px 65px}
+.placeholder-band p{font:13px Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--secondary);margin:0}
+.hero.pub{background:var(--bg)}
+/* pictures inside pages (About) */
+.wide-fig{margin:6px 0 30px;max-width:760px}
+.wide-fig img{display:block;width:100%;height:auto}
+.wide-fig figcaption{font:italic 18px/1.4 EB,Georgia,serif;color:var(--secondary);margin-top:8px}
+@media(max-width:900px){
+  .letter{grid-template-columns:1fr;gap:34px}
+  .letter-fig{max-width:420px}
+}
+@media(max-width:700px){
+  .start-hero{padding:44px 27px 40px}
+  .start-hero h1{font-size:40px}
+  .letter,.projects{padding:38px 27px}
+  .letter p{font-size:20px}
+  .letter h2{font-size:30px}
+  .projects h2{font-size:32px}
+  .proj-grid{grid-template-columns:1fr}
+  .placeholder-band{padding:16px 27px}
+}

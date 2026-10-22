@@ -14,6 +14,7 @@
   --maze: url('maze-12-dark.svg');
   --ld: inline;
   --ll: none;
+  --wall: .028;
 }
 
 @media (prefers-color-scheme: light) {
@@ -27,6 +28,7 @@
     --maze: url('maze-12-light.svg');
     --ld: none;
     --ll: inline;
+    --wall: .034;
   }
 }
 
@@ -40,6 +42,7 @@
   --maze: url('maze-12-light.svg');
   --ld: none;
   --ll: inline;
+  --wall: .034;
 }
 
 /* The header emblem has one file per theme. */
