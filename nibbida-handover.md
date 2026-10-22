@@ -23,8 +23,7 @@ If you cannot reach nibbida.com from this environment, say so in `SURVEY.md`, su
 - **Old site:** nibbida.com, built in Google Sites. Half of its content is Swedish.
 - **Goal:** Rebuild nibbida.com as a static site on GitHub Pages. Move the Swedish material to dhammadana.se (also Google Sites at present), which becomes a Swedish counterpart.
 - **Deadline:** The site should be finished well before the first book, *Insight Is the End: Short teachings by Ayya Khema* (ITE), is printed. Printing is hoped for in March 2027.
-- **Retreat:** In July 2027 Jayadhamma goes on a long retreat, probably without electricity, internet, or AI subscriptions. After that, the site must keep working and allow small edits from a phone or tablet.
-- **Credit:** About $70 in Claude Code credit, expiring within a few weeks of this handover. How cloud usage is metered against it is unknown. Check usage after the first session and scale the scope.
+- **Long term:** The site must keep working with little attention, and allow small edits from a phone or tablet.
 
 ## 3. Decisions made
 
@@ -32,7 +31,7 @@ If you cannot reach nibbida.com from this environment, say so in `SURVEY.md`, su
 - Content lives in plain Markdown files and simple data files (for example, one entry per place for the map). The goal is that **existing content is easy to edit on a phone through GitHub's web or mobile editor**. Adding new kinds of pages may require a computer, which is acceptable.
 - The design can be complex and attractive. Jayadhamma already has a home page design made with the ChatGPT "Astra" model, supplied as HTML plus PNG and SVG files. Only the home page is designed.
 - Everything the design needs must be stored in the repository. Fonts and scripts must be copied locally, so nothing breaks years from now when nobody is there to fix it.
-- Two repositories, one per domain, with the design finished before the retreat. They are independent, not linked by any automatic push. A push needs a credential that could expire while he is away.
+- Two repositories, one per domain, with the design finished before long-term hands-off use. They are independent, not linked by any automatic push. A push needs a credential that could expire.
 - The planned order of work:
   1. Decisions and survey (this session).
   2. Skeleton site with the home page, plus a shared header, footer, and layout.
@@ -76,8 +75,8 @@ Only the Dhamma-Dana Archive page was read in detail. The rest is taken from the
 
 ### Dhamma-Dana Archive (DDA)
 
-- The Google Drive folder ID is `1s-rswO7c5EMIc5LBfcrccVbLBXK7MBwB`. It has subfolders: Various Authors, Buddhist Canon & Tipitaka, Chanting Books, Dictionaries & Guides, Swedish, German, and a public Upload folder.
-- Concerns: the redistribution terms of many books are unknown, so the archive is not safe to rehost. Anyone can add to the Upload folder, which should be closed. The archive depends on a personal Google account that nobody will use during the retreat.
+- The archive is a public Google Drive folder. It has subfolders: Various Authors, Buddhist Canon & Tipitaka, Chanting Books, Dictionaries & Guides, Swedish, German, and a public Upload folder.
+- Concerns: the redistribution terms of many books are unknown, so the archive is not safe to rehost. Anyone can add to the Upload folder, which should be closed. The archive depends on a personal Google account.
 - **Recommended direction, not yet decided:** replace it with a catalogue, meaning one data file with an entry per book (title, author, folder, format, original source link, license note), shown as a searchable page. Nothing is rehosted.
 - The inventory (folder, filename, format, size) should be produced from a local sync of the folder through Google Drive for desktop, as the Drive connector in chat could not list it. Titles and authors can be taken from filenames where patterns exist, with gaps marked for manual completion. The source and license columns are for Jayadhamma to fill in, not for Claude Code to infer.
 
@@ -89,12 +88,12 @@ Only the Dhamma-Dana Archive page was read in detail. The rest is taken from the
 
 ## 7. GitHub setup
 
-- GitHub organization: `nibbidadhamma`, owned by the personal account `jayadhamma`. A second owner may be added for continuity during the retreat. The earlier personal account `nibbida-dhamma` could not be converted into an organization and has been deleted.
+- GitHub organization: `nibbidadhamma`, owned by the personal account `jayadhamma`. A second owner may be added for continuity. The earlier personal account `nibbida-dhamma` could not be converted into an organization and has been deleted.
 - Repositories in `nibbidadhamma`: `nibbida` (for nibbida.com) and `dhammadana` (for dhammadana.se). Both exist and are currently **private**. This handover and the Astra files are in `nibbida`. Work in `nibbida` only, and leave `dhammadana` untouched until asked.
 - GitHub Pages probably requires a public repository on the free plan, which is unconfirmed. Do not change visibility or enable Pages without asking. When a repository becomes public, its whole commit history becomes public too.
 - An older repository holding Ayya Khema material has been deleted. No such material should be added to either repository.
 - `jayadhamma` also holds the Obsidian vault sync repository. It is separate from Nibbidā and should stay that way.
-- Domains: nibbida.com and dhammadana.se. A programmer friend pays for them and for the Claude account. The registered owner of each domain is **not yet confirmed**. Renewals should be automatic or paid several years ahead, and registrar details kept where two people can reach them.
+- Domains: nibbida.com and dhammadana.se. The registered owner of each domain is **not yet confirmed**. Renewals should be automatic or paid several years ahead, and registrar details kept where two people can reach them.
 
 ## 8. Open items
 
