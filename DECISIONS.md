@@ -16,7 +16,7 @@ Recorded from conversations with Jayadhamma Bhikkhu, 22 October 2026. Only what 
 
 **Structure**
 - A Resources overview page exists at `/resources/` (text from the old overview; the Pali guide is added; the YouTube channel is dropped on purpose). The Resources menu has an "All resources" entry.
-- The Three-step Reboot page is dropped from nibbida.com (removed from the menu and the Resources overview).
+- The Three-step Reboot page is dropped from the new site: removed from the menu and the Resources overview, and it will not move to dhammadana.se. The old page on Google Sites is not touched by this project.
 - The Archive text on the Resources overview says "more than 300 books" (the old overview said 250; the old Archive page said 300+).
 - Keep the old addresses (for example `/resources/pali`), so existing links keep working.
 - People suggest additions (map places, archive books) by email link. No Google forms or folders.
