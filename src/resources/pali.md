@@ -7,7 +7,7 @@ description: The best resources so far for learning Pali
 permalink: /resources/pali/
 ---
 
-*This is a selection of the best Pali resources I’ve found so far online, especially for helping you to learn the language. If you've found something even more useful out there, don't hesitate to [reach out](mailto:jayadhammapus@gmail.com) and share it with the rest of us!*
+*This is a selection of the best Pali resources I’ve found so far online, especially for helping you to learn the language. If you've found something even more useful out there, don't hesitate to [reach out](mailto:nibbidadhamma@gmail.com) and share it with the rest of us!*
 
 The guide begins  with tools that make it easier to immerse yourself in Pali language and use it daily. The next section gathers three sets of free Pali resources built around three classic introductory textbooks. As you will see, A.K. Warder’s book has inspired the widest range of material. The final section, “Further resources,” broadens the guide, offering sites to explore the suttas online, some cutting-edge visual diagrams of the teachings and more.
 

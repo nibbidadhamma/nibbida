@@ -45,4 +45,5 @@ The page text was copied unchanged, except for these points:
 - An invisible character (U+FEFF) after `Tipiṭaka"` in the Oberlies sentence was removed.
 - An invisible trailing space after the heading "Further reading: Commercial books" was removed.
 - Link lines such as "Download: https://..." are now buttons ("Download"). The addresses are no longer shown as text.
+- The "reach out" link in the introduction now points to nibbidadhamma@gmail.com (the old page had a different address), as Jayadhamma instructed on 22 October 2026.
 - Not changed, but noticed: "The guide begins  with" has a stray double space in the original.
