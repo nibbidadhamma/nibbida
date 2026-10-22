@@ -123,15 +123,15 @@ Location: `design/nibbida-website-chatgpt-sketch/` (added to `main` at the root 
 - Small copyright questions are set aside for now.
 - A Donate page stays, with bank transfer details, so people can donate by bank. I will keep the details in one data file, separate from the page text, so they can be changed in one place. Nothing has been copied yet.
 - The blog is cancelled and will not be rebuilt. The audio players are to be included.
-- Images: Jayadhamma made them or downloaded them from free sources, and believes they are without copyright. He asked me to double-check; see the note under "Still open".
+- Images: Jayadhamma made them himself, using material found online, mostly from free websites, and believes they are without copyright. He asked me to double-check; see the note under "Still open".
 - The home page leads as a publisher, as in the sketch. The Dhamma projects (Resources, Audio, and so on) are what people already know Nibbidā for, so they get a prominent place on the home page and in the navigation, not a small link.
 
 **What this leaves for nibbida.com** (my reading of the decisions; please correct): Home (English part), Resources (Archive, Map, Pali guide, Reboot English part, Myanmar visa guide), Audio, Links, About (English part), and Donate if kept. That is about 10 pages instead of 24. Pages 2–13 are out of scope here, and the English halves of pages 1, 18, 22, and 24 would need to be separated from the Swedish.
 
 **Still open**
-1. **Donate page, details.** Jayadhamma thinks his mother agrees and will confirm later. Until then I will not copy her IBAN, address, or phone number into the repository.
+1. **Donate page, details.** Decided: the bank details from the old page go into the new Donate page, as a data file. Jayadhamma thinks his mother agrees and will confirm later. I will copy them when the Donate page is built, not before; nothing is copied in this survey.
 2. **Images: I cannot double-check the licenses.** I looked at the in-scope pages (Home, About, Audio, Links, Donate, Resources and its subpages, about 39 image elements in all, a few of them small icons). None has alt text, a caption, or a source note (only the visa page has descriptive alt text, for three photos taken at the Myanmar embassy in Bangkok). The files sit on Google's servers with no author or license data. So from the site alone I can tell neither who made an image nor under what terms it was published. The About page names Freepik, Rawpixel, and Wikimedia as sources and says that a few images have no known holder. What I can do when images are copied in: record, per image, the page, the file, and a source field for Jayadhamma to fill in, with known cases (own photos, Wikimedia) marked. Freepik and Rawpixel images often carry attribution or account conditions, which I cannot judge. A reverse image search would need your accounts or an outside service, so I have not run one.
-3. **Audio.** To be included. Open choice: keep the archive.org embeds, or use a plain audio element with a download link (section 2).
+3. **Audio.** To be included. Jayadhamma will decide after seeing both options: the archive.org embeds, and a plain HTML audio player (the browser's own player) with a download link. I will build a small sample of each when we reach the skeleton step.
 4. **Analytics.** I would not carry over Google Analytics. Correct?
 5. **Archive count.** "300+" on the home and archive pages, "250" on the Resources index. Use the real count from the catalogue?
 6. **Bare domain.** `nibbida.com` was blocked here, so I haven't seen what it does. No action needed now.
