@@ -132,3 +132,8 @@ The page text was copied unchanged, except for these points:
 - Donate page: one email invitation (the second sentence of the intro moved into "Ways to give").
 - Fonts use `font-display: swap`. Smooth scrolling is off for visitors who ask for reduced motion. Stand-alone links on phones have a 44 px tap area.
 - The signature on the About page is spelled "Haraldsson".
+
+## Page weight
+
+- The site went from 4.5 MB to 1.7 MB. The two fonts are now WOFF2 files (about 150 KB each instead of 520–590 KB), and the pictures are WebP, at most 900 px wide.
+- The original pictures are kept in `design/original-images/` and the original TTF fonts in `design/original-fonts/`. To add a picture, save it as WebP (about 800 px wide, quality about 75) in `src/assets/images/`.

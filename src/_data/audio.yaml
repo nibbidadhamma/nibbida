@@ -2,7 +2,7 @@
 # "text" may use *italics* and [links](https://example.org).
 items:
   - title: Tuning in
-    image: audio-tuning-guided.jpg
+    image: audio-tuning-guided.webp
     kind: Guided meditation
     length: 1 hour
     tone: "#a5ad92"
@@ -12,7 +12,7 @@ items:
     page: https://archive.org/details/tuning-in-guided-meditation-3parts
     file: "https://archive.org/download/tuning-in-guided-meditation/Tuning%20In-Guided%20meditation-Complete.mp3"
   - title: Tuning in
-    image: audio-tuning-talk.jpg
+    image: audio-tuning-talk.webp
     kind: Dhamma talk
     length: 35 min
     tone: "#b7a685"
@@ -22,7 +22,7 @@ items:
     page: https://archive.org/details/tuning-in-dhamma-talk
     file: "https://archive.org/download/tuning-in-dhamma-talk/Tuning%20In-Dhamma%20talk.mp3"
   - title: Balloons
-    image: audio-balloons.jpg
+    image: audio-balloons.webp
     kind: Dhamma talk
     length: 70 min
     tone: "#b7a685"
@@ -32,7 +32,7 @@ items:
     page: https://archive.org/details/balloons-jaya
     file: https://archive.org/download/balloons-jaya/Balloons-Dhammatalk-Jaya.mp3
   - title: Solitude
-    image: audio-solitude.jpg
+    image: audio-solitude.webp
     kind: Dhamma talk
     length: 35 min
     tone: "#b7a685"
@@ -42,7 +42,7 @@ items:
     page: https://archive.org/details/solitude-jaya
     file: https://archive.org/download/solitude-jaya/Solitude-Dhammatalk-Jaya.mp3
   - title: Dreams
-    image: audio-dreams.jpg
+    image: audio-dreams.webp
     kind: Dhamma talk
     length: 1 hour
     tone: "#b7a685"
@@ -52,7 +52,7 @@ items:
     page: https://archive.org/details/dreams-dhammatalk-jayadhamma
     file: https://archive.org/download/dreams-dhammatalk-jayadhamma/Dreams-Dhammatalk-Jaya.mp3
   - title: Mistakes
-    image: audio-mistakes.jpg
+    image: audio-mistakes.webp
     kind: Dhamma talk
     tone: "#b7a685"
     tagline: A talk about life changing mistakes.
