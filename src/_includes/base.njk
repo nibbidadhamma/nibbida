@@ -28,6 +28,7 @@
 <a href="{{ '/' | url }}#books">Books</a>
 <details class="drop"><summary>Resources</summary>
 <div class="panel">
+{{ entry({title: site.overview.title, url: site.overview.url, ready: true}, page) }}
 {%- for r in site.resources %}
 {{ entry(r, page) }}
 {%- endfor %}
@@ -37,7 +38,7 @@
 <details class="menu"><summary>Menu</summary>
 <div class="panel" role="navigation" aria-label="Main">
 <a class="main-link" href="{{ '/' | url }}#books">Books</a>
-<span class="main-link">Resources</span>
+<a class="main-link" href="{{ site.overview.url | url }}"{% if site.overview.url == page.url %} aria-current="page"{% endif %}>Resources</a>
 <div class="sub">
 {%- for r in site.resources %}
 {{ entry(r, page) }}

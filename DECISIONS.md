@@ -9,10 +9,11 @@ Recorded from conversations with Jayadhamma Bhikkhu, 22 October 2026. Only what 
 - Home page: Astra direction A, with the smallest text enlarged ("larger" version).
 - Menu: Books, Resources and About are the main links. Resources opens a list of its pages. Audio, Links and Donate are in the footer. Pages not built yet appear greyed out as "coming soon".
 - Inner pages: a narrow reading column, a small label above the title ("Resources"), and an "On this page" box on long pages. Links appear as buttons, not as raw addresses.
-- A light option will be added (not designed yet).
+- A light option will be added. Pictures made; the choice of how visitors get it (device setting, button, or both) is open.
 - Ornaments and logos: Jayadhamma has many sizes and will supply them.
 
 **Structure**
+- A Resources overview page exists at `/resources/` (text from the old overview; the Pali guide is added; the YouTube channel is dropped on purpose). The Resources menu has an "All resources" entry.
 - Keep the old addresses (for example `/resources/pali`), so existing links keep working.
 - People suggest additions (map places, archive books) by email link. No Google forms or folders.
 - One shared book-list format, to serve the Dhamma-Dana Archive now and other book lists later.
@@ -21,6 +22,7 @@ Recorded from conversations with Jayadhamma Bhikkhu, 22 October 2026. Only what 
 
 **Dhamma-Dana Archive (DDA)**
 - Rebuilt on this site, no Google Drive.
+- Hosting only the books that are allowed. Jayadhamma is considering keeping the hosted books in the `dhammadana` repository, because of the planned Swedish translation of the resources.
 - A bookshelf with generated covers in the site's own style. Each book has a title, author and download button.
 - Most buttons link to the original publisher. A book is hosted on this site only after its terms are confirmed.
 - Root texts may be stored in a DDA folder in the repository, but only texts whose source and license are known. A public repository's history stays public after a file is deleted.

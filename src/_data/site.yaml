@@ -3,6 +3,10 @@ name: NIBBIDĀ
 tagline: Books, teachings, and room to reflect.
 description: Dhamma resources and books.
 
+overview:
+  title: All resources
+  url: /resources/
+
 resources:
   - title: Dhamma-Dana Archive
     url: /resources/archive/

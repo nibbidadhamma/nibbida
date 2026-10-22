@@ -22,6 +22,7 @@
 .page a.btn::after{content:"\00a0\2197"}
 .page a.btn:hover{background:var(--accent);color:var(--bg)}
 .buttons em{flex-basis:100%;font:italic 18px/1.4 EB,Georgia,serif;color:var(--secondary)}
+.page h3 small{font:italic 18px EB,Georgia,serif;color:var(--secondary);margin-left:8px;white-space:nowrap}
 @media(max-width:700px){
   .page{padding:36px 25px 30px}
   .page h1{font-size:42px}
