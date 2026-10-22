@@ -9,11 +9,10 @@
 .letter p{font-size:21px;line-height:1.55;max-width:680px;margin:0 0 18px}
 .letter .sign{margin-top:26px}
 .letter-fig{margin:0}
-.letter-fig img{display:block;width:100%;height:auto}
 .projects h2{font-size:40px;margin:0 0 34px}
 .proj-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:48px 32px}
 .proj-img{display:block}
-.proj img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;margin-bottom:16px}
+.proj .frame{margin-bottom:18px}
 .proj .tag{font:italic 18px/1.35 EB,Georgia,serif;color:var(--accent);margin:0 0 6px}
 .proj h3{font-size:28px;margin:0 0 10px}
 .proj p:not(.tag){font-size:19px;line-height:1.5;color:var(--secondary);margin:0 0 14px}
@@ -24,7 +23,6 @@
 .hero.pub{background:var(--bg)}
 /* pictures inside pages (About) */
 .wide-fig{margin:6px 0 30px;max-width:760px}
-.wide-fig img{display:block;width:100%;height:auto}
 .wide-fig figcaption{font:italic 18px/1.4 EB,Georgia,serif;color:var(--secondary);margin-top:8px}
 @media(max-width:900px){
   .letter{grid-template-columns:1fr;gap:34px}
