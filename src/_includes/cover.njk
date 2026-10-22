@@ -1,7 +1,7 @@
 {#- A generated book cover. Colors come from the book's folder; the title shrinks for long titles. -#}
-{%- macro cover(title, author, tone, size) -%}
+{%- macro cover(title, author, tone, size, imprint) -%}
 <div class="cv{% if size %} {{ size }}{% endif %}" style="--cv:{{ tone }};--fs:{{ title | coverSize }}" aria-hidden="true">
-<span class="imp">DHAMMA-DĀNA</span>
+<span class="imp">{{ imprint or "DHAMMA-DĀNA" }}</span>
 <span class="tt">{{ title }}</span>
 <img class="mz" src="{{ '/assets/labyrinth-white.svg' | url }}" alt="">
 <span class="au">{{ author | upper }}</span>

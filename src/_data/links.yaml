@@ -1,0 +1,28 @@
+# Links page. Add a link by copying a block of three lines ("name", "url", "text") into a group.
+groups:
+  - title: Various English links
+    items:
+      - {name: Dhamma Wiki, url: "https://dhammawiki.com/", text: 11,000 articles so far about Buddhism.}
+      - {name: Buddhist Door, url: "https://www.buddhistdoor.net/", text: Buddhist journal and multimedia platform.}
+      - {name: Dharma Gates, url: "https://www.dharma-gates.org", text: Promoting Buddhist meditation for young adults.}
+      - {name: BuddhaDharma, url: "https://www.lionsroar.com/buddhadharma/", text: Online articles about Buddhist practice and study.}
+      - {name: Dhamma Talks, url: "https://www.dhammatalks.org/", text: "Talks, writings, and translations by Thanissaro Bhikkhu."}
+      - {name: Tricycle, url: "http://www.tricycle.com/", text: A well-known Buddhist magazine.}
+      - {name: Buddha Dharma Education Association, url: "http://buddhanet.net", text: A Buddhist education and information network.}
+      - {name: Sutta Central, url: "https://suttacentral.net/", text: "Early Buddhist texts, translations, and parallels. All available online."}
+      - {name: Ancient Buddhist Texts, url: "https://www.ancient-buddhist-texts.net/", text: "Ānandajoti Bhikkhu, a prolific translator of ancient Buddhist texts."}
+      - {name: Amaravati Publications, url: "https://amaravati.org/dhamma-books/", text: "The biggest Ajahn Chah monastery in England, which also publishes many of its books."}
+      - {name: Buddhist Publication Society, url: "https://www.bps.lk/", text: "One of the oldest publishers of Buddhist books in English, with many available online."}
+      - {name: Suan Mokkh, url: "https://www.suanmokkh.org/", text: "Books, audio, poems, and more by Ajahn Buddhadasa."}
+      - {name: Ashintejaniya.org, url: "https://ashintejaniya.org/", text: "Home of Sayadaw U Tejaniya, with books available in many languages."}
+      - {name: Aim Well, url: "http://aimwell.org/", text: Books and Buddhist information by Bhikkhu Pesala.}
+      - {name: Reading Faithfully, url: "https://readingfaithfully.org/", text: Devotional and contemplative sutta reading for the faithful disciple.}
+      - {name: "Wolf's Guide to Dharma Books & Practice", url: "https://docs.google.com/document/d/1hlk6x2XJy8ZQfdYYTibCx2ADRtZDLPqJifQrggic47k/", text: "A perhaps not 100% legal document, filled with useful information about Buddhist meditation and beyond."}
+  - title: Podcasts and audio
+    items:
+      - {name: Pali Audio, url: "https://www.paliaudio.com/", text: Suttas from the Pali canon in English translation professionally read and recorded.}
+      - {name: Be Here Now Network, url: "https://beherenownetwork.com/", text: A network of mindfulness and spirituality podcasts.}
+      - {name: Dharma Seed, url: "http://www.dharmaseed.org/", text: Dhamma talks from most teachers.}
+      - {name: Audio Dharma, url: "http://www.audiodharma.org/", text: Dhamma talks from most teachers can be downloaded here.}
+      - {name: Pariyatti podcasts, url: "https://pariyatti.org/Free-Resources/Podcasts/", text: A selection of different video and audio podcasts.}
+      - {name: Insight Myanmar, url: "https://insightmyanmar.org/", text: Podcast about Dhamma and meditation in Myanmar.}

@@ -1,0 +1,14 @@
+# Donate page. The page shows the "ways to give" section only when "methods" has entries.
+# Until then it asks visitors to write by email. Add details only with the account owner's agreement.
+intro: With the help of my dear mother and my kappiya you can make a donation here. If you'd rather meet in person to share some Dhamma or offer food, etc., please send me an email.
+thanks: Yours gratefully,
+signature: Jayadhamma Bhikkhu
+methods: []
+# Example of one method (copy it under "methods:" and remove the leading "# "):
+# methods:
+#   - title: Bank transfer
+#     lines:
+#       - {label: IBAN, value: "..."}
+#       - {label: SWIFT/BIC, value: "..."}
+#       - {label: Owner, value: "..."}
+#     note: A sentence shown under the details.

@@ -21,7 +21,8 @@ projects:
     image: project-audio.jpg
     alt: "Abstract red wave lines on black, with the title Audio Dhamma"
     url: /audio/
-    ready: false
+    ready: true
+    link: "Open the audio page"
     tagline: "Talks and guided meditations by Jayadhamma Bhikkhu."
     text: >-
       On this page you'll find different Dhamma audio files that have been recorded over the years. The Dhamma talks and guided meditations can either be downloaded or streamed directly from the page with the embedded plug-in.

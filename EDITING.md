@@ -74,6 +74,18 @@ terms: Free distribution, not for sale
 - Added back at Jayadhamma's request: the format and e-book notes. The paragraph about the PDF and EPUB formats came from the old "quick walkthrough" section; it now opens the new "New to e-books?" section, in front of the two paragraphs that were already under that heading.
 - The upload-folder sentence was shortened to "You can send your favorites with an e-mail", and the e-mail address is now nibbidadhamma@gmail.com.
 
+## Audio, Links and Donate
+
+- **Audio:** `src/_data/audio.yaml`. One block per recording: title, kind, length, a short line (`tagline`), the description (`text`), the archive.org page (`page`) and the MP3 address (`file`). Copy a block to add a recording.
+- **Links:** `src/_data/links.yaml`. Groups with one line per link: `{name, url, text}`.
+- **Donate:** `src/_data/donate.yaml`. The "Ways to give" section appears when `methods` has entries. An example is in the file as a comment. Add bank or phone details only with the account owner's agreement; the site and its history are public.
+
+### Changes made when these three pages were converted from the old site
+
+- Audio: the typo `("n tune")` became `("in tune")`. The old "Stream here or download here" links became a player, a Download button and an "On archive.org" button. The Solitude MP3 address was changed from a numbered archive.org server to the stable form.
+- Links: "Meditation Map of the Dharma" became "...of the Dhamma", "Pali Resoure Guide" became "Pali Resource Guide", and the heading lines were rewritten for the new design ("Good places to read and listen", "Dhamma sites, publishers and podcasts."). The Swedish group of links was left out. "BuddhaDharma:" lost its colon.
+- Donate: the headline is the proverb. The intro no longer names the mother and the kappiya, and the bank, Swish and Revolut details are not on the page (see above).
+
 ## Before editing from a phone
 
 A mistake in the top block of a file (between the `---` lines) can stop the site from building. Leave that block alone unless you are sure.

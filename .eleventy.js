@@ -25,6 +25,9 @@ module.exports = function (eleventyConfig) {
   const inlineMd = new MarkdownIt({ html: false });
   eleventyConfig.addFilter("mdInline", (s) => inlineMd.renderInline(String(s)));
 
+  // "https://www.dhammawiki.com/path" -> "dhammawiki.com"
+  eleventyConfig.addFilter("host", (u) => String(u).replace(/^https?:\/\//, "").replace(/^www\./, "").split("/")[0]);
+
   // --- Dhamma-Dāna Archive -------------------------------------------------
   const folders = yaml.load(fs.readFileSync("src/_data/archive.yaml", "utf8")).folders;
 

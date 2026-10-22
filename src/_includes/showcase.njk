@@ -1,0 +1,10 @@
+---
+layout: base.njk
+---
+{#- A page in the style of the home page: a hero with the labyrinth, then bands with hairlines. -#}
+<section class="hero start-hero show-hero">
+{% if kicker %}<p class="kicker">{{ kicker }}</p>{% endif %}
+<h1>{{ headline | safe }}</h1>
+{% if intro %}<p class="intro">{{ intro }}</p>{% endif %}
+</section>
+{{ content | safe }}

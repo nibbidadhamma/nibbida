@@ -1,0 +1,26 @@
+---
+layout: showcase.njk
+title: Links
+permalink: /links/
+description: Dhamma sites, publishers and podcasts.
+kicker: Links
+headline: Good places to<br>read and listen
+intro: Dhamma sites, publishers and podcasts.
+---
+<section class="band">
+<p class="lead-note">If you're looking for places to meditate, you might want to visit the Meditation Map of the Dhamma <span class="soon">(coming soon)</span>. If you're looking for books to download easily, you can visit the <a href="{{ '/resources/archive/' | url }}">Dhamma-Dāna Archive</a>. A lot of different Pali related links are also available in the <a href="{{ '/resources/pali/' | url }}">Pali Resource Guide</a>.</p>
+</section>
+{%- for g in links.groups %}
+<section class="band link-group">
+<h2>{{ g.title }}</h2>
+<div class="link-grid">
+{%- for l in g.items %}
+<article class="link-card">
+<h3><a href="{{ l.url }}">{{ l.name }} <span aria-hidden="true">↗</span></a></h3>
+<p class="host">{{ l.url | host }}</p>
+<p>{{ l.text }}</p>
+</article>
+{%- endfor %}
+</div>
+</section>
+{%- endfor %}

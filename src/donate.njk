@@ -1,0 +1,33 @@
+---
+layout: showcase.njk
+title: Donate
+permalink: /donate/
+description: How to support the work.
+kicker: Donate
+headline: It is the heart that gives,<br>the fingers just let go.
+intro: – African proverb
+---
+<section class="band donate-text">
+<p>{{ donate.intro | replace("send me an email", '<a href="mailto:nibbidadhamma@gmail.com">send me an email</a>') | safe }}</p>
+<p class="sign"><em>{{ donate.thanks }}<br>{{ donate.signature }}</em></p>
+</section>
+<section class="band ways">
+<h2>Ways to give</h2>
+{%- if donate.methods and donate.methods.length %}
+<div class="way-grid">
+{%- for m in donate.methods %}
+<article class="way">
+<h3>{{ m.title }}</h3>
+<dl>
+{%- for l in m.lines %}
+<dt>{{ l.label }}</dt><dd>{{ l.value }}</dd>
+{%- endfor %}
+</dl>
+{%- if m.note %}<p class="note-line">{{ m.note }}</p>{% endif %}
+</article>
+{%- endfor %}
+</div>
+{%- else %}
+<p class="lead-note">To donate, please <a href="mailto:nibbidadhamma@gmail.com">write to nibbidadhamma@gmail.com</a>, and I will send you the details.</p>
+{%- endif %}
+</section>

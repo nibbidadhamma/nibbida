@@ -24,13 +24,13 @@ resources:
 footer:
   - title: Audio
     url: /audio/
-    ready: false
+    ready: true
   - title: Links
     url: /links/
-    ready: false
+    ready: true
   - title: Donate
     url: /donate/
-    ready: false
+    ready: true
   - title: License
     url: /license/
     ready: true

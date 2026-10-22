@@ -1,0 +1,26 @@
+---
+layout: showcase.njk
+title: Audio Dhamma
+permalink: /audio/
+description: Talks and guided meditations by Jayadhamma Bhikkhu.
+kicker: Audio Dhamma
+headline: Talks and guided<br>meditations
+intro: By Jayadhamma Bhikkhu.
+---
+{% from "cover.njk" import cover %}
+<section class="band tracks">
+<p class="band-note">Press play to listen here, or download a recording. The recordings are stored on archive.org.</p>
+{%- for t in audio.items %}
+<article class="track">
+<div class="track-cover">{{ cover(t.title, "Jayadhamma Bhikkhu", t.tone, "", "AUDIO DHAMMA") }}</div>
+<div class="track-body">
+<p class="kicker">{{ t.kind }}{% if t.length %} · {{ t.length }}{% endif %}</p>
+<h2>{{ t.title }}</h2>
+<p class="tag">{{ t.tagline | mdInline | safe }}</p>
+<p class="desc">{{ t.text | mdInline | safe }}</p>
+<audio controls preload="none" src="{{ t.file }}">Your browser cannot play audio here. You can <a href="{{ t.file }}">download the recording</a>.</audio>
+<p class="track-links"><a class="btn" href="{{ t.file }}" download>Download</a> <a class="btn" href="{{ t.page }}">On archive.org</a></p>
+</div>
+</article>
+{%- endfor %}
+</section>

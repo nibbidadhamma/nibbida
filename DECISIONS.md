@@ -44,6 +44,12 @@ Recorded from conversations with Jayadhamma Bhikkhu, 22 October 2026. Only what 
 - Rebuilt on this site with no Google Maps. The list view must work without map tiles.
 - A one-time Google Takeout export of the saved places is still needed.
 
+**Audio, Links, Donate (first versions, built 22 October)**
+- Pages in the style of the home page: a hero with the labyrinth, then bands with hairlines. Text adapted where the design needed it; see EDITING.md.
+- Audio: plain browser audio players with a download button and a link to archive.org. Nothing loads from archive.org until someone presses play. Six recordings, in the old order.
+- Links: the English groups only (Various English links, Podcasts and audio). The Swedish group of Buddhist groups in Sweden is left for the Swedish site.
+- Donate: the page is built, but the bank, Swish and Revolut details are NOT on it. They belong to third parties (Jayadhamma's mother and the kappiya) and the site is public. The page asks visitors to write by email until `src/_data/donate.yaml` has methods filled in, after the people concerned have agreed. The names of the mother and the kappiya were left out of the intro for the same reason.
+
 **Other**
 - License: Creative Commons CC BY-NC-ND 4.0 for the text, design and artwork, with the exclusions listed on the License page (`src/license.md`): the font, photographs, quotations, other people's books and tools, and the design study. The official legal text is in `LICENSE`. The copyright holder is written as "Nibbidā Dhamma (Jayadhamma Bhikkhu)"; Jayadhamma should confirm this.
 - Start page and About page: copied from the old nibbida.com (English part); the Swedish half goes to the Swedish site.
