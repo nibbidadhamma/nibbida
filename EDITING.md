@@ -38,7 +38,7 @@ The site follows the visitor's device setting. A Light / Dark button in the head
 
 In `src/_data/site.yaml`, each page has `ready: false` until it exists. Greyed items show "coming soon". Change it to `ready: true` when the page is built.
 
-## The Dhamma-Dana Archive
+## The Dhamma-Dāna Archive
 
 Each book is one small file in `src/archive/books/`. The file name becomes the book's web address, so use lowercase words with dashes, for example `ajahn-chah-a-still-forest-pool.md`. To add a book, copy an existing file, change the words, and save it under a new name.
 

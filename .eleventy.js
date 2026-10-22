@@ -1,5 +1,6 @@
 const fs = require("fs");
 const yaml = require("js-yaml");
+const MarkdownIt = require("markdown-it");
 
 // Turns "Some Title: A.K. Warder" into "some-title-a-k-warder" for page anchors.
 const slug = (text) =>
@@ -20,7 +21,11 @@ module.exports = function (eleventyConfig) {
   // Books hosted on this site are kept in src/archive/files and published at /archive/files/.
   eleventyConfig.addPassthroughCopy("src/archive/files");
 
-  // --- Dhamma-Dana Archive -------------------------------------------------
+  // Inline Markdown (for example *italic*) inside data files.
+  const inlineMd = new MarkdownIt({ html: false });
+  eleventyConfig.addFilter("mdInline", (s) => inlineMd.renderInline(String(s)));
+
+  // --- Dhamma-Dāna Archive -------------------------------------------------
   const folders = yaml.load(fs.readFileSync("src/_data/archive.yaml", "utf8")).folders;
 
   // Folder name and cover color from a card's "folder" word.

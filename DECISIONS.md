@@ -23,11 +23,11 @@ Recorded from conversations with Jayadhamma Bhikkhu, 22 October 2026. Only what 
 - The Archive text on the Resources overview says "more than 300 books" (the old overview said 250; the old Archive page said 300+).
 - Keep the old addresses (for example `/resources/pali`), so existing links keep working.
 - People suggest additions (map places, archive books) by email link. No Google forms or folders.
-- One shared book-list format, to serve the Dhamma-Dana Archive now and other book lists later.
+- One shared book-list format, to serve the Dhamma-Dāna Archive now and other book lists later.
 - Tool: Eleventy.
 - Footer and menu show Audio, Links and Donate as "coming soon" until those pages exist.
 
-**Dhamma-Dana Archive (DDA)**
+**Dhamma-Dāna Archive (DDA)**
 - Rebuilt on this site, no Google Drive.
 - Links between nibbida.com and dhammadana.se (for example to hosted books) are acceptable.
 - Hosting only the books that are allowed. Jayadhamma is considering keeping the hosted books in the `dhammadana` repository, because of the planned Swedish translation of the resources.

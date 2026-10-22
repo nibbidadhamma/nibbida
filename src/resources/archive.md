@@ -1,6 +1,6 @@
 ---
 layout: archive.njk
-title: Dhamma-Dana Archive
+title: Dhamma-Dāna Archive
 eyebrow: Resources
 subtitle: A collection of free Buddhist books
 permalink: /resources/archive/
@@ -44,7 +44,7 @@ The books are shown in alphabetical order by title. Use the folder buttons above
 
 ## New to e-books?
 
-The books included in the Dhamma-Dana Archive are either in the standard formats PDF or EPUB. The PDF's you can read on your computer or tablet, or print easily. The format EPUB are made especially with the intention to be read on an e-book reader, but can also be read on any other device.
+The books included in the Dhamma-Dāna Archive are either in the standard formats PDF or EPUB. The PDF's you can read on your computer or tablet, or print easily. The format EPUB are made especially with the intention to be read on an e-book reader, but can also be read on any other device.
 
 If you’re looking for an easy way to read books offline on your Android smartphone or tablet, you might want to download the free app [ReadEra](https://readera.org/). With this app you can read almost any book or document, and easily manage and sort your books. Here’s also [ten more apps](https://www.pcmag.com/how-to/free-ebook-reader-apps-for-smartphone-or-tablet) you can download and use, covering all formats.
 

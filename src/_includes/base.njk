@@ -24,6 +24,7 @@
 <link rel="stylesheet" href="{{ '/assets/menu.css' | url }}">
 <link rel="stylesheet" href="{{ '/assets/pages.css' | url }}">
 <link rel="stylesheet" href="{{ '/assets/archive.css' | url }}">
+<link rel="stylesheet" href="{{ '/assets/start.css' | url }}">
 <script src="{{ '/assets/menu.js' | url }}" defer></script>
 <script src="{{ '/assets/theme.js' | url }}" defer></script>
 </head>
@@ -41,7 +42,7 @@
 {{ entry(r, page) }}
 {%- endfor %}
 </div></details>
-<a href="{{ '/' | url }}#about">About</a>
+<a href="{{ '/about/' | url }}"{% if page.url == '/about/' %} aria-current="page"{% endif %}>About</a>
 <button type="button" class="theme-btn" hidden>Dark</button>
 </nav>
 <details class="menu"><summary>Menu</summary>
@@ -53,7 +54,7 @@
 {{ entry(r, page) }}
 {%- endfor %}
 </div>
-<a class="main-link" href="{{ '/' | url }}#about">About</a>
+<a class="main-link" href="{{ '/about/' | url }}"{% if page.url == '/about/' %} aria-current="page"{% endif %}>About</a>
 <button type="button" class="theme-btn" hidden>Dark</button>
 </div></details>
 </header>

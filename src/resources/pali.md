@@ -11,7 +11,7 @@ permalink: /resources/pali/
 
 The guide begins  with tools that make it easier to immerse yourself in Pali language and use it daily. The next section gathers three sets of free Pali resources built around three classic introductory textbooks. As you will see, A.K. Warder’s book has inspired the widest range of material. The final section, “Further resources,” broadens the guide, offering sites to explore the suttas online, some cutting-edge visual diagrams of the teachings and more.
 
-Most of the text resources mentioned below, plus a few others, are available for [easy download here](https://drive.google.com/drive/folders/1fwzdAil1-ySfHtoEc2uoGjY8mpmIYuu1?usp=drive_link) from the *Dhamma-Dana Archive*.
+Most of the text resources mentioned below, plus a few others, are available for [easy download here](https://drive.google.com/drive/folders/1fwzdAil1-ySfHtoEc2uoGjY8mpmIYuu1?usp=drive_link) from the *Dhamma-Dāna Archive*.
 
 ## Useful tools
 

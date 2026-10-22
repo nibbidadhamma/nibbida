@@ -5,11 +5,11 @@ permalink: /resources/
 description: Free resources for Buddhist study and practice.
 ---
 
-### Dhamma Dana Archive (DDA)
+### Dhamma Dāna Archive (DDA)
 
 [Open the archive]({{ '/resources/archive/' | url }})
 
-There's a lot of Buddhist books online given away online, so called *Dhamma-dana*. But where to find them, and which one to read? Here's a selection for you with more than 300 books in total, all distributed freely as gifts of Dhamma. The books are either from modern meditation teachers and scholars, or translations from the Buddhist canon and other old scriptures. All just one click away to read or download.
+There's a lot of Buddhist books online given away online, so called *Dhamma-dāna*. But where to find them, and which one to read? Here's a selection for you with more than 300 books in total, all distributed freely as gifts of Dhamma. The books are either from modern meditation teachers and scholars, or translations from the Buddhist canon and other old scriptures. All just one click away to read or download.
 
 ### Meditation Map of the Dhamma (MMD) <small>coming soon</small>
 

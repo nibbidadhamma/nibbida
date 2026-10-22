@@ -46,34 +46,34 @@ If you cannot reach nibbida.com from this environment, say so in `SURVEY.md`, su
 - Do not overwrite or delete originals. Keep the Astra files untouched in a `design/` folder and work on copies. Commit after each task so every step can be reversed.
 - Do not enter or ask for passwords, tokens, or other credentials. Jayadhamma handles all sign-ins himself.
 - Do not put ITE material or Ayya Khema's texts into either repository. The repositories may become public, and history stays public even after files are deleted, so commit only what could be published. Those texts belong in separate private repositories.
-- Do not process the 300+ PDFs and EPUBs of the Dhamma-Dana Archive. Only a catalogue is needed (see section 6).
+- Do not process the 300+ PDFs and EPUBs of the Dhamma-Dāna Archive. Only a catalogue is needed (see section 6).
 - Preserve existing text exactly, including Swedish text and Pāli diacritics. Do not "improve" quotations or someone else's words. Fix only what is clearly broken, and list such changes.
 - Do not guess. If something is unclear, ask, and do not fill gaps with plausible assumptions.
 - Prefer American English spelling in new text, and write plainly. Avoid promotional language.
 
 ## 5. The old site: what is known
 
-Only the Dhamma-Dana Archive page was read in detail. The rest is taken from the navigation menu and from Jayadhamma's description. Verify all of it.
+Only the Dhamma-Dāna Archive page was read in detail. The rest is taken from the navigation menu and from Jayadhamma's description. Verify all of it.
 
 **Menu structure:**
 
 - Home
 - Texter (Swedish): Superkort om buddhismen; Mindfulness i korthet (översättning); Mindfulness rötter; Om pali och dess kanon; Ratana Sutta: Munkliv under COVID-19
 - Poesi (Swedish): De fem Buddha-drömmarna; Myrstacken; Spjutet; Sömnbubbla; Jag erkänner!
-- Resources: Dhamma-Dana Archive; Meditation Map of the Dhamma; Pali Resource Guide; Three-step Reboot (a guided meditation); How to make a Myanmar Meditation Visa
+- Resources: Dhamma-Dāna Archive; Meditation Map of the Dhamma; Pali Resource Guide; Three-step Reboot (a guided meditation); How to make a Myanmar Meditation Visa
 - Audio, Blog, Donate, Links, About
 
 **Projects, as Jayadhamma described them:**
 
 - **MMD, Meditation Map of the Dhamma.** More than 60 meditation places, kept as a saved list in Google Maps with notes. He has no photos of his own.
-- **DDA, Dhamma-Dana Archive.** More than 300 PDFs and EPUBs in a public Google Drive folder, linked from the page.
+- **DDA, Dhamma-Dāna Archive.** More than 300 PDFs and EPUBs in a public Google Drive folder, linked from the page.
 - **Myanmar meditation visa guide.** A text page with photos.
 - **Pali Resource Guide.** A list of free Pali resources, organized around books.
 - **Audio Dhamma.** Talks edited by Jayadhamma, stored on archive.org and streamed through a player plugin on the page.
 
 ## 6. Two special cases
 
-### Dhamma-Dana Archive (DDA)
+### Dhamma-Dāna Archive (DDA)
 
 - The archive is a public Google Drive folder. It has subfolders: Various Authors, Buddhist Canon & Tipitaka, Chanting Books, Dictionaries & Guides, Swedish, German, and a public Upload folder.
 - Concerns: the redistribution terms of many books are unknown, so the archive is not safe to rehost. Anyone can add to the Upload folder, which should be closed. The archive depends on a personal Google account.

@@ -29,7 +29,7 @@ All URLs are under `https://www.nibbida.com`. Language: EN = English, SV = Swedi
 | 12 | `/poesi/sömnbubbla` | Sömnbubbla | SV | Text page; one link to a file on Google Drive | 227 |
 | 13 | `/poesi/jag-erkänner` | Jag erkänner! | SV | **Embedded Google resource**: a Google Form that collects responses | 52 |
 | 14 | `/resources` | Resources | EN | Index page | 326 |
-| 15 | `/resources/archive` | Dhamma-Dana Archive | EN | **Embedded Google resource**: a Drive folder view (`embeddedfolderview`), plus text and acknowledgements | 721 |
+| 15 | `/resources/archive` | Dhamma-Dāna Archive | EN | **Embedded Google resource**: a Drive folder view (`embeddedfolderview`), plus text and acknowledgements | 721 |
 | 16 | `/resources/map` | Meditation Map of the Dhamma | EN | Text and links. **No map is embedded.** It links to the Google Maps saved list (short links `goo.gl/maps/…`, `bit.ly/3s2BB0h`), shows highlight images, and lists related guides (Google Docs and Drive files) | 428 |
 | 17 | `/resources/pali` | Pali Resource Guide | EN | Text page: a long list of tools, courses, and PDFs with external links | 2,178 |
 | 18 | `/resources/reboot` | Three-step Reboot: A Guided Meditation | EN + SV | Text page with an embedded YouTube video | 959 |
@@ -72,7 +72,7 @@ The text lives in Google Docs. To store it as Markdown, someone has to export th
 The PDF and EPUB of "Mindfulness rötter" and the Drive file on "Sömnbubbla" are hosted on Google Drive. The files could be copied into the repository (if they are yours to publish), or the links could stay as they are. The Drive folder linked from page 3 is a separate question.
 
 **Data file, one entry per item (pages 15, 16, 20).**
-- Page 15, Dhamma-Dana Archive: see the handover's catalogue proposal. The embedded Drive folder view cannot be stored; the catalogue replaces it. The text and the acknowledgements list are ordinary Markdown.
+- Page 15, Dhamma-Dāna Archive: see the handover's catalogue proposal. The embedded Drive folder view cannot be stored; the catalogue replaces it. The text and the acknowledgements list are ordinary Markdown.
 - Page 16, Meditation Map: the intro text is Markdown. The places themselves are not on the site at all; they depend on the Google Takeout export. The "popular highlights" images and the related guides (Google Docs, Drive files) are separate items to decide on.
 - Page 20, Audio: six entries (title, description, date/place of talk, archive.org identifier, download URL). Each player is an `<iframe>` to `archive.org/embed/…`. Two ways to keep it: (a) keep the archive.org iframe, which depends on archive.org being up, or (b) use a plain HTML `<audio>` element pointing at the archive.org MP3 link, with a download link, which degrades more gracefully. One of the six MP3 links points to a numbered server (`ia904504.us.archive.org`) that may change; the stable `archive.org/download/…` form should be used instead.
 
