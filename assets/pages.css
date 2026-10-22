@@ -49,6 +49,7 @@
 .footer-orn{color:var(--ink);flex:none;-webkit-mask-position:center;mask-position:center}
 
 /* Wallpaper on inner pages: the 16-band labyrinth, tiled so the pattern continues in every direction.
-   It is drawn in the text color at very low opacity, so it follows the theme and stays almost invisible. */
+   Each theme has its own very faint file (wallpaper-dark.svg, wallpaper-light.svg); the strength is the
+   fill-opacity inside those files. A plain background image is used because it works in every browser. */
 .site.plain{position:relative;isolation:isolate}
-.site.plain::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background-color:var(--ink);opacity:var(--wall, .045);-webkit-mask:url(wallpaper-16.svg) 0 0/760px 760px repeat;mask:url(wallpaper-16.svg) 0 0/760px 760px repeat}
+.site.plain::before{content:"";position:absolute;top:0;right:0;bottom:0;left:0;z-index:-1;pointer-events:none;background:var(--wall-img) 0 0/760px 760px repeat}
