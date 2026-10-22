@@ -11,12 +11,22 @@ intro: Dhamma sites, publishers, tools and podcasts.
 <article class="link-card">
 <h3><a href="{{ l.url }}">{{ l.name }} <span aria-hidden="true">↗</span></a></h3>
 <p class="host">{{ l.url | host }}</p>
+{%- if l.google %}<p class="g-tag">Google account needed</p>{% endif %}
 {%- if l.text %}<p>{{ l.text }}</p>{% endif %}
 </article>
 {%- endmacro -%}
 <section class="band">
 <p class="lead-note">If you're looking for places to meditate, you might want to visit the Meditation Map of the Dhamma <span class="soon">(coming soon)</span>. If you're looking for books to download easily, you can visit the <a href="{{ '/resources/archive/' | url }}">Dhamma-Dāna Archive</a>. A lot of different Pali related links are also available in the <a href="{{ '/resources/pali/' | url }}">Pali Resource Guide</a>.</p>
 <p class="lead-note credit">{{ links.credit | mdInline | safe }}</p>
+</section>
+<section class="band link-start" id="start">
+<h2>{{ links.recommended.title }}</h2>
+<p class="sub-intro">{{ links.recommended.intro }}</p>
+<div class="link-grid">
+{%- for l in links.recommended.items %}
+{{ card(l) }}
+{%- endfor %}
+</div>
 </section>
 <section class="band link-tools" id="links-top">
 <label class="srch"><span>Search the links</span><input type="search" id="link-search" placeholder="Name, site or topic"></label>
@@ -30,6 +40,7 @@ intro: Dhamma sites, publishers, tools and podcasts.
 {%- for g in links.groups %}
 <section class="band link-group" id="{{ g.id }}">
 <h2>{{ g.title }}</h2>
+{%- if g.intro %}<p class="sub-intro">{{ g.intro }}</p>{% endif %}
 {%- if g.items %}
 <div class="link-grid">
 {%- for l in g.items %}

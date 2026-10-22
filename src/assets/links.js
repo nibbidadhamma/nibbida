@@ -2,7 +2,8 @@
 (function () {
   var box = document.getElementById("link-search");
   if (!box) return;
-  var cards = [].slice.call(document.querySelectorAll(".link-card"));
+  var cards = [].slice.call(document.querySelectorAll(".link-group .link-card"));
+  var start = document.querySelector(".link-start");
   var groups = [].slice.call(document.querySelectorAll(".link-group"));
   var subs = [].slice.call(document.querySelectorAll(".link-sub"));
   var count = document.getElementById("link-count");
@@ -29,6 +30,7 @@
     groups.forEach(function (g) {
       g.hidden = !g.querySelector(".link-card:not([hidden])");
     });
+    if (start) start.hidden = words.length > 0;
     count.textContent = words.length ? shown + " of " + cards.length + " links" : cards.length + " links";
     none.hidden = shown !== 0;
   }

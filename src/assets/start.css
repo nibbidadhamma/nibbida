@@ -2,7 +2,7 @@
 .start-hero{min-height:0;padding:76px 65px 58px}
 .start-hero h1{max-width:1100px;font-size:62px}
 .letter,.projects{background:var(--bg);border-top:1px solid var(--line);padding:56px 65px}
-.letter{display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:56px;align-items:start}
+.letter{display:grid;grid-template-columns:minmax(0,1fr) 290px;gap:56px;align-items:start}
 .letter-text{max-width:700px}
 .letter h2{font-size:36px;margin:0 0 12px}
 .letter h2:not(:first-child){margin-top:36px}
@@ -10,7 +10,7 @@
 .letter .sign{margin-top:26px}
 .letter-fig{margin:0}
 .projects h2{font-size:40px;margin:0 0 34px}
-.proj-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:48px 32px}
+.proj-grid{display:grid;grid-template-columns:repeat(3,minmax(0,320px));justify-content:start;gap:48px 36px}
 .proj-img{display:block}
 .proj .frame{margin-bottom:18px}
 .proj .tag{font:italic 18px/1.35 EB,Georgia,serif;color:var(--accent);margin:0 0 6px}
@@ -22,11 +22,18 @@
 .placeholder-band p{font:13px Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--secondary);margin:0}
 .hero.pub{background:var(--bg)}
 /* pictures inside pages (About) */
-.wide-fig{margin:6px 0 30px;max-width:760px}
+.wide-fig{margin:4px 0 24px}
+.fig-right{float:right;width:330px;margin:4px 0 24px 36px}
+.fig-left{float:left;width:390px;margin:4px 36px 24px 0}
+.page-body::after{content:"";display:block;clear:both}
+@media(max-width:900px){.fig-right,.fig-left{float:none;width:100%;max-width:380px;margin:4px 0 24px}}
 .wide-fig figcaption{font:italic 18px/1.4 EB,Georgia,serif;color:var(--secondary);margin-top:8px}
+@media(max-width:1000px){
+  .proj-grid{grid-template-columns:repeat(2,minmax(0,320px))}
+}
 @media(max-width:900px){
   .letter{grid-template-columns:1fr;gap:34px}
-  .letter-fig{max-width:420px}
+  .letter-fig{max-width:300px}
 }
 @media(max-width:700px){
   .start-hero{padding:44px 27px 40px}
@@ -35,6 +42,6 @@
   .letter p{font-size:20px}
   .letter h2{font-size:30px}
   .projects h2{font-size:32px}
-  .proj-grid{grid-template-columns:1fr}
+  .proj-grid{grid-template-columns:1fr;justify-content:stretch}
   .placeholder-band{padding:16px 27px}
 }

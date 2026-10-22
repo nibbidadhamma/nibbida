@@ -1,6 +1,19 @@
 # Links page. Add a link by copying one line of an "items" list. Each line: {name, url, text}.
+# A link that needs a Google account gets ", google: true" and is kept in the "Needs a Google account" group.
 # Credit shown at the top of the page (Markdown).
 credit: "Most of the links below come from *Online Dhamma Resources*, a list compiled by Kusalacāra Bhikkhu for the [Early Buddhist Obsidian Vault](https://github.com/dhamma-vinaya-connections/early-buddhist-connections/releases). Many thanks to him for sharing it."
+recommended:
+  title: "Start here"
+  intro: "New to these sites? Here are eight well-known places to begin, from different kinds of resources: sutta texts, a classic archive, talks, a dictionary, a publisher, a magazine and a forum."
+  items:
+    - {name: "SuttaCentral", url: "https://suttacentral.net/", text: "Main hub for early Buddhist texts with multiple translations, parallels, segmented Pāli, and tools."}
+    - {name: "Access to Insight (archive)", url: "https://www.accesstoinsight.org/", text: "Classic collection of Theravāda sutta translations and essays (archived but still widely referenced)."}
+    - {name: "Dhamma Talks (Thanissaro Bhikkhu)", url: "https://www.dhammatalks.org/suttas/", text: "Large collection of sutta translations, books, and essays from the Thai Forest tradition."}
+    - {name: "Dharma Seed", url: "http://www.dharmaseed.org/", text: "Dhamma talks from most teachers."}
+    - {name: "Digital Pāli Dictionary (DPDict)", url: "https://dpdict.net/", text: "Modern, searchable Pāli–English dictionary, useful alongside any Pāli text. Online and offline."}
+    - {name: "Buddhist Publication Society (BPS)", url: "https://bps.lk/", text: "Sri Lankan publisher offering a vast library of downloadable Theravāda books and booklets."}
+    - {name: "Tricycle", url: "http://www.tricycle.com/", text: "A well-known Buddhist magazine."}
+    - {name: "Dhamma Wheel", url: "https://www.dhammawheel.com/", text: "Large English-language discussion forum focused on Theravāda Buddhism."}
 groups:
   - title: "Canonical links"
     id: canonical
@@ -55,20 +68,6 @@ groups:
     items:
       - {name: "NORBU", url: "https://norbu-ai.org/en/norbu", text: "AI guide of the foundational principles of Buddhist teachings, help clarify key terms and concepts"}
       - {name: "NORBU Early Buddhist Texts", url: "https://norbu-ai.org/en/norbu_ebt", text: "contains only suttas from the Pali Tipitaka, Chinese Agamas, Sanskrit fragments as well as some sutras preserved in Tibetan translation."}
-    subgroups:
-      - title: "Notebook LM"
-        url: "https://notebooklm.google/"
-        intro: "It is a great AI tool that is limited only by the selected resources. It's good for finding needed references. There are a few useful collections available:"
-        items:
-          - {name: "Early Suttas", url: "https://notebooklm.google.com/notebook/6a9818aa-3045-4f35-8afb-ec5f13571d40", text: "mūla of EBT"}
-          - {name: "Sutta Piṭaka + Commentaries", url: "https://notebooklm.google.com/notebook/68815e7f-c5b6-4b12-a66e-9f80729b9015", text: "Second basket of the Tipiṭaka, mūla + atthakathā"}
-          - {name: "Vinaya", url: "https://notebooklm.google.com/notebook/d5bdd9b7-1b25-4e9c-b3ea-f19bb93c9081", text: "First basket of the Tipiṭaka, mūla part"}
-          - {name: "Vinaya + Commentaries", url: "https://notebooklm.google.com/notebook/118e3516-95d1-4f8d-9f8b-371ee078f621", text: "everything from the Tipiṭaka related to Vinaya - mūla + atthakathā + ṭīkā + aññā"}
-          - {name: "Early Suttas + Vinaya", url: "https://notebooklm.google.com/notebook/62ff61c6-b9e1-4524-8447-82b00ca6f6ff", text: "mūla: EBT* and Vinaya"}
-          - {name: "Pātimokkha Pali Study", url: "https://notebooklm.google.com/notebook/36c7a255-1b16-455c-bcde-14574d8f0dd2", text: "sources include: Bhikkhu Vibhaṅga Pāli–English (Ven. Brahmali); Pātimokkha Analysis — normal and extended versions (Ven. Ñāṇatusita); Buddhist Monastic Code I and II (Ven. Ṭhānissaro); SBS Pātimokkha Analysis"}
-          - {name: "Anupubbasikkhā Gradual Illumination", url: "https://notebooklm.google.com/notebook/317a21a5-267c-4153-9543-b5bcfdcc6625?artifactId=3dcc3a5a-9b0b-488b-aa00-aa60764f6340", text: "everything from Tipiṭaka (mūla, atthakathā, ṭīkā) related to the Gradual Training, compiled by Ā Virāga."}
-          - {name: "Pāli Tipiṭaka", url: "https://notebooklm.google.com/notebook/8e21e964-8804-437d-a355-ed93666058ca", text: "Tipiṭaka mūla"}
-          - {name: "Visuddhimagga", url: "https://notebooklm.google.com/notebook/13187f85-d540-42c1-8ea8-5f723c5afab3 |"}
   - title: "Visual & charts"
     id: visual
     items:
@@ -121,7 +120,6 @@ groups:
       - {name: "Suan Mokkh", url: "https://www.suanmokkh.org/", text: "Books, audio, poems, and more by Ajahn Buddhadasa."}
       - {name: "Ashintejaniya.org", url: "https://ashintejaniya.org/", text: "Home of Sayadaw U Tejaniya, with books available in many languages."}
       - {name: "Aim Well", url: "http://aimwell.org/", text: "Books and Buddhist information by Bhikkhu Pesala."}
-      - {name: "Wolf's Guide to Dharma Books & Practice", url: "https://docs.google.com/document/d/1hlk6x2XJy8ZQfdYYTibCx2ADRtZDLPqJifQrggic47k/", text: "A perhaps not 100% legal document, filled with useful information about Buddhist meditation and beyond."}
   - title: "Podcasts and Dhamma talks"
     id: podcasts
     items:
@@ -130,3 +128,22 @@ groups:
       - {name: "Audio Dharma", url: "http://www.audiodharma.org/", text: "Dhamma talks from most teachers can be downloaded here."}
       - {name: "Pariyatti podcasts", url: "https://pariyatti.org/Free-Resources/Podcasts/", text: "A selection of different video and audio podcasts."}
       - {name: "Insight Myanmar", url: "https://insightmyanmar.org/", text: "Podcast about Dhamma and meditation in Myanmar."}
+  - title: "Needs a Google account"
+    id: google
+    intro: "The links in this group open on Google and need a Google account."
+    items:
+      - {name: "Wolf's Guide to Dharma Books & Practice", url: "https://docs.google.com/document/d/1hlk6x2XJy8ZQfdYYTibCx2ADRtZDLPqJifQrggic47k/", text: "A perhaps not 100% legal document, filled with useful information about Buddhist meditation and beyond.", google: true}
+    subgroups:
+      - title: "Notebook LM"
+        url: "https://notebooklm.google/"
+        intro: "It is a great AI tool that is limited only by the selected resources. It's good for finding needed references. There are a few useful collections available:"
+        items:
+          - {name: "Early Suttas", url: "https://notebooklm.google.com/notebook/6a9818aa-3045-4f35-8afb-ec5f13571d40", text: "mūla of EBT", google: true}
+          - {name: "Sutta Piṭaka + Commentaries", url: "https://notebooklm.google.com/notebook/68815e7f-c5b6-4b12-a66e-9f80729b9015", text: "Second basket of the Tipiṭaka, mūla + atthakathā", google: true}
+          - {name: "Vinaya", url: "https://notebooklm.google.com/notebook/d5bdd9b7-1b25-4e9c-b3ea-f19bb93c9081", text: "First basket of the Tipiṭaka, mūla part", google: true}
+          - {name: "Vinaya + Commentaries", url: "https://notebooklm.google.com/notebook/118e3516-95d1-4f8d-9f8b-371ee078f621", text: "everything from the Tipiṭaka related to Vinaya - mūla + atthakathā + ṭīkā + aññā", google: true}
+          - {name: "Early Suttas + Vinaya", url: "https://notebooklm.google.com/notebook/62ff61c6-b9e1-4524-8447-82b00ca6f6ff", text: "mūla: EBT* and Vinaya", google: true}
+          - {name: "Pātimokkha Pali Study", url: "https://notebooklm.google.com/notebook/36c7a255-1b16-455c-bcde-14574d8f0dd2", text: "sources include: Bhikkhu Vibhaṅga Pāli–English (Ven. Brahmali); Pātimokkha Analysis — normal and extended versions (Ven. Ñāṇatusita); Buddhist Monastic Code I and II (Ven. Ṭhānissaro); SBS Pātimokkha Analysis", google: true}
+          - {name: "Anupubbasikkhā Gradual Illumination", url: "https://notebooklm.google.com/notebook/317a21a5-267c-4153-9543-b5bcfdcc6625?artifactId=3dcc3a5a-9b0b-488b-aa00-aa60764f6340", text: "everything from Tipiṭaka (mūla, atthakathā, ṭīkā) related to the Gradual Training, compiled by Ā Virāga.", google: true}
+          - {name: "Pāli Tipiṭaka", url: "https://notebooklm.google.com/notebook/8e21e964-8804-437d-a355-ed93666058ca", text: "Tipiṭaka mūla", google: true}
+          - {name: "Visuddhimagga", url: "https://notebooklm.google.com/notebook/13187f85-d540-42c1-8ea8-5f723c5afab3 |", google: true}

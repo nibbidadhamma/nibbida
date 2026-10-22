@@ -10,7 +10,7 @@
 .band a.btn{text-decoration:none}
 /* Audio */
 .tracks{padding-top:34px}
-.track{display:grid;grid-template-columns:230px minmax(0,1fr);gap:40px;padding:44px 0;border-top:1px solid var(--line)}
+.track{display:grid;grid-template-columns:200px minmax(0,1fr);gap:36px;padding:44px 0;border-top:1px solid var(--line)}
 .tracks .band-note{margin-bottom:14px}
 .track:first-of-type{border-top:0;padding-top:20px}
 .track .kicker{margin:0 0 10px}
@@ -66,3 +66,6 @@
 .sub-intro{font-size:20px;line-height:1.5;color:var(--secondary);max-width:760px;margin:0 0 24px}
 .link-group>h2{scroll-margin-top:20px}
 @media(max-width:700px){.sub-title{font-size:24px}.jump a{font-size:16px}}
+.link-start[hidden]{display:none}
+.g-tag{display:inline-block;font:12px Arial,sans-serif!important;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)!important;border:1px solid var(--accent);padding:3px 8px;margin:0 0 10px!important}
+.link-start{background:var(--bg)}
