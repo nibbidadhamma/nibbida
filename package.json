@@ -1,0 +1,15 @@
+{
+  "name": "nibbida",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Nibbidā Dhamma website (nibbida.com)",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@11ty/eleventy": "3.1.7",
+    "js-yaml": "4.3.2"
+  }
+}

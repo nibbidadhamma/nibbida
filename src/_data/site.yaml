@@ -1,0 +1,32 @@
+# Menu and footer. Pages with "ready: false" show greyed out as "coming soon".
+name: NIBBIDĀ
+tagline: Books, teachings, and room to reflect.
+description: Dhamma resources and books.
+
+resources:
+  - title: Dhamma-Dana Archive
+    url: /resources/archive/
+    ready: false
+  - title: Meditation Map of the Dhamma
+    url: /resources/map/
+    ready: false
+  - title: Pali Resource Guide
+    url: /resources/pali/
+    ready: true
+  - title: Three-step Reboot
+    url: /resources/reboot/
+    ready: false
+  - title: Myanmar Meditation Visa guide
+    url: /resources/visa/
+    ready: false
+
+footer:
+  - title: Audio
+    url: /audio/
+    ready: false
+  - title: Links
+    url: /links/
+    ready: false
+  - title: Donate
+    url: /donate/
+    ready: false

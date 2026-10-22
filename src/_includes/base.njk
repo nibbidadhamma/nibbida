@@ -1,0 +1,64 @@
+{%- macro entry(i, page) -%}
+{%- if i.ready -%}
+<a href="{{ i.url | url }}"{% if i.url == page.url %} aria-current="page"{% endif %}>{{ i.title }}</a>
+{%- else -%}
+<span class="soon">{{ i.title }} <small>coming soon</small></span>
+{%- endif -%}
+{%- endmacro -%}
+<!doctype html>
+<html lang="en" style="--bg:#1b1917;--ink:#eee7da;--secondary:#bbb4a8;--accent:#cab795;--cover:#b7a685;--line:#24211e;--maze:url('maze-A.svg');--field:2350px;--x:-125px;--y:-775px;--mx:-650px;--my:-900px;">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{% if title %}{{ title }} — {{ site.name }}{% else %}{{ site.name }}{% endif %}</title>
+<meta name="description" content="{{ description or site.description }}">
+<link rel="icon" type="image/svg+xml" href="{{ '/assets/emblem-A.svg' | url }}">
+<link rel="stylesheet" href="{{ '/assets/site.css' | url }}">
+<link rel="stylesheet" href="{{ '/assets/readable.css' | url }}">
+<link rel="stylesheet" href="{{ '/assets/menu.css' | url }}">
+<link rel="stylesheet" href="{{ '/assets/pages.css' | url }}">
+<script src="{{ '/assets/menu.js' | url }}" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="site A{% if plain %} plain{% endif %}" id="top">
+<header class="header">
+<a class="brand" href="{{ '/' | url }}"><img src="{{ '/assets/emblem-A.svg' | url }}" alt=""><span>{{ site.name }}</span></a>
+<nav class="desk" aria-label="Main">
+<a href="{{ '/' | url }}#books">Books</a>
+<details class="drop"><summary>Resources</summary>
+<div class="panel">
+{%- for r in site.resources %}
+{{ entry(r, page) }}
+{%- endfor %}
+</div></details>
+<a href="{{ '/' | url }}#about">About</a>
+</nav>
+<details class="menu"><summary>Menu</summary>
+<div class="panel" role="navigation" aria-label="Main">
+<a class="main-link" href="{{ '/' | url }}#books">Books</a>
+<span class="main-link">Resources</span>
+<div class="sub">
+{%- for r in site.resources %}
+{{ entry(r, page) }}
+{%- endfor %}
+</div>
+<a class="main-link" href="{{ '/' | url }}#about">About</a>
+</div></details>
+</header>
+<main id="main">
+{{ content | safe }}
+</main>
+<footer class="footer" id="about">
+<img class="footer-mark" src="{{ '/assets/E2.svg' | url }}" alt="">
+<p>{{ site.name }}<br>{{ site.tagline }}</p>
+<div class="footer-links">
+{%- for f in site.footer %}
+{{ entry(f, page) }}
+{%- endfor %}
+</div>
+<a href="#top">Back to the beginning ↑</a>
+</footer>
+</div>
+</body>
+</html>

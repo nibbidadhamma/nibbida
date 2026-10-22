@@ -1,0 +1,12 @@
+---
+layout: base.njk
+plain: true
+---
+<div class="page">
+{% if eyebrow %}<p class="eyebrow">{{ eyebrow }}</p>{% endif %}
+<h1>{{ title }}</h1>
+{% if subtitle %}<p class="subtitle">{{ subtitle }}</p>{% endif %}
+<div class="page-body">
+{{ content | withToc("On this page") | safe }}
+</div>
+</div>
