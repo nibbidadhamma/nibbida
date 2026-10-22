@@ -5,7 +5,7 @@ Written 22 October 2026, following section 1 of `nibbida-handover.md`. Survey on
 ## 0. Summary
 
 - **nibbida.com is reachable** from this environment, through the host `www.nibbida.com`. The bare host `nibbida.com` was refused by the egress proxy (it is probably only a redirect). All 24 pages in the site menu were fetched and read as HTML.
-- **The Astra files were not on my branch when I started**, so my first version of this file said they were missing. They were added to `main` (commit `e7ef89e`, "Astra made website draft") as the folder `nibbida-website-chatgpt-sketch/`. I have now inspected them without merging or moving anything; section 3 is based on that. The folder is at the repository root, not in `design/` as the handover says.
+- **The Astra files were not on my branch when I started**, so my first version of this file said they were missing. They were added to `main` (commit `e7ef89e`, "Astra made website draft") as the folder `nibbida-website-chatgpt-sketch/`. I have now inspected them without merging or moving anything; section 3 is based on that. On Jayadhamma's instruction (22 October) it has been moved, with `git mv`, to `design/nibbida-website-chatgpt-sketch/` on this branch.
 - The old site is small: 24 pages, about 18,000 words, almost all plain text with images. Only a few pages depend on something outside the page itself (see section 2).
 - Facts below come from the fetched HTML. Where I could not see something (for example the contents of embedded Google Docs), I say so.
 
@@ -85,7 +85,7 @@ The PDF and EPUB of "Mindfulness rötter" and the Drive file on "Sömnbubbla" ar
 
 ## 3. Astra design files
 
-Location: `nibbida-website-chatgpt-sketch/` on `main` (commit `e7ef89e`). I read it from `origin/main` and did not merge it into this branch. Its own `MANIFEST.sha256` verified without errors.
+Location: `design/nibbida-website-chatgpt-sketch/` (added to `main` at the root in commit `e7ef89e`, then moved here). Files are otherwise untouched. Its own `MANIFEST.sha256` verified without errors.
 
 **What it is.** A design study for one page, in three directions (A "expanded labyrinth", B "quiet center", C "edge of the page") with A recommended. It is a mockup: the copy is illustrative (its README says so), the links are in-page anchors only, and nothing is a real catalogue or reading page. It is a working HTML page that opens offline, but not a site.
 
@@ -111,28 +111,28 @@ Location: `nibbida-website-chatgpt-sketch/` on `main` (commit `e7ef89e`). I read
 - The labyrinth is one 2,350 px SVG used as a background, positioned by fixed pixel offsets (a different offset for phones). It stays 2,350 px wide on a phone and is cropped. It is a very low-contrast background (the designer's figure is about 1.09:1 against the ground), by intent.
 - Some text is very small: 10 px labels, and 7 px text on the book cover. Body text is 21 px. The README says its contrast numbers are computed checks and not a full accessibility audit.
 - Pāli diacritics: the sketch's text uses ā in "Jhāna" and "nibbāna". I could not check whether EB Garamond covers the full set (ṭ ḍ ṇ ḷ ṃ ṅ ñ), because that needs a font tool I did not install. This should be tested before the font is chosen for good.
-- **Content that may touch the handover's rules.** The sketch contains the title *Insight Is the End*, "Ayya Khema", and a four-line verse ("No jhāna without wisdom, no wisdom without jhāna. One who has both stands close to nibbāna."), shown in the HTML and in the preview images and PDFs. The README calls the verse "supplied" and says no attribution was invented. I do not know whether the verse comes from ITE or from Ayya Khema's texts. The handover says such material must not go into either repository, and the repository is private for now. See question 2.
+- The sketch shows the title *Insight Is the End*, Ayya Khema's name, and a four-line verse. Jayadhamma says the verse is the Buddha's, and asked not to be consulted on small copyright matters for now. I have not raised it further.
 
-## 5. Questions for Jayadhamma that block the next step
+## 5. Decisions received, and remaining questions
 
-**Blocking**
+**Decided by Jayadhamma, 22 October**
+- The Astra sketch goes in `design/` (done).
+- The Google Docs texts (*Mindfulness i korthet*, *Ratana Sutta*) are not needed now.
+- The site is republished around the Dhamma projects, focusing on Resources and the English material.
+- The Swedish material moves to the new dhammadana.se site. That covers Texter, Poesi, and the Swedish parts of the mixed pages (home, Reboot, About, Donate). "Jag erkänner!" is a poem and goes with the Swedish poems.
+- Small copyright questions are set aside for now.
 
-1. **Where should the Astra files live?** They are in `nibbida-website-chatgpt-sketch/` on `main`. The handover says `design/`. May I move them there with `git mv` (history is kept), or should they stay as they are?
-2. **The verse and book title in the sketch.** Is the verse "No jhāna without wisdom…" from ITE or Ayya Khema? If it is, should it be replaced with neutral placeholder text in the working copy? Nothing has been changed. The original is in the private repository history already.
-3. **Google Docs for "Mindfulness i korthet" and "Ratana Sutta".** Do you want these converted to Markdown? If so, please export the two Docs (Markdown or .docx) and add them to the repository, or paste the text. I cannot read them from the page.
-4. **Which texts are yours to publish?** "Mindfulness i korthet" is a translation of a text by Sayadaw U Tejaniya, and "Reboot" quotes instructions from James Kingsland's book and the Dhammapada translation by Eknath Easwaran. Is the translation permitted? This matters if the repository becomes public.
-5. **Swedish material.** Should I move the Swedish pages into a staging folder now (to go to `dhammadana.se`), or leave them out of this repository until that site exists? Pages 1, 18, 22, and 24 mix both languages.
-6. **"Jag erkänner!"** The interactive poem uses a Google Form. Keep the embed, link to it, or keep the poem text only?
+**What this leaves for nibbida.com** (my reading of the decisions; please correct): Home (English part), Resources (Archive, Map, Pali guide, Reboot English part, Myanmar visa guide), Audio, Blog, Links, About (English part), and Donate if kept. That is about 11 pages instead of 24. Pages 2–13 are out of scope here, and the English halves of pages 1, 18, 22, and 24 would need to be separated from the Swedish.
 
-**Needed soon, not blocking this step**
-
-7. **Donate page.** It contains a private person's bank details (IBAN, account, address), a phone number for Swish, and a Revolut link. I have not copied any of it into this file. If the repository becomes public, these details become public, and remain in the history. Do you want them in the repository at all, and does the person concerned agree?
-8. **Images.** The About page says that for a few images no copyright holder could be found. Which images are those? Should unlicensed images be left out of the repository? Should I list the images per page with their sources for you to review?
-9. **Audio.** Keep the archive.org embeds, or use a plain audio element with a download link (see section 2)?
-10. **Blog.** Is the single post the whole blog, and will new posts be added later as separate files?
-11. **Analytics.** The old site uses Google Analytics. I would not carry it over. Is that correct?
-12. **Inconsistent counts.** The archive is described as "300+" books on the home page and archive page, and "250" on the Resources index. Should the new text say 300+ or use the real number from the catalogue?
-13. **Bare domain.** `nibbida.com` was blocked for this session while `www.nibbida.com` worked. Nothing is needed from you, but it means I have not seen what the bare domain does. The redirect behavior will matter at the domain switch.
+**Still open**
+1. **Donate page.** It has a private person's bank details (IBAN, account, address) and a phone number. If the repository becomes public, these become public and stay in the history. Keep them in the repository, or link to something else?
+2. **Images.** The About page says a few images have no known copyright holder. I will list images per page with their sources if you want to review them; otherwise I will not act on this.
+3. **Audio.** Keep the archive.org embeds, or use a plain audio element with a download link (section 2)?
+4. **Blog.** Is the single post the whole blog, and are new posts to be added as separate files?
+5. **Analytics.** I would not carry over Google Analytics. Correct?
+6. **Archive count.** "300+" on the home and archive pages, "250" on the Resources index. Use the real count from the catalogue?
+7. **Home page content.** The sketch presents Nibbidā as a publisher (Books / Read / About). The old home page introduces the Dhamma projects. Which should the new home page lead with, and where do the projects go in the navigation?
+8. **Bare domain.** `nibbida.com` was blocked here, so I haven't seen what it does. No action needed now.
 
 ## 6. Not done
 
