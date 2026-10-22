@@ -33,7 +33,7 @@ intro: Dhamma sites, publishers, tools and podcasts.
 <p class="count" id="link-count" aria-live="polite"></p>
 <nav class="jump" aria-label="Link groups">
 {%- for g in links.groups %}
-<a href="#{{ g.id }}">{{ g.title }}</a>
+<a href="#{{ g.id }}">{{ g.short or g.title }}</a>
 {%- endfor %}
 </nav>
 </section>

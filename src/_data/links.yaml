@@ -15,7 +15,8 @@ recommended:
     - {name: "Tricycle", url: "https://tricycle.org/", text: "A well-known Buddhist magazine."}
     - {name: "Dhamma Wheel", url: "https://www.dhammawheel.com/", text: "Large English-language discussion forum focused on Theravāda Buddhism."}
 groups:
-  - title: "Canonical links"
+  - title: "Early Buddhist texts (the canon, where to read it)"
+    short: "Texts"
     id: canonical
     subgroups:
       - title: "Translations (Pāli Nikāyas & related)"
@@ -34,7 +35,7 @@ groups:
           - {name: "ReadingFaithfully.org", url: "https://readingfaithfully.org/", text: "Resources to build a regular sutta reading practice: guides, reading plans, and study tips."}
           - {name: "Buddha Dust", url: "https://buddhadust.net/backmatter/indexes/sutta/sutta_toc.htm", text: "Extensive index pointing to sutta translations across several websites and collections."}
           - {name: "A Buddhist View", url: "https://abuddhistview.com/", text: "Essays and reflections grounded in early Buddhist teachings and practice."}
-      - title: "Pāli text & study tools"
+      - title: "Pāli texts & study tools (original language, dictionaries)"
         items:
           - {name: "BuddhaNexus – Pāli", url: "https://buddhanexus.net/pli/", text: "Pāli text viewer with powerful parallel search across Pāli Nikāyas and Chinese Āgamas."}
           - {name: "Tipitaka.org", url: "https://www.tipitaka.org", text: "Online Pāli Canon in multiple scripts, with line-by-line text navigation."}
@@ -45,34 +46,37 @@ groups:
           - {name: "Digital Pāli Dictionary (DPDict)", url: "https://dpdict.net/", text: "Modern, searchable Pāli–English dictionary, useful alongside any Pāli text. Online and offline."}
           - {name: "PTS Converter (Dhamma-Dāna)", url: "https://pts.dhamma-dana.de", text: "Converts between PTS page references and standard sutta references for the main Nikāyas."}
           - {name: "Open.tipitaka.lk", url: "https://open.tipitaka.lk", text: "Sri Lankan Tipitaka in various scripts and include audio for all pali texts."}
-      - title: "Āgamas & other early canons"
+      - title: "Āgamas & other canons (Chinese and other early collections)"
         items:
           - {name: "Dharma Pearls", url: "https://canon.dharmapearls.net/", text: "High-quality English translations of Chinese Āgama collections and related early Buddhist texts."}
           - {name: "BDK America (Bukkyō Dendō Kyōkai)", url: "https://www.bdkamerica.org/tripitaka-list/", text: "Translations from the Chinese canon, including some Āgama and early Mahāyāna texts."}
           - {name: "Dharmamitra", url: "https://dharmamitra.org/", text: "Extensive collection of English translations from the Chinese Buddhist Canon by Bhikshu Dharmamitra, covering Mahāyāna Sūtras, Vinaya, and Śāstras."}
           - {name: "Bhikkhu Anālayo – meditation instructions", url: "https://agamaresearch.dila.edu.tw/bhikkhu-analayo-meditation-instructions", text: "A page from the Āgama Research Group (Dharma Drum Institute) that provides meditation‑instruction audio and transcripts by Bhikkhu Anālayo, covering practices like Satipaṭṭhāna (mindfulness), Ānāpānasati (breath mindfulness), the Brahmavihāras, and emptiness."}
-      - title: "Audio – listening to the suttas"
+      - title: "Audio (listening to the suttas)"
         items:
           - {name: "PaliAudio.com", url: "https://www.paliaudio.com/", text: "Professional readings of Pāli Nikāya suttas (often based on SuttaCentral translations)."}
           - {name: "Sutta Readings", url: "https://www.suttareadings.net/", text: "Curated audio readings of suttas from various translators and sources."}
           - {name: "SuttaCentral Voice", url: "https://www.sc-voice.net/?src=sc#/wiki/toc", text: "SuttaCentral's audio front-end: listen to Pāli and translations with navigation synced to segments."}
           - {name: "Audio Tipitaka (Audtip)", url: "https://audtip.org/", text: "Long-term project offering audio versions of sutta translations; open to volunteers."}
           - {name: "Dharma Audiobooks", url: "http://dharmaaudiobooks.com/", text: "Professionally produced audiobooks of suttas, talks, and classic Buddhist writings."}
-      - title: "Helper tools & research"
+      - title: "Apps & research tools (readers, search, developer tools)"
         items:
           - {name: "Simsapa Dhamma Reader", url: "https://simsapa.github.io/", text: "Excellent sutta reader and Pali dictionary application."}
           - {name: "ReadingFaithfully – Sutta Tools Lab", url: "https://readingfaithfully.org/lab/", text: "Small utilities for sutta study: citation helpers, random sutta pickers, and link tools."}
           - {name: "Awesome SuttaCentral (developer tools)", url: "https://suttacentral.github.io/awesome/", text: "Curated list of tools, APIs, and add-ons built around SuttaCentral (e.g. Voice, Bilara tools)."}
-  - title: "AI tools"
+  - title: "AI tools (chatbots built on Buddhist texts)"
+    short: "AI"
     id: ai
     items:
       - {name: "NORBU", url: "https://norbu-ai.org/en/norbu", text: "AI guide of the foundational principles of Buddhist teachings, help clarify key terms and concepts"}
       - {name: "NORBU Early Buddhist Texts", url: "https://norbu-ai.org/en/norbu_ebt", text: "contains only suttas from the Pali Tipitaka, Chinese Agamas, Sanskrit fragments as well as some sutras preserved in Tibetan translation."}
-  - title: "Visual & charts"
+  - title: "Charts & diagrams (visual summaries of the teachings)"
+    short: "Charts"
     id: visual
     items:
       - {name: "DhammaCharts.org", url: "https://www.dhammacharts.org/", text: "Visual charts and diagrams of core teachings (e.g. 37 wings, dependent origination, jhānas)."}
-  - title: "Buddhist education and Dharma blogging"
+  - title: "Study & reference (dictionaries, courses, Dhamma sites)"
+    short: "Study"
     id: education
     items:
       - {name: "Digital Dictionary of Buddhism", url: "http://buddhism-dict.net/", text: "Large, scholarly online dictionary of Buddhist terms, texts, and people (requires login/guest access)."}
@@ -109,7 +113,8 @@ groups:
       - {name: "Oxford Bibliographies: Buddhism", url: "https://www.oxfordbibliographies.com/browse?module_0=obo-9780195393521", text: "Curated academic research guides and reading lists on Buddhist topics."}
       - {name: "Palikanon.com", url: "https://www.palikanon.com/", text: "German and English collection of Buddhist texts, dictionaries, and meditation manuals."}
       - {name: "Words of the Buddha", url: "https://www.wordsofthebuddha.org/", text: "Side-by-side Pāli-English corpus with contextual tooltips and notes."}
-  - title: "Publishers, magazines and teachers"
+  - title: "Publishers, magazines & monasteries (books and articles)"
+    short: "Publishers"
     id: publishers
     items:
       - {name: "Buddhist Door", url: "https://www.buddhistdoor.net/", text: "Buddhist journal and multimedia platform."}
@@ -120,7 +125,8 @@ groups:
       - {name: "Suan Mokkh", url: "https://www.suanmokkh.org/", text: "Books, audio, poems, and more by Ajahn Buddhadasa."}
       - {name: "Ashintejaniya.org", url: "https://ashintejaniya.org/", text: "Home of Sayadaw U Tejaniya, with books available in many languages."}
       - {name: "Aim Well", url: "https://aimwell.org/", text: "Books and Buddhist information by Bhikkhu Pesala."}
-  - title: "Podcasts and Dhamma talks"
+  - title: "Podcasts & talks (listening to teachers)"
+    short: "Talks"
     id: podcasts
     items:
       - {name: "Be Here Now Network", url: "https://beherenownetwork.com/", text: "A network of mindfulness and spirituality podcasts."}
@@ -128,13 +134,14 @@ groups:
       - {name: "Audio Dharma", url: "https://www.audiodharma.org/", text: "Dhamma talks from most teachers can be downloaded here."}
       - {name: "Pariyatti podcasts", url: "https://pariyatti.org/Free-Resources/Podcasts/", text: "A selection of different video and audio podcasts."}
       - {name: "Insight Myanmar", url: "https://insightmyanmar.org/", text: "Podcast about Dhamma and meditation in Myanmar."}
-  - title: "Needs a Google account"
+  - title: "Needs a Google account (documents and NotebookLM)"
+    short: "Google account"
     id: google
     intro: "The links in this group open on Google and need a Google account."
     items:
       - {name: "Wolf's Guide to Dharma Books & Practice", url: "https://docs.google.com/document/d/1hlk6x2XJy8ZQfdYYTibCx2ADRtZDLPqJifQrggic47k/", text: "A perhaps not 100% legal document, filled with useful information about Buddhist meditation and beyond.", google: true}
     subgroups:
-      - title: "Notebook LM"
+      - title: "NotebookLM (AI notebooks on selected texts)"
         url: "https://notebooklm.google/"
         intro: "It is a great AI tool that is limited only by the selected resources. It's good for finding needed references. There are a few useful collections available:"
         items:
