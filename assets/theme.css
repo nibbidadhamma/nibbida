@@ -77,9 +77,13 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .panel .theme-btn { margin-top: 14px; }
 
 /* Pictures from the old site: shown in two tones taken from the theme (shadows and highlights),
-   inside a double-line frame. The blend modes are supported by all current browsers. */
-.frame { display: block; position: relative; padding: 11px; background: var(--bg); border: 1px solid var(--accent); }
-.frame::before { content: ""; position: absolute; top: 4px; right: 4px; bottom: 4px; left: 4px; border: 1px solid var(--line); pointer-events: none; }
+   inside an open frame with corner brackets (the F3O ornament, defined once in base.njk). The blend modes are supported by all current browsers. */
+.frame { display: block; position: relative; padding: 28px; background: var(--bg); color: var(--accent); }
+.frame .fc { position: absolute; width: 88px; height: 64px; pointer-events: none; }
+.frame .tl { top: 0; left: 0; transform: scale(1, -1); }
+.frame .tr { top: 0; right: 0; transform: scale(-1, -1); }
+.frame .bl { bottom: 0; left: 0; }
+.frame .br { bottom: 0; right: 0; transform: scale(-1, 1); }
 .duo { display: block; position: relative; isolation: isolate; background: var(--duo-light); line-height: 0; }
 .duo img { display: block; width: 100%; height: auto; filter: grayscale(1) contrast(1.08); mix-blend-mode: multiply; }
 .duo::after { content: ""; position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: var(--duo-dark); mix-blend-mode: lighten; pointer-events: none; }
