@@ -80,6 +80,16 @@ terms: Free distribution, not for sale
 - **Links:** `src/_data/links.yaml`. Groups with one line per link: `{name, url, text}`.
 - **Donate:** `src/_data/donate.yaml`. The "Ways to give" section appears when `methods` has entries. An example is in the file as a comment. Add bank or phone details only with the account owner's agreement; the site and its history are public.
 
+### The merged links list (October 2026)
+
+The Links page now combines Jayadhamma's older list with *Online Dhamma Resources* by Kusalacāra Bhikkhu (from the Early Buddhist Obsidian Vault), who is credited at the top of the page. Where both lists had the same site, the newer list's entry was kept:
+
+- Removed from the older list: Dhamma Wiki, Dhamma Talks, Buddha Dharma Education Association (BuddhaNet), Sutta Central, Ancient Buddhist Texts, Buddhist Publication Society, Reading Faithfully and Pali Audio.
+- Removed from the newer list: "Ancient-Buddhist-Texts.net" (same as "Ancient Buddhist Texts") and "NORBU (AI)" (same address as "NORBU Early Buddhist Texts").
+- Kept although they share a site, because they are different pages: Pariyatti and Pariyatti podcasts; ReadingFaithfully and its Sutta Tools Lab; Buddha-Vacana and its French page; two NORBU pages; two Old Buddhist Objects pages.
+- Changes to the newer list: addresses that contained template markers such as `{{suttacode}}` now point to the site's main address; "Open.tipitaka.lk" and the Simsapa entry became links; two typos were fixed ("Excelent", "scipts"); the entry for Bhikkhu Anālayo's meditation instructions got a name and the opening words "This is a page from" became "A page from"; the headings were set in sentence case ("Canonical links", "AI tools", "Buddhist education and Dharma blogging").
+- The old Swedish group (Buddhist groups in Sweden) is not on this page.
+
 ### Changes made when these three pages were converted from the old site
 
 - Audio: the typo `("n tune")` became `("in tune")`. The old "Stream here or download here" links became a player, a Download button and an "On archive.org" button. The Solitude MP3 address was changed from a numbered archive.org server to the stable form.

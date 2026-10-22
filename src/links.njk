@@ -2,25 +2,53 @@
 layout: showcase.njk
 title: Links
 permalink: /links/
-description: Dhamma sites, publishers and podcasts.
+description: Dhamma sites, publishers, tools and podcasts.
 kicker: Links
 headline: Good places to<br>read and listen
-intro: Dhamma sites, publishers and podcasts.
+intro: Dhamma sites, publishers, tools and podcasts.
 ---
-<section class="band">
-<p class="lead-note">If you're looking for places to meditate, you might want to visit the Meditation Map of the Dhamma <span class="soon">(coming soon)</span>. If you're looking for books to download easily, you can visit the <a href="{{ '/resources/archive/' | url }}">Dhamma-Dāna Archive</a>. A lot of different Pali related links are also available in the <a href="{{ '/resources/pali/' | url }}">Pali Resource Guide</a>.</p>
-</section>
-{%- for g in links.groups %}
-<section class="band link-group">
-<h2>{{ g.title }}</h2>
-<div class="link-grid">
-{%- for l in g.items %}
+{%- macro card(l) -%}
 <article class="link-card">
 <h3><a href="{{ l.url }}">{{ l.name }} <span aria-hidden="true">↗</span></a></h3>
 <p class="host">{{ l.url | host }}</p>
-<p>{{ l.text }}</p>
+{%- if l.text %}<p>{{ l.text }}</p>{% endif %}
 </article>
+{%- endmacro -%}
+<section class="band">
+<p class="lead-note">If you're looking for places to meditate, you might want to visit the Meditation Map of the Dhamma <span class="soon">(coming soon)</span>. If you're looking for books to download easily, you can visit the <a href="{{ '/resources/archive/' | url }}">Dhamma-Dāna Archive</a>. A lot of different Pali related links are also available in the <a href="{{ '/resources/pali/' | url }}">Pali Resource Guide</a>.</p>
+<p class="lead-note credit">{{ links.credit | mdInline | safe }}</p>
+</section>
+<section class="band link-tools" id="links-top">
+<label class="srch"><span>Search the links</span><input type="search" id="link-search" placeholder="Name, site or topic"></label>
+<p class="count" id="link-count" aria-live="polite"></p>
+<nav class="jump" aria-label="Link groups">
+{%- for g in links.groups %}
+<a href="#{{ g.id }}">{{ g.title }}</a>
+{%- endfor %}
+</nav>
+</section>
+{%- for g in links.groups %}
+<section class="band link-group" id="{{ g.id }}">
+<h2>{{ g.title }}</h2>
+{%- if g.items %}
+<div class="link-grid">
+{%- for l in g.items %}
+{{ card(l) }}
 {%- endfor %}
 </div>
+{%- endif %}
+{%- for s in g.subgroups %}
+<div class="link-sub">
+<h3 class="sub-title">{% if s.url %}<a href="{{ s.url }}">{{ s.title }} <span aria-hidden="true">↗</span></a>{% else %}{{ s.title }}{% endif %}</h3>
+{%- if s.intro %}<p class="sub-intro">{{ s.intro }}</p>{% endif %}
+<div class="link-grid">
+{%- for l in s.items %}
+{{ card(l) }}
+{%- endfor %}
+</div>
+</div>
+{%- endfor %}
 </section>
 {%- endfor %}
+<p class="none band" id="link-none" hidden>No links match.</p>
+<script src="{{ '/assets/links.js' | url }}" defer></script>

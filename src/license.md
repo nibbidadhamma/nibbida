@@ -20,6 +20,7 @@ In short: you may copy and share this material in any medium, as long as you giv
 - **Fonts.** EB Garamond is used under the SIL Open Font License 1.1. Its license file is `src/assets/FONT-LICENSE.txt`.
 - **Photographs and illustrations** in `src/assets/images/`. As the About page says, many come from free web resources such as Freepik, Rawpixel and Wikimedia, and some are of unknown origin. They keep their own terms, or none that is known.
 - **Quotations and other people's texts**, such as the lines by Leonard Cohen, the quotation from the Pali English Glossary, and the placeholder verse on the home page. They belong to their authors.
+- **The list of links on the Links page**, which comes largely from *Online Dhamma Resources*, compiled by Kusalacāra Bhikkhu for the Early Buddhist Obsidian Vault. The list and its descriptions belong to him.
 - **Other people's books, tools and websites**, with their names, titles and the content they link to. A book kept on this site carries the terms recorded in its own entry.
 - **The design study** in `design/nibbida-website-chatgpt-sketch/`, which is kept for reference.
 - **Software tools** used to build the site. They are not part of this repository and have their own licenses.

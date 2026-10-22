@@ -47,7 +47,7 @@ Recorded from conversations with Jayadhamma Bhikkhu, 22 October 2026. Only what 
 **Audio, Links, Donate (first versions, built 22 October)**
 - Pages in the style of the home page: a hero with the labyrinth, then bands with hairlines. Text adapted where the design needed it; see EDITING.md.
 - Audio: plain browser audio players with a download button and a link to archive.org. Nothing loads from archive.org until someone presses play. Six recordings, in the old order.
-- Links: the English groups only (Various English links, Podcasts and audio). The Swedish group of Buddhist groups in Sweden is left for the Swedish site.
+- Links: the English links only; the Swedish group of Buddhist groups in Sweden is left for the Swedish site. Merged with the list *Online Dhamma Resources* by Kusalacāra Bhikkhu (Early Buddhist Obsidian Vault), who is credited on the page and on the License page; duplicates were removed in favor of his newer entries (see EDITING.md). The page has a search box and a jump list.
 - Donate: the page is built, but the bank, Swish and Revolut details are NOT on it. They belong to third parties (Jayadhamma's mother and the kappiya) and the site is public. The page asks visitors to write by email until `src/_data/donate.yaml` has methods filled in, after the people concerned have agreed. The names of the mother and the kappiya were left out of the intro for the same reason.
 
 **Other**
