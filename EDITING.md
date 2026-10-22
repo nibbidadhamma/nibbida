@@ -9,7 +9,8 @@ The website is built from plain text files in the `src` folder. Everything can b
 | The Pali Resource Guide | `src/resources/pali.md` |
 | The home page text | `src/index.njk` (the text between the tags) |
 | The menu and footer links | `src/_data/site.yaml` |
-| Colors and layout | `src/assets/*.css` (needs care) |
+| Colors of the dark and light themes | `src/assets/theme.css` (the light values appear twice; change both) |
+| Layout | `src/assets/*.css` (needs care) |
 
 ## The Pali Resource Guide
 
@@ -28,6 +29,10 @@ A description of the resource.
 - The line of links directly under a `###` heading becomes buttons. The words in square brackets are the button text.
 - To add a resource, copy an existing one, including the blank lines, and change the words.
 - Keep the blank lines between parts. A missing blank line can merge two parts.
+
+## Light and dark
+
+The site follows the visitor's device setting. A Light / Dark button in the header (inside the Menu on phones) lets a visitor choose; the choice is remembered in that browser. Without JavaScript the device setting still applies and the button is hidden.
 
 ## The menu
 

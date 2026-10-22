@@ -6,25 +6,31 @@
 {%- endif -%}
 {%- endmacro -%}
 <!doctype html>
-<html lang="en" style="--bg:#1b1917;--ink:#eee7da;--secondary:#bbb4a8;--accent:#cab795;--cover:#b7a685;--line:#24211e;--maze:url('maze-A.svg');--field:2350px;--x:-125px;--y:-775px;--mx:-650px;--my:-900px;">
+<html lang="en" style="--field:2350px;--x:-125px;--y:-775px;--mx:-650px;--my:-900px;">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{% if title %}{{ title }} — {{ site.name }}{% else %}{{ site.name }}{% endif %}</title>
 <meta name="description" content="{{ description or site.description }}">
-<link rel="icon" type="image/svg+xml" href="{{ '/assets/emblem-A.svg' | url }}">
+<script>try{var t=localStorage.getItem("nibbida-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<link rel="icon" href="{{ '/favicon.ico' | url }}" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/icons/favicon-32.png' | url }}">
+<link rel="icon" type="image/png" sizes="192x192" href="{{ '/assets/icons/icon-192.png' | url }}">
+<link rel="apple-touch-icon" href="{{ '/assets/icons/apple-touch-icon.png' | url }}">
 <link rel="stylesheet" href="{{ '/assets/site.css' | url }}">
 <link rel="stylesheet" href="{{ '/assets/readable.css' | url }}">
+<link rel="stylesheet" href="{{ '/assets/theme.css' | url }}">
 <link rel="stylesheet" href="{{ '/assets/menu.css' | url }}">
 <link rel="stylesheet" href="{{ '/assets/pages.css' | url }}">
 <link rel="stylesheet" href="{{ '/assets/archive.css' | url }}">
 <script src="{{ '/assets/menu.js' | url }}" defer></script>
+<script src="{{ '/assets/theme.js' | url }}" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <div class="site A{% if plain %} plain{% endif %}" id="top">
 <header class="header">
-<a class="brand" href="{{ '/' | url }}"><img src="{{ '/assets/emblem-A.svg' | url }}" alt=""><span>{{ site.name }}</span></a>
+<a class="brand" href="{{ '/' | url }}"><img class="logo-dark" src="{{ '/assets/emblem-A.svg' | url }}" alt=""><img class="logo-light" src="{{ '/assets/emblem-A-light.svg' | url }}" alt=""><span>{{ site.name }}</span></a>
 <nav class="desk" aria-label="Main">
 <a href="{{ '/' | url }}#books">Books</a>
 <details class="drop"><summary>Resources</summary>
@@ -35,6 +41,7 @@
 {%- endfor %}
 </div></details>
 <a href="{{ '/' | url }}#about">About</a>
+<button type="button" class="theme-btn" hidden>Dark</button>
 </nav>
 <details class="menu"><summary>Menu</summary>
 <div class="panel" role="navigation" aria-label="Main">
@@ -46,13 +53,14 @@
 {%- endfor %}
 </div>
 <a class="main-link" href="{{ '/' | url }}#about">About</a>
+<button type="button" class="theme-btn" hidden>Dark</button>
 </div></details>
 </header>
 <main id="main">
 {{ content | safe }}
 </main>
 <footer class="footer" id="about">
-<img class="footer-mark" src="{{ '/assets/E2.svg' | url }}" alt="">
+<span class="orn orn-c4b footer-orn" aria-hidden="true"></span>
 <p>{{ site.name }}<br>{{ site.tagline }}</p>
 <div class="footer-links">
 {%- for f in site.footer %}

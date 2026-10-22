@@ -35,3 +35,15 @@
   .page h3{font-size:24px}
   .toc{padding:18px 20px}
 }
+
+/* Ornaments: single-color shapes drawn with the current text color, so they follow the theme. */
+.orn{display:block;background-color:currentColor;color:var(--secondary);-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-position:left center;mask-position:left center;-webkit-mask-size:contain;mask-size:contain}
+.orn-c3b{width:54px;aspect-ratio:27/3.5;-webkit-mask-image:url(ornaments/C3-B.svg);mask-image:url(ornaments/C3-B.svg)}
+.orn-c4b{width:98px;aspect-ratio:43/4;-webkit-mask-image:url(ornaments/C4-B.svg);mask-image:url(ornaments/C4-B.svg)}
+.orn-d3b{width:116px;aspect-ratio:58/5;-webkit-mask-image:url(ornaments/D3-B.svg);mask-image:url(ornaments/D3-B.svg)}
+.orn-o2{width:96px;aspect-ratio:48/9;-webkit-mask-image:url(ornaments/O2.svg);mask-image:url(ornaments/O2.svg)}
+.orn-c5b{width:48px;aspect-ratio:17/30;color:var(--ink);opacity:.8;-webkit-mask-position:center;mask-position:center;-webkit-mask-image:url(ornaments/C5-B.svg);mask-image:url(ornaments/C5-B.svg)}
+.orn-title{margin:2px 0 30px}
+.orn-end{margin:56px 0 6px}
+.orn-between{margin:8px 0 26px}
+.footer-orn{color:var(--ink);flex:none;-webkit-mask-position:center;mask-position:center}

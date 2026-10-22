@@ -1,0 +1,66 @@
+/* Colors for the dark and light themes.
+   Dark is the default. The light theme is used when the visitor's device asks for it,
+   or when the visitor chooses it with the Light / Dark button (stored as data-theme on <html>).
+   The light values appear twice (device setting, and the button). Change both together. */
+
+:root {
+  color-scheme: dark;
+  --bg: #1b1917;
+  --ink: #eee7da;
+  --secondary: #bbb4a8;
+  --accent: #cab795;
+  --line: #24211e;
+  --cover: #b7a685;
+  --maze: url('maze-12-dark.svg');
+  --ld: inline;
+  --ll: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    color-scheme: light;
+    --bg: #FAF5E8;
+    --ink: #3F2713;
+    --secondary: #6F4F3C;
+    --accent: #7A4F33;
+    --line: #E2D6C1;
+    --maze: url('maze-12-light.svg');
+    --ld: none;
+    --ll: inline;
+  }
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #FAF5E8;
+  --ink: #3F2713;
+  --secondary: #6F4F3C;
+  --accent: #7A4F33;
+  --line: #E2D6C1;
+  --maze: url('maze-12-light.svg');
+  --ld: none;
+  --ll: inline;
+}
+
+/* The header emblem has one file per theme. */
+.brand img.logo-dark { display: var(--ld); }
+.brand img.logo-light { display: var(--ll); }
+
+/* Book covers stay tan with dark text in both themes. */
+.cover, .cover .author, .cover .title, .cover .imprint { color: #1b1917; }
+
+/* Light / Dark button. It stays hidden until the script has run. */
+.theme-btn {
+  font: 17px EB, Georgia, serif;
+  color: var(--ink);
+  background: transparent;
+  border: 1px solid var(--accent);
+  padding: 8px 16px;
+  min-height: 44px;
+  letter-spacing: .04em;
+  cursor: pointer;
+}
+.theme-btn[hidden] { display: none; }
+.theme-btn:hover { background: var(--accent); color: var(--bg); }
+.theme-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.panel .theme-btn { margin-top: 14px; }

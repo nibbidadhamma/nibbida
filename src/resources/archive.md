@@ -16,6 +16,8 @@ The books are either from modern meditation teachers and scholars, or translatio
 
 <!--shelf-->
 
+<div class="orn orn-c3b orn-between" aria-hidden="true"></div>
+
 ## Blessings to all the contributors to the archive!
 
 This collection of books wouldn’t, of course, have been possible without so many Buddhist websites and writers offering their work freely here online, to be read by anyone that’s interested. So lots of thanks and gratitude to everyone that’s been included here – *sādhu sādhu sādhu*! (Well done!) May all your work inspire new generations to walk the path.

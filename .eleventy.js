@@ -15,6 +15,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
 
   eleventyConfig.addPassthroughCopy("src/assets");
+  // Browsers ask for /favicon.ico by default.
+  eleventyConfig.addPassthroughCopy({ "src/assets/icons/favicon.ico": "favicon.ico" });
   // Books hosted on this site are kept in src/archive/files and published at /archive/files/.
   eleventyConfig.addPassthroughCopy("src/archive/files");
 

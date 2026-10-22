@@ -29,8 +29,10 @@ plain: true
 {% if eyebrow %}<p class="eyebrow">{{ eyebrow }}</p>{% endif %}
 <h1>{{ title }}</h1>
 {% if subtitle %}<p class="subtitle">{{ subtitle }}</p>{% endif %}
+<div class="orn orn-d3b orn-title" aria-hidden="true"></div>
 <div class="page-body">
 {{ content | replace("<!--shelf-->", shelf) | safe }}
 </div>
+<div class="orn orn-o2 orn-end" aria-hidden="true"></div>
 </div>
 <script src="{{ '/assets/archive.js' | url }}" defer></script>

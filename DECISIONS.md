@@ -10,9 +10,12 @@ Recorded from conversations with Jayadhamma Bhikkhu, 22 October 2026. Only what 
 - Menu: Books, Resources and About are the main links. Resources opens a list of its pages. Audio, Links and Donate are in the footer. Pages not built yet appear greyed out as "coming soon".
 - Inner pages: a narrow reading column, a small label above the title ("Resources"), and an "On this page" box on long pages. Links appear as buttons, not as raw addresses.
 - A light option will be added. Visitors get it both ways: the site follows the device's light or dark setting by default, and a small Light / Dark button lets them choose and remembers the choice.
-- Light colors: to follow the light color scheme already made for dhammadana.se, or one of its alternative schemes, instead of the colors in `previews/light-option/`. Not yet seen.
-- Light artwork: Jayadhamma has inverted versions of all logos and ornaments and will supply them, to replace the recolors.
-- Ornaments and logos: Jayadhamma has many sizes and will supply them.
+- Light colors: a middle way between the dhammadana.se palette (Brown #542300, Ivory #FFF9E8, Clay #9A5B3F, Sand #E7D6B9) and the first neutral paper palette. Chosen by Claude as asked ("find the sweet spot, still a light theme"): ground #FAF5E8, text #3F2713, supporting text #6F4F3C, accent #7A4F33, lines #E2D6C1. Contrast on the ground: text 12.8:1, supporting text 6.8:1, accent 6.4:1. Values are in `src/assets/theme.css`. The dark theme is unchanged.
+- Emblem in the header: 06A, the star in a ring (choice A). Warm copies of the artwork, shapes untouched: the light version uses the text color.
+- Tab icon: 02C white-on-black (`src/assets/icons/`).
+- Labyrinth: the 12-band one, tried as the home page background in both themes (the 16-band file is still in `design/` if we go back).
+- Ornaments (Jayadhamma likes C3-B, C4-B, D3-B and O2 and left the placing to Claude): C5-B beside the verse on the home page; C4-B in the footer; D3-B under the title of inner pages; O2 at the end of inner pages; C3-B before the acknowledgements on the archive page. They are drawn in the current text color, so they follow the theme.
+- Fonts: EB Garamond stays (the dhammadana.se headings use Alegreya; item 7 of the choices was left blank).
 
 **Structure**
 - A Resources overview page exists at `/resources/` (text from the old overview; the Pali guide is added; the YouTube channel is dropped on purpose). The Resources menu has an "All resources" entry.
