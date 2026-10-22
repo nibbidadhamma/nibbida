@@ -17,6 +17,7 @@
   --wall-img: url('wallpaper-dark.svg');
   --duo-dark: #1f1b17;
   --duo-light: #d9cbaa;
+  --mat: #9c8f74;
 }
 
 @media (prefers-color-scheme: light) {
@@ -33,6 +34,7 @@
     --wall-img: url('wallpaper-light.svg');
     --duo-dark: #4a2d17;
     --duo-light: #f2e6cb;
+    --mat: #E8DCC5;
   }
 }
 
@@ -49,6 +51,7 @@
   --wall-img: url('wallpaper-light.svg');
   --duo-dark: #4a2d17;
   --duo-light: #f2e6cb;
+  --mat: #E8DCC5;
 }
 
 html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
@@ -78,7 +81,7 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 
 /* Pictures from the old site: shown in two tones taken from the theme (shadows and highlights),
    inside a mat (the text color) with a hairline. The blend modes are supported by all current browsers. */
-.frame { display: block; position: relative; padding: 10px; background: var(--ink); box-shadow: 0 0 0 1px var(--accent); }
+.frame { display: block; position: relative; padding: 10px; background: var(--mat); box-shadow: 0 0 0 1px var(--accent); }
 .frame .duo { outline: 1px solid var(--bg); outline-offset: 0; }
 .duo { display: block; position: relative; isolation: isolate; background: var(--duo-light); line-height: 0; }
 .duo img { display: block; width: 100%; height: auto; filter: grayscale(1) contrast(1.08); mix-blend-mode: multiply; }
