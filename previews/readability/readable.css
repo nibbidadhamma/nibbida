@@ -1,0 +1,15 @@
+/* Readability variant: only enlarges very small text; layout and colors unchanged. */
+.kicker,.feature .kicker{font-size:13px}
+.button{font-size:16px}
+.reading-head span{font-size:14px}
+.prototype-note{font-size:13px}
+.rail-title a,.library-list a,.footer a{font-size:17px}
+.header nav{font-size:18px}
+@media(max-width:700px){
+.kicker,.reading-head .kicker{font-size:12px}
+.button{font-size:16px}
+.reading-head span{font-size:13px}
+.rail-title a{font-size:16px}
+.header nav{font-size:17px}
+.quiet-link,.C .feature-actions .quiet-link{font-size:17px}
+}
