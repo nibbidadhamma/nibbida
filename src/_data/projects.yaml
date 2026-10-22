@@ -5,9 +5,9 @@ projects:
     alt: "Old world map with the title Meditation Map of the Dhamma"
     url: /resources/map/
     ready: false
-    tagline: "A map with lots of places to practice Buddhist meditation."
+    tagline: "A map of places to practice Buddhist meditation."
     text: >-
-      This map will help you find nice meditation centers and monasteries around the world to practice Buddhist meditation. In the spirit of *one* Dhamma/Dharma, places from many different traditions are included here. With this map made in Google Maps, it's now even more easy to share places with fellow meditators, and find new vistas for exploring the Buddha's ancient path.
+      A map of meditation centers and monasteries around the world, from many traditions, for those looking for a place to practice.
   - title: "Dhamma-Dāna Archive"
     image: project-archive.jpg
     alt: "Illustration of a large book with a lotus on its cover, with monks reading, and the title Dhamma-Dāna Archive"
@@ -16,7 +16,7 @@ projects:
     link: "Open the archive"
     tagline: "A collection of free books from different online sources."
     text: >-
-      There's a lot of Buddhist books given away online, so called *Dhammadāna*. But where to find them, and which one to read? Here's a selection for you with more than 300 books in total, all distributed freely as gifts of Dhamma. The books are either from modern meditation teachers and scholars, or translations of old scriptures. All just one click away to read or download.
+      A collection of more than 300 Buddhist books given freely as *Dhamma-dāna*, from modern teachers and scholars and from translations of the early texts.
   - title: "Jaya's Audio Dhamma"
     image: project-audio.jpg
     alt: "Abstract red wave lines on black, with the title Audio Dhamma"
@@ -25,7 +25,7 @@ projects:
     link: "Open the audio page"
     tagline: "Talks and guided meditations by Jayadhamma Bhikkhu."
     text: >-
-      On this page you'll find different Dhamma audio files that have been recorded over the years. The Dhamma talks and guided meditations can either be downloaded or streamed directly from the page with the embedded plug-in.
+      Talks and guided meditations recorded over the years, to stream or download.
   - title: "Pali Resource Guide"
     image: project-pali.jpg
     alt: "Hands holding an old Pali manuscript"
@@ -34,12 +34,12 @@ projects:
     link: "Open the guide"
     tagline: "A selection of the most useful Pali resources online."
     text: >-
-      This guide gathers the best tools and resources for learning Pali, the language of the early Buddhist texts. It includes apps, dictionaries, Pali keyboards, books, courses, and more. Everything carefully chosen to make reading, studying, and understanding Pali easier and more enjoyable, whether you’re a beginner or more advanced.
+      A selection of the most useful online resources for learning Pali, the language of the early Buddhist texts: tools, dictionaries, courses and books.
   - title: "How to make a Myanmar Meditation Visa"
     image: project-visa.jpg
     alt: "Row of golden Buddha statues in a temple hall"
     url: /resources/visa/
     ready: false
-    tagline: "A short guide to the application procedure of the Myanmar Meditation Visa."
+    tagline: "A short guide to the Myanmar meditation visa."
     text: >-
-      If you are getting serious about your meditation practice, one of the best countries you can travel to is Myanmar (Burma). With its meditation visa (also called religious visa) you are allowed to stay practically as long as you like in Myanmar, if you decide to extend it. This guide will help you through the process how to make the visa, and in Bangkok especially.
+      A short guide to applying for the Myanmar meditation visa, which allows a long stay for practice, with notes for applicants in Bangkok.

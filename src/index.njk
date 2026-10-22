@@ -2,27 +2,26 @@
 layout: base.njk
 permalink: /
 ---
-{#- Home page. Wording and layout are from the Astra design study (direction A), copied from design/. The text is placeholder and will be replaced. -#}
 {% from "frame.njk" import frame %}
-{#- Start page: the text and images are copied from the old nibbida.com start page (English part). The sections after "Placeholder" are from the design study. -#}
+{#- Start page. The letter and the pictures come from the old nibbida.com start page, with the text rewritten in a more formal publisher voice. -#}
 <section class="hero start-hero">
 <h1>There is a crack in everything,<br>that's how the light gets in.</h1>
 <p class="intro">– Leonard Cohen</p>
 </section>
 <section class="letter" id="welcome">
 <div class="letter-text">
-<h2>The way in is the way out...</h2>
-<p>The Internet can sometimes feel like a giant maze, with websites and apps doing everything they can to suck us in and make us forget our path. I'm happy to tell you that <em>Nibbidā</em> has the exact opposite purpose. It's all about disenchantment here, and no money is involved. If you can find any useful information here in minutes or less, I've done my job correctly.</p>
-<h2>...and the way out is through.</h2>
-<p>This site is for "insiders". For people who want to delve deep into their own minds. People who, like the Buddha, have seen that there <em>is</em> a way out of the labyrinth, if we allow ourselves to walk through it with increasing clarity and wisdom. The main method for this progress is, of course, meditation. So that's the kind of cultivation and practice that forms the main focus here. But there's a lot more that's helpful to know about the path to liberation...</p>
-<p>I hope you like this initiative, and maybe even want to contribute to one of the projects here. May the site make your own exploration of meditation and Dhamma easier, perhaps even more fruitful.</p>
-<p>Warmly welcome!</p>
-<p class="sign"><em>/Jayadhamma Bhikkhu</em></p>
+<h2>The way in is the way out…</h2>
+<p>The Internet can feel like a maze, built to hold our attention and make us forget where we were going. <em>Nibbidā</em> is meant to do the opposite. The word means disenchantment, a quiet turning away from what does not lead to freedom. Here nothing is sold, and nothing is asking for your attention.</p>
+<h2>…and the way out is through.</h2>
+<p>Nibbidā is a small, independent Dhamma publisher. It prepares books and resources for people who want to understand their own minds more deeply, and who, like the Buddha, take it that there <em>is</em> a way out of the labyrinth for those who walk through it with growing clarity and wisdom. Meditation is the core of that work. Around it there is much that helps: the texts, the languages, the places to practice.</p>
+<p>I hope the work here is useful, and that some of you will want to take part in it. May it make your own study and practice a little easier.</p>
+<p class="sign"><em>Jayadhamma Bhikkhu</em></p>
 </div>
 <figure class="letter-fig">{{ frame('/assets/images/start-cat.jpg', 'A long-haired cat with closed eyes, rainbow light falling across its face and body', 1208, 1133) }}</figure>
 </section>
 <section class="projects" id="projects">
-<h2>Dhamma projects</h2>
+<h2>Publications and projects</h2>
+<p class="sub-intro">Books, archives and tools, offered freely.</p>
 <div class="proj-grid">
 {% for p in projects.projects %}
 <article class="proj">
@@ -35,84 +34,88 @@ permalink: /
 {% endfor %}
 </div>
 </section>
-<div class="placeholder-band"><p>Placeholder sections from the design study follow. They will be replaced.</p></div>
 <section class="hero pub">
 <p class="kicker">Independent Dhamma publishing</p>
-<h1>A little room<br>for understanding.</h1>
+<h1>Books for<br>slow reading.</h1>
 <div class="hero-bottom">
-<p class="intro">Books to read slowly.<br>Teachings to return to.</p>
+<p class="intro">Texts and teachings of the Buddhist path, prepared with care and offered freely.</p>
 <div class="actions">
-<a class="button" href="#books">Explore the books</a>
-<a class="quiet-link" href="#reading">Read a passage ↗</a>
+<a class="button" href="{{ '/resources/archive/' | url }}">Explore the archive</a>
+<a class="quiet-link" href="{{ '/about/' | url }}">About Nibbidā ↗</a>
 </div>
 </div>
 </section>
 <section class="feature" id="books">
 <div class="cover">
 <span class="imprint">NIBBIDĀ</span>
-<span class="title">Insight Is<br>the End</span>
+<span class="title">First<br>editions</span>
 <img class="cover-maze" src="{{ '/assets/labyrinth-white.svg' | url }}" alt="">
-<span class="author">AYYA KHEMA</span>
+<span class="author">IN PREPARATION</span>
 </div>
 <div class="feature-copy">
-<p class="kicker">Featured publication</p>
-<h2>Insight Is the End</h2>
-<p class="author">Ayya Khema</p>
-<p>A collection of teachings for reading,<br>reflection, and practice.</p>
+<p class="kicker">In preparation</p>
+<h2>The first Nibbidā editions</h2>
+<p>The first books are being prepared. Until they are ready, the Dhamma-Dāna Archive holds more than 300 freely given books to read or download.</p>
 </div>
 <div class="feature-actions">
-<a class="button" href="#reading">Read a passage</a>
-<a class="quiet-link" href="#book-detail">About this book ↗</a>
+<a class="button" href="{{ '/resources/archive/' | url }}">Open the archive</a>
 </div>
 </section>
 <section class="library">
 <div class="rail-title">
 <h2>Ways into the reading</h2>
-<a href="#reading">Open the reading room ↗</a>
+<a href="{{ '/resources/' | url }}">All resources ↗</a>
 </div>
 <div class="library-list">
 <article>
-<h3>A single passage</h3>
-<p>Begin with a few lines.<br>Leave room to reflect.</p>
-<a href="#reading">Read slowly ↗</a>
+<h3>Begin with the archive</h3>
+<p>Over 300 books, given freely<br>as Dhamma-dāna.</p>
+<a href="{{ '/resources/archive/' | url }}">Open the archive ↗</a>
 </article>
 <article>
-<h3>Return to a book</h3>
-<p>Stay with a teaching<br>over several visits.</p>
-<a href="#book-detail">Explore the book ↗</a>
+<h3>Learn Pali</h3>
+<p>Tools, courses and texts for the<br>language of the early texts.</p>
+<a href="{{ '/resources/pali/' | url }}">Open the guide ↗</a>
 </article>
 <article>
-<h3>About NIBBIDĀ</h3>
-<p>A place for books<br>and Dhamma teachings.</p>
-<a href="#about">About the publisher ↗</a>
+<h3>Listen</h3>
+<p>Talks and guided meditations<br>to stream or download.</p>
+<a href="{{ '/audio/' | url }}">Open the audio page ↗</a>
 </article>
 </div>
 </section>
 <section class="reading" id="reading">
 <div class="reading-head">
-<p class="kicker">02 / A passage to sit with</p>
-<span>Jhāna and wisdom</span>
+<p class="kicker">A passage to sit with</p>
+<span class="passage-count" aria-live="polite"></span>
 </div>
+<div class="passage-list">
+{%- for q in passages.items %}
+<div class="passage{% if loop.first %} on{% endif %}">
 <div class="quote">
-<p class="verse">No jhāna without wisdom,<br>no wisdom without jhāna.<br>One who has both<br>stands close to nibbāna.</p>
+<p class="verse">{{ q.text | trim | replace("\n", "<br>") | safe }}</p>
 {{ "C5-B" | ornament("orn-c5b corner") | safe }}
 </div>
-<p class="note">A little space before the next passage.</p>
-<div class="passages">
-<a href="#books">Back to the book ↑</a>
+<p class="note">{{ q.ref }} · {{ q.topic }}</p>
 </div>
+{%- endfor %}
+</div>
+<div class="passages">
+<button type="button" class="passage-btn" data-dir="-1" hidden>← Previous</button>
+<button type="button" class="passage-btn" data-dir="1" hidden>Next passage →</button>
+</div>
+<p class="note credit-note">{{ passages.credit }}.</p>
 </section>
 <section class="book-detail" id="book-detail">
-<p class="kicker">03 / About the book</p>
+<p class="kicker">About the publisher</p>
 <div class="detail-row">
 <div>
-<h2>Insight Is the End</h2>
-<p>Ayya Khema’s teachings brought together for reading and reflection.</p>
+<h2>Nibbidā</h2>
+<p>Nibbidā is a Dhamma publishing project run by Jayadhamma Bhikkhu, a Theravāda monk in the Forest tradition. It works on its own, without advertising, and relies on the generosity of its readers.</p>
 </div>
 <div class="actions">
-<a class="quiet-link" href="#reading">Read a passage ↗</a>
-<a class="quiet-link" href="#books">Return to the library ↑</a>
+<a class="quiet-link" href="{{ '/about/' | url }}">About ↗</a>
+<a class="quiet-link" href="{{ '/donate/' | url }}">Donate ↗</a>
 </div>
 </div>
 </section>
-<div class="prototype-note">Placeholder. The cover, the supporting text and the verse on this page come from the design study and will be replaced.</div>

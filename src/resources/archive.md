@@ -7,7 +7,7 @@ permalink: /resources/archive/
 description: More than 300 free Buddhist books.
 ---
 
-*There's a lot of Buddhist books given away freely online, so called Dhammadāna. But where to find them, and which one to read? Here's a selection for you with more than 300 books in total, gathered from different online sources.*
+*There are many Buddhist books given away freely online, so called Dhamma-dāna. But where to find them, and which one to read? This is a selection of more than 300 books, gathered from different online sources.*
 
 The books are either from modern meditation teachers and scholars, or translations of the Buddhist canon and its commentaries. The main language in the archive is English, but there's also a Swedish and German folder. Later on, more languages might also be added with the help of others.
 

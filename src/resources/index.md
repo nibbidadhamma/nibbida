@@ -5,22 +5,30 @@ permalink: /resources/
 description: Free resources for Buddhist study and practice.
 ---
 
-### Dhamma Dāna Archive (DDA)
+*Free resources for Buddhist study and practice. Each one is offered without charge.*
+
+### Dhamma-Dāna Archive (DDA)
 
 [Open the archive]({{ '/resources/archive/' | url }})
 
-There's a lot of Buddhist books online given away online, so called *Dhamma-dāna*. But where to find them, and which one to read? Here's a selection for you with more than 300 books in total, all distributed freely as gifts of Dhamma. The books are either from modern meditation teachers and scholars, or translations from the Buddhist canon and other old scriptures. All just one click away to read or download.
+A collection of more than 300 Buddhist books given freely as *Dhamma-dāna*, from modern teachers and scholars and from translations of the early texts. Each is one click from reading or downloading.
 
 ### Meditation Map of the Dhamma (MMD) <small>coming soon</small>
 
-This map will help you find nice meditation centers and monasteries around the world for practicing Buddhist meditation. In the spirit of *one* Dhamma/Dharma, places from many different traditions are included and welcome here. With this map it has now become even more easy to share favorites with fellow meditators, and to find new vistas for exploring the Buddha's ancient path.
+A map of meditation centers and monasteries around the world, from many traditions, for those looking for a place to practice.
 
 ### Pali Resource Guide
 
 [Open the guide]({{ '/resources/pali/' | url }})
 
-A selection of resources for entering the world of the Pali language
+A selection of the most useful online resources for learning Pali, the language of the early Buddhist texts: tools, dictionaries, courses and books.
 
 ### How to make a Myanmar Meditation Visa <small>coming soon</small>
 
-If you are getting serious about your meditation practice, one of the best countries you can travel to is Myanmar (Burma). With its meditation visa (also called "religious visa") you are allowed to stay practically as long as you like in Myanmar, if you decide to extend it! It's a generous  opportunity to dive deeper in the Dhamma, and will give you a first hand experience of Buddhism's particular culture.
+A short guide to applying for the Myanmar meditation visa, which allows a long stay for practice, with notes for applicants in Bangkok.
+
+### Audio Dhamma
+
+[Open the audio page]({{ '/audio/' | url }})
+
+Talks and guided meditations recorded over the years, to stream or download.
