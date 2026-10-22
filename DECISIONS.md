@@ -44,6 +44,15 @@ Recorded from conversations with Jayadhamma Bhikkhu, 22 October 2026. Only what 
 - Rebuilt on this site with no Google Maps. The list view must work without map tiles.
 - A one-time Google Takeout export of the saved places is still needed.
 
+**Other**
+- License: Creative Commons CC BY-NC-ND 4.0 for the text, design and artwork, with the exclusions listed on the License page (`src/license.md`): the font, photographs, quotations, other people's books and tools, and the design study. The official legal text is in `LICENSE`. The copyright holder is written as "Nibbidā Dhamma (Jayadhamma Bhikkhu)"; Jayadhamma should confirm this.
+- Start page and About page: copied from the old nibbida.com (English part); the Swedish half goes to the Swedish site.
+- Wallpaper: the 16-band labyrinth tiles very faintly behind all inner pages.
+
+## Ideas (not decided, not started)
+
+- An outline for phones and tablets. The meaning is not yet clear: a button that stays visible while scrolling and jumps to a section of the page, or an outline of the whole site. Jayadhamma asked to leave it for now.
+
 ## Open
 
 - DDA: which books to host, and the real list of books.

@@ -31,3 +31,6 @@ footer:
   - title: Donate
     url: /donate/
     ready: false
+  - title: License
+    url: /license/
+    ready: true
