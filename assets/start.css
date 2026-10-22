@@ -45,3 +45,15 @@
   .proj-grid{grid-template-columns:1fr;justify-content:stretch}
   .placeholder-band{padding:16px 27px}
 }
+
+/* Passages carousel (see passages.js) */
+.js-rot .passage:not(.on){display:none}
+.passage + .passage{margin-top:34px}
+.js-rot .passage + .passage{margin-top:0}
+.passage-btn{font:17px EB,Georgia,serif;color:var(--accent);background:transparent;border:1px solid var(--accent);padding:8px 16px;min-height:44px;cursor:pointer}
+.passage-btn:hover{background:var(--accent);color:var(--bg)}
+.passage-btn[hidden]{display:none}
+.reading .passages{flex-wrap:wrap;gap:14px}
+.credit-note{font-size:15px}
+.verse.long{font-size:26px;line-height:1.5;margin-bottom:44px}
+@media(max-width:700px){.verse.long{font-size:20px}}
