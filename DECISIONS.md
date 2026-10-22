@@ -29,6 +29,8 @@ Recorded from conversations with Jayadhamma Bhikkhu, 22 October 2026. Only what 
 - Links between nibbida.com and dhammadana.se (for example to hosted books) are acceptable.
 - Hosting only the books that are allowed. Jayadhamma is considering keeping the hosted books in the `dhammadana` repository, because of the planned Swedish translation of the resources.
 - A bookshelf with generated covers in the site's own style. Each book has a title, author and download button.
+- Shelf look: covers colored by folder (option B in `previews/bookshelf/`), with a search box and folder buttons. Cover imprint: DHAMMA-DĀNA.
+- Book data: one small text file per book. The real list of books is to be solved later (the handover suggests listing a synced Drive folder on Jayadhamma's computer).
 - Most buttons link to the original publisher. A book is hosted on this site only after its terms are confirmed.
 - Root texts may be stored in a DDA folder in the repository, but only texts whose source and license are known. A public repository's history stays public after a file is deleted.
 - Each book's catalogue entry records its source, its terms, and who agreed and when. Jayadhamma fills these in. Permission is asked from the publisher; the publishers' friendliness is not permission.
@@ -39,6 +41,6 @@ Recorded from conversations with Jayadhamma Bhikkhu, 22 October 2026. Only what 
 
 ## Open
 
-- DDA: the book data format, the cover approach, and which books to host.
+- DDA: which books to host, and the real list of books.
 - Whether GitHub Pages works from a private repository, or the repositories must become public.
 - Remaining questions in `SURVEY.md`, section 5 (for example the Swedish page split, the "Jag erkänner!" form, image licenses, and audio hosting).
