@@ -9,10 +9,10 @@ recommended:
     - {name: "SuttaCentral", url: "https://suttacentral.net/", text: "Main hub for early Buddhist texts with multiple translations, parallels, segmented Pāli, and tools."}
     - {name: "Access to Insight (archive)", url: "https://www.accesstoinsight.org/", text: "Classic collection of Theravāda sutta translations and essays (archived but still widely referenced)."}
     - {name: "Dhamma Talks (Thanissaro Bhikkhu)", url: "https://www.dhammatalks.org/suttas/", text: "Large collection of sutta translations, books, and essays from the Thai Forest tradition."}
-    - {name: "Dharma Seed", url: "http://www.dharmaseed.org/", text: "Dhamma talks from most teachers."}
+    - {name: "Dharma Seed", url: "https://www.dharmaseed.org/", text: "Dhamma talks from most teachers."}
     - {name: "Digital Pāli Dictionary (DPDict)", url: "https://dpdict.net/", text: "Modern, searchable Pāli–English dictionary, useful alongside any Pāli text. Online and offline."}
     - {name: "Buddhist Publication Society (BPS)", url: "https://bps.lk/", text: "Sri Lankan publisher offering a vast library of downloadable Theravāda books and booklets."}
-    - {name: "Tricycle", url: "http://www.tricycle.com/", text: "A well-known Buddhist magazine."}
+    - {name: "Tricycle", url: "https://tricycle.org/", text: "A well-known Buddhist magazine."}
     - {name: "Dhamma Wheel", url: "https://www.dhammawheel.com/", text: "Large English-language discussion forum focused on Theravāda Buddhism."}
 groups:
   - title: "Canonical links"
@@ -21,11 +21,11 @@ groups:
       - title: "Translations (Pāli Nikāyas & related)"
         items:
           - {name: "SuttaCentral", url: "https://suttacentral.net/", text: "Main hub for early Buddhist texts with multiple translations, parallels, segmented Pāli, and tools."}
-          - {name: "The Buddha’s Words", url: "http://thebuddhaswords.net/", text: "Clean HTML versions of many Pāli suttas in English and Pāli, organised by Nikāya."}
+          - {name: "The Buddha’s Words", url: "https://thebuddhaswords.net/", text: "Clean HTML versions of many Pāli suttas in English and Pāli, organised by Nikāya."}
           - {name: "Dhamma.gift", url: "https://dhamma.gift/", text: "Lightweight reader that aggregates sutta texts from multiple sources; good for quick reading."}
           - {name: "Dhamma Talks (Thanissaro Bhikkhu)", url: "https://www.dhammatalks.org/suttas/", text: "Large collection of sutta translations, books, and essays from the Thai Forest tradition."}
           - {name: "Ancient Buddhist Texts", url: "https://ancient-buddhist-texts.net/Buddhist-Texts/index.htm", text: "Pāli and English texts, metrical editions, and study material by Ānandajoti Bhikkhu."}
-          - {name: "Pa-Auk Tipiṭaka Project", url: "http://tipitaka.paauksociety.org/", text: "Online Pāli Canon from the Pa-Auk tradition, with some supporting material."}
+          - {name: "Pa-Auk Tipiṭaka Project", url: "https://tipitaka.paauksociety.org/", text: "Online Pāli Canon from the Pa-Auk tradition, with some supporting material."}
           - {name: "SuttaFriends", url: "https://suttafriends.org/sutta/", text: "Accessible English translations of Pāli suttas, with some Pāli text and topic-based navigation."}
           - {name: "Dharmafarer (Sutta Discovery)", url: "https://www.themindingcentre.org/dharmafarer/sutta-titles-2", text: "Annotated translations and in-depth study notes by Piya Tan; strong focus on early suttas."}
           - {name: "Hillside Hermitage – Suttas", url: "https://suttas.hillsidehermitage.org/", text: "Suttas and talks from Ajahn Nyanamoli and the Hillside Hermitage community, practice-focused."}
@@ -40,7 +40,7 @@ groups:
           - {name: "Tipitaka.org", url: "https://www.tipitaka.org", text: "Online Pāli Canon in multiple scripts, with line-by-line text navigation."}
           - {name: "Digital Pāli Reader (web)", url: "https://www.digitalpalireader.online/_dprhtml/index.html", text: "Browser-based version of the classic DPR: instant word lookup and dictionary integration."}
           - {name: "Tipitaka Pali Reader", url: "https://americanmonk.org/tipitaka-pali-reader/", text: "Reader app with integrated dictionaries and search, designed for Pāli Canon study."}
-          - {name: "Tipitaka.app", url: "https://tipitaka.app/index.html", text: "Mobile-friendly web app for browsing the Pāli Canon."}
+          - {name: "Tipitaka.app", url: "https://tipitaka.app/", text: "Mobile-friendly web app for browsing the Pāli Canon."}
           - {name: "Tipitaka Sutta (sutta.org)", url: "https://tipitaka.sutta.org", text: "Alternative front-end to Pāli texts with its own navigation structure."}
           - {name: "Digital Pāli Dictionary (DPDict)", url: "https://dpdict.net/", text: "Modern, searchable Pāli–English dictionary, useful alongside any Pāli text. Online and offline."}
           - {name: "PTS Converter (Dhamma-Dāna)", url: "https://pts.dhamma-dana.de", text: "Converts between PTS page references and standard sutta references for the main Nikāyas."}
@@ -50,13 +50,13 @@ groups:
           - {name: "Dharma Pearls", url: "https://canon.dharmapearls.net/", text: "High-quality English translations of Chinese Āgama collections and related early Buddhist texts."}
           - {name: "BDK America (Bukkyō Dendō Kyōkai)", url: "https://www.bdkamerica.org/tripitaka-list/", text: "Translations from the Chinese canon, including some Āgama and early Mahāyāna texts."}
           - {name: "Dharmamitra", url: "https://dharmamitra.org/", text: "Extensive collection of English translations from the Chinese Buddhist Canon by Bhikshu Dharmamitra, covering Mahāyāna Sūtras, Vinaya, and Śāstras."}
-          - {name: "Bhikkhu Anālayo – meditation instructions", url: "http://agamaresearch.dila.edu.tw/bhikkhu-analayo-meditation-instructions", text: "A page from the Āgama Research Group (Dharma Drum Institute) that provides meditation‑instruction audio and transcripts by Bhikkhu Anālayo, covering practices like Satipaṭṭhāna (mindfulness), Ānāpānasati (breath mindfulness), the Brahmavihāras, and emptiness."}
+          - {name: "Bhikkhu Anālayo – meditation instructions", url: "https://agamaresearch.dila.edu.tw/bhikkhu-analayo-meditation-instructions", text: "A page from the Āgama Research Group (Dharma Drum Institute) that provides meditation‑instruction audio and transcripts by Bhikkhu Anālayo, covering practices like Satipaṭṭhāna (mindfulness), Ānāpānasati (breath mindfulness), the Brahmavihāras, and emptiness."}
       - title: "Audio – listening to the suttas"
         items:
           - {name: "PaliAudio.com", url: "https://www.paliaudio.com/", text: "Professional readings of Pāli Nikāya suttas (often based on SuttaCentral translations)."}
           - {name: "Sutta Readings", url: "https://www.suttareadings.net/", text: "Curated audio readings of suttas from various translators and sources."}
           - {name: "SuttaCentral Voice", url: "https://www.sc-voice.net/?src=sc#/wiki/toc", text: "SuttaCentral's audio front-end: listen to Pāli and translations with navigation synced to segments."}
-          - {name: "Audio Tipitaka (Audtip)", url: "http://audtip.org/", text: "Long-term project offering audio versions of sutta translations; open to volunteers."}
+          - {name: "Audio Tipitaka (Audtip)", url: "https://audtip.org/", text: "Long-term project offering audio versions of sutta translations; open to volunteers."}
           - {name: "Dharma Audiobooks", url: "http://dharmaaudiobooks.com/", text: "Professionally produced audiobooks of suttas, talks, and classic Buddhist writings."}
       - title: "Helper tools & research"
         items:
@@ -115,17 +115,17 @@ groups:
       - {name: "Buddhist Door", url: "https://www.buddhistdoor.net/", text: "Buddhist journal and multimedia platform."}
       - {name: "Dharma Gates", url: "https://www.dharma-gates.org", text: "Promoting Buddhist meditation for young adults."}
       - {name: "BuddhaDharma", url: "https://www.lionsroar.com/buddhadharma/", text: "Online articles about Buddhist practice and study."}
-      - {name: "Tricycle", url: "http://www.tricycle.com/", text: "A well-known Buddhist magazine."}
+      - {name: "Tricycle", url: "https://tricycle.org/", text: "A well-known Buddhist magazine."}
       - {name: "Amaravati Publications", url: "https://amaravati.org/dhamma-books/", text: "The biggest Ajahn Chah monastery in England, which also publishes many of its books."}
       - {name: "Suan Mokkh", url: "https://www.suanmokkh.org/", text: "Books, audio, poems, and more by Ajahn Buddhadasa."}
       - {name: "Ashintejaniya.org", url: "https://ashintejaniya.org/", text: "Home of Sayadaw U Tejaniya, with books available in many languages."}
-      - {name: "Aim Well", url: "http://aimwell.org/", text: "Books and Buddhist information by Bhikkhu Pesala."}
+      - {name: "Aim Well", url: "https://aimwell.org/", text: "Books and Buddhist information by Bhikkhu Pesala."}
   - title: "Podcasts and Dhamma talks"
     id: podcasts
     items:
       - {name: "Be Here Now Network", url: "https://beherenownetwork.com/", text: "A network of mindfulness and spirituality podcasts."}
-      - {name: "Dharma Seed", url: "http://www.dharmaseed.org/", text: "Dhamma talks from most teachers."}
-      - {name: "Audio Dharma", url: "http://www.audiodharma.org/", text: "Dhamma talks from most teachers can be downloaded here."}
+      - {name: "Dharma Seed", url: "https://www.dharmaseed.org/", text: "Dhamma talks from most teachers."}
+      - {name: "Audio Dharma", url: "https://www.audiodharma.org/", text: "Dhamma talks from most teachers can be downloaded here."}
       - {name: "Pariyatti podcasts", url: "https://pariyatti.org/Free-Resources/Podcasts/", text: "A selection of different video and audio podcasts."}
       - {name: "Insight Myanmar", url: "https://insightmyanmar.org/", text: "Podcast about Dhamma and meditation in Myanmar."}
   - title: "Needs a Google account"
@@ -146,4 +146,4 @@ groups:
           - {name: "Pātimokkha Pali Study", url: "https://notebooklm.google.com/notebook/36c7a255-1b16-455c-bcde-14574d8f0dd2", text: "sources include: Bhikkhu Vibhaṅga Pāli–English (Ven. Brahmali); Pātimokkha Analysis — normal and extended versions (Ven. Ñāṇatusita); Buddhist Monastic Code I and II (Ven. Ṭhānissaro); SBS Pātimokkha Analysis", google: true}
           - {name: "Anupubbasikkhā Gradual Illumination", url: "https://notebooklm.google.com/notebook/317a21a5-267c-4153-9543-b5bcfdcc6625?artifactId=3dcc3a5a-9b0b-488b-aa00-aa60764f6340", text: "everything from Tipiṭaka (mūla, atthakathā, ṭīkā) related to the Gradual Training, compiled by Ā Virāga.", google: true}
           - {name: "Pāli Tipiṭaka", url: "https://notebooklm.google.com/notebook/8e21e964-8804-437d-a355-ed93666058ca", text: "Tipiṭaka mūla", google: true}
-          - {name: "Visuddhimagga", url: "https://notebooklm.google.com/notebook/13187f85-d540-42c1-8ea8-5f723c5afab3 |", google: true}
+          - {name: "Visuddhimagga", url: "https://notebooklm.google.com/notebook/13187f85-d540-42c1-8ea8-5f723c5afab3", google: true}
