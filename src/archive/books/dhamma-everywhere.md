@@ -4,6 +4,8 @@ author: Sayadaw U Tejaniya
 folder: various
 language: English
 recommended: true
+cover_image: /assets/covers/dhamma-everywhere.webp
+cover_credit: "Cover design, layout and photography Hor Tuck Loon. Shown as a small thumbnail."
 available: PDF · EPUB
 pending: true
 formats: []

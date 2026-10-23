@@ -4,6 +4,8 @@ author: Bhikkhu Ñāṇamoli
 folder: various
 language: English
 recommended: true
+cover_image: /assets/covers/life-of-the-buddha.webp
+cover_credit: "Cover design Amy Cao, cover photograph Jerry Davis (BPS Pariyatti Edition). Shown as a small thumbnail."
 available: PDF
 pending: true
 formats: []

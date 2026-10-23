@@ -4,6 +4,8 @@ author: Ajaan Nico Jotidhammo Thera
 folder: various
 language: English
 recommended: true
+cover_image: /assets/covers/anatomy-of-awakening.webp
+cover_credit: "Gosingārāma Mountain Hermitage. Shown as a small thumbnail."
 available: PDF
 pending: true
 formats: []

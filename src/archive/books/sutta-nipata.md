@@ -4,6 +4,8 @@ author: Laurence Khantipalo Mills (translator)
 folder: canon
 language: English
 recommended: true
+cover_image: /assets/covers/sutta-nipata.webp
+cover_credit: "Cover of the printed edition; the artist is not named. Shown as a small thumbnail."
 available: Online · downloads
 formats:
 - name: Online

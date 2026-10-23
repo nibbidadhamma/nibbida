@@ -4,6 +4,8 @@ author: Bhikkhu Anon
 folder: dictionaries
 language: English
 recommended: true
+cover_image: /assets/covers/concise-buddhist-monastic-code.webp
+cover_credit: "Design by the author. Shown as a small thumbnail."
 available: PDF
 pending: true
 formats: []

@@ -4,6 +4,8 @@ author: Bhikkhu Sujato (translator)
 folder: canon
 language: English
 recommended: true
+cover_image: /assets/covers/numbered-discourses.webp
+cover_credit: "SuttaCentral. Shown as a small thumbnail."
 available: Online · downloads
 formats:
 - name: Online

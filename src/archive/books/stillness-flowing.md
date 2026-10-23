@@ -4,6 +4,8 @@ author: Ajahn Jayasaro
 folder: various
 language: English
 recommended: true
+cover_image: /assets/covers/stillness-flowing.webp
+cover_credit: "Cover photograph Gunt Susangkarakan, Panyaprateep Foundation. Shown as a small thumbnail."
 available: PDF · EPUB · MOBI
 formats:
 - name: Download

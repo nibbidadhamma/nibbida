@@ -11,7 +11,7 @@ plain: true
 <p class="subtitle">{{ author }}</p>
 {{ "D3-B" | ornament("orn-d3b orn-title") | safe }}
 <div class="detail">
-<div class="detail-cover">{{ cover(title, author, fo.tone, "lg") }}</div>
+<div class="detail-cover">{{ cover(title, author, fo.tone, "lg", "", cover_image | coverFile) }}</div>
 <div class="detail-info">
 {% if about %}<p class="about">{{ about }}</p>{% endif %}
 <dl>
@@ -20,6 +20,7 @@ plain: true
 <dt>Formats</dt><dd>{% if available %}{{ available }}{% else %}{% for f in formats %}{{ f.name }}{% if not loop.last %}, {% endif %}{% endfor %}{% endif %}</dd>
 {% if source %}<dt>Source</dt><dd>{% if source_url %}<a href="{{ source_url }}">{{ source }}</a>{% else %}{{ source }}{% endif %}</dd>{% endif %}
 {% if terms %}<dt>Terms</dt><dd>{{ terms }}</dd>{% endif %}
+{% if cover_credit and (cover_image | coverFile) %}<dt>Cover</dt><dd>{{ cover_credit }}</dd>{% endif %}
 </dl>
 <p class="buttons">
 {%- for f in formats %}

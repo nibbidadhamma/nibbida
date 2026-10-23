@@ -4,6 +4,8 @@ author: Ajahn Sucitto
 folder: various
 language: English
 recommended: true
+cover_image: /assets/covers/breathing-like-a-buddha.webp
+cover_credit: "Amaravati Publications. Shown as a small thumbnail."
 available: Download
 formats:
 - name: Download

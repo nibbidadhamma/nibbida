@@ -4,6 +4,8 @@ author: Bhikkhu Bodhi
 folder: various
 language: English
 recommended: true
+cover_image: /assets/covers/dhamma-reflections.webp
+cover_credit: "Buddhist Publication Society. Shown as a small thumbnail."
 available: PDF
 pending: true
 formats: []

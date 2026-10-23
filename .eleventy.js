@@ -77,6 +77,9 @@ module.exports = function (eleventyConfig) {
     return books.sort((a, b) => String(a.data.title).localeCompare(String(b.data.title), "en", { sensitivity: "base" }));
   });
 
+  // A cover picture is used only if its file exists; otherwise the generated cover is shown.
+  eleventyConfig.addFilter("coverFile", (p) => (p && fs.existsSync("src" + p) ? p : ""));
+
   // Only the folders that hold at least one book (the archive shows no empty folder buttons).
   eleventyConfig.addFilter("usedFolders", (list, books) => list.filter((f) => books.some((b) => b.data.folder === f.slug)));
 

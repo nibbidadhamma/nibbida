@@ -164,3 +164,8 @@ The page text was copied unchanged, except for these points:
 - Each place in `map.yaml` can have `website` (its own site). The card on the map and the list then show "Visit the website ↗" next to "Open in Google Maps ↗". Panditarama Lumbini has none yet (its address, panditarama-lumbini.info, could not be confirmed).
 - Names on the map: OpenStreetMap's tiles write each country's names in its own language. For English only, use a tile style without labels (for example CARTO `light_nolabels` and `dark_nolabels`, free key from carto.com/basemaps/apikey), put the addresses and the key in `tiles:` in `map.yaml` and set `labels: false`. The page then writes English names of countries (`src/assets/countries-en.json`) and of the places itself.
 - With light and dark tile addresses (`url` and `dark_url`), the map follows the Light/Dark button.
+
+## Cover pictures
+
+- A book can show its real cover: set `cover_image: /assets/covers/NAME.webp` and `cover_credit:` in its file. The picture is used only when the file exists in `src/assets/covers/`; otherwise the generated cover is shown. Covers are shown unchanged, as small thumbnails (about 420 px high, WebP), with the credit on the book's page.
+- The 13 recommended books are already set up. Their thumbnails are a separate download (`dda-covers-thumbnails.zip`) and must be uploaded to `src/assets/covers/` by Jayadhamma (decision of 2026-10-23: all 13 as thumbnails, since they are free Dhamma publications). To remove one cover, delete its file.

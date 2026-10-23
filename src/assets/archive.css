@@ -41,3 +41,6 @@
   .detail dl{grid-template-columns:90px 1fr}
 }
 .detail-info .about{font-size:20px;color:var(--secondary);margin:0 0 18px}
+/* Real cover pictures: shown unchanged, standing on the shelf */
+.cv.has-img{background:none;padding:0;align-items:center;justify-content:flex-end}
+.cv.has-img .cvi{display:block;max-width:100%;max-height:100%;width:auto;height:auto;box-shadow:0 2px 6px rgba(0,0,0,.35)}

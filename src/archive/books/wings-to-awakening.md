@@ -4,6 +4,8 @@ author: Ṭhānissaro Bhikkhu
 folder: various
 language: English
 recommended: true
+cover_image: /assets/covers/wings-to-awakening.webp
+cover_credit: "Metta Forest Monastery. Shown as a small thumbnail."
 available: EPUB · PDF
 formats:
 - name: Download

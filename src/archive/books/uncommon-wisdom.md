@@ -4,6 +4,8 @@ author: Ajaan Dick Sīlaratano
 folder: various
 language: English
 recommended: true
+cover_image: /assets/covers/uncommon-wisdom.webp
+cover_credit: "Forest Dhamma Monastery. Shown as a small thumbnail."
 available: PDF · EPUB
 formats:
 - name: Download

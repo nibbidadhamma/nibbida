@@ -4,6 +4,8 @@ author: Bhikkhu P. A. Payutto, translated by Robin Philip Moore
 folder: various
 language: English
 recommended: true
+cover_image: /assets/covers/buddhadhamma.webp
+cover_credit: "Buddhadhamma Foundation. Shown as a small thumbnail."
 available: PDF · EPUB · MOBI
 formats:
 - name: Download
