@@ -178,3 +178,10 @@ The page text was copied unchanged, except for these points:
 - The 13 recommended books are already set up. Their thumbnails are a separate download (`dda-covers-thumbnails.zip`) and must be uploaded to `src/assets/covers/` by Jayadhamma (decision of 2026-10-23: all 13 as thumbnails, since they are free Dhamma publications). To remove one cover, delete its file.
 
 - Google Maps is shown in one place only: the button on the place card (the card you get by clicking a pin or a name in the list). The card says that the button leaves nibbida.com. The old "Open the map in Google Maps" section and the share images were removed from the page; the list shows plain names.
+
+## Archive collections
+
+- A collection is a book file with `collection: true` and a list `items:` instead of `formats:`. On the shelf it shows a picture of book spines (colors follow the folder) and "Collection · N books". Its page lists every book in it, each with buttons. The search box also finds the books inside a collection.
+- Each item has `title`, optional `author` and `about`, and `formats` (`name`, `url`, optional `label`). Items are shown in the order written: larger works first.
+- Example: `src/archive/books/anandajoti-bhikkhu-canon-texts.md`. The build warns if a collection has no items or an item has no title or format.
+- Items link to files in the Dhamma-Dāna Drive archive. Nothing is hosted on this site.
