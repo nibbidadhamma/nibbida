@@ -64,7 +64,7 @@ module.exports = function (eleventyConfig) {
     let samples = 0;
     books.forEach((b) => {
       const d = b.data;
-      const missing = ["title", "author", "folder", "formats"].filter((k) => !d[k] || (k === "formats" && !d.formats.length));
+      const missing = ["title", "author", "folder", "formats"].filter((k) => !d[k] || (k === "formats" && !d.formats.length && !d.pending));
       if (missing.length) console.warn(`[archive] WARNING ${b.inputPath}: missing ${missing.join(", ")}`);
       if (d.folder && !known.includes(d.folder)) console.warn(`[archive] WARNING ${b.inputPath}: unknown folder "${d.folder}" (use one of: ${known.join(", ")})`);
       (d.formats || []).forEach((f) => {
@@ -76,6 +76,9 @@ module.exports = function (eleventyConfig) {
     if (samples) console.warn(`[archive] NOTE: ${samples} sample entries are still present. Delete the files marked "sample: true" before publishing.`);
     return books.sort((a, b) => String(a.data.title).localeCompare(String(b.data.title), "en", { sensitivity: "base" }));
   });
+
+  // Only the folders that hold at least one book (the archive shows no empty folder buttons).
+  eleventyConfig.addFilter("usedFolders", (list, books) => list.filter((f) => books.some((b) => b.data.folder === f.slug)));
 
   // The continents that have at least one place, in the order of first appearance.
   eleventyConfig.addFilter("continents", (items) => [...new Set(items.map((i) => i.continent))]);

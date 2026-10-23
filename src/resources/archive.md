@@ -9,6 +9,8 @@ description: More than 300 free Buddhist books.
 
 *There are many Buddhist books given away freely online, so called Dhamma-dāna. But where to find them, and which one to read? This is a selection of more than 300 books, gathered from different online sources.*
 
+The full collection is on Google Drive: [Open the full archive on Google Drive](https://drive.google.com/drive/folders/1s-rswO7c5EMIc5LBfcrccVbLBXK7MBwB). Below are the books chosen for this site, starting with the recommended ones.
+
 The books are either from modern meditation teachers and scholars, or translations of the Buddhist canon and its commentaries. The main language in the archive is English, but there’s also a Swedish and German folder. Later on, more languages might also be added with the help of others.
 
 > *"Dhammadāna is the noblest among practices of gifts, as it lies in offering the knowledge of the dhamma to sentient beings. Gift (dāna) of the teaching on reality (dhamma)."*  

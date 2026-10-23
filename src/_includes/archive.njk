@@ -7,8 +7,9 @@ plain: true
 <div class="ctl" hidden>
 <label class="srch"><span>Search the archive</span><input type="search" placeholder="Title or author"></label>
 <div class="chips" role="group" aria-label="Folders">
-<button type="button" class="chip" data-folder="all" aria-pressed="true">All</button>
-{%- for f in archive.folders %}
+<button type="button" class="chip" data-folder="recommended" aria-pressed="true">Recommended</button>
+<button type="button" class="chip" data-folder="all" aria-pressed="false">All</button>
+{%- for f in archive.folders | usedFolders(collections.books) %}
 <button type="button" class="chip" data-folder="{{ f.slug }}" aria-pressed="false">{{ f.title }}</button>
 {%- endfor %}
 </div>
@@ -17,9 +18,9 @@ plain: true
 <div class="shelf" id="shelf">
 {%- for b in collections.books %}
 {%- set fo = b.data.folder | folderInfo(archive.folders) %}
-<a class="bk" href="{{ b.url | url }}" aria-label="{{ b.data.title }}, by {{ b.data.author }}" data-folder="{{ b.data.folder }}" data-search="{{ (b.data.title ~ ' ' ~ b.data.author) | plain }}">
+<a class="bk" href="{{ b.url | url }}" aria-label="{{ b.data.title }}, by {{ b.data.author }}" data-folder="{{ b.data.folder }}" data-rec="{% if b.data.recommended %}1{% else %}0{% endif %}" data-search="{{ (b.data.title ~ ' ' ~ b.data.author) | plain }}">
 {{ cover(b.data.title, b.data.author, fo.tone) }}
-<span class="fm">{% for f in b.data.formats %}{{ f.name }}{% if not loop.last %} · {% endif %}{% endfor %}</span>
+<span class="fm">{% if b.data.available %}{{ b.data.available }}{% else %}{% for f in b.data.formats %}{{ f.name }}{% if not loop.last %} · {% endif %}{% endfor %}{% endif %}{% if b.data.pending %} · file soon{% endif %}</span>
 </a>
 {%- endfor %}
 </div>

@@ -150,3 +150,11 @@ The page text was copied unchanged, except for these points:
 - Continent buttons and a real map (Leaflet with OpenStreetMap tiles). The map loads only when the visitor presses "Show the map"; the list of places works without JavaScript.
 - Every place in `src/_data/map.yaml` (under `highlights:`) needs a `continent`. A button appears for each continent that has a place. Places without `lat` and `lng` are listed but have no pin.
 - To change the map style or provider, edit `tiles:` in the same file (`url`, optional `dark_url`, and `attribution`). OpenStreetMap's own server is meant for light use; for more traffic use a provider with a key and set its credit line.
+
+## Archive entries (recommended shelf)
+
+- Each book is one file in `src/archive/books/`. Fields: `title`, `author`, `folder` (various, canon, chanting, dictionaries, swedish, german), `language`, `recommended: true` (shown under the "Recommended" button), `available` (the formats shown on the shelf), `formats` (the buttons: `name`, `label`, `url`), `about`, `source`, `source_url`, `terms`.
+- A book whose file is not on this site yet has `pending: true` and no `formats`. The page says "The file will be added here soon." To host a file, put it in `src/archive/files/`, add a format with `url: /archive/files/NAME.pdf`, set `hosted: true` and a `permission:` note, and remove `pending`.
+- The shelf starts on "Recommended"; a search always looks through all books. Folder buttons appear only for folders that have a book.
+- The first 13 entries are the recommended titles (data in `import/dda-recommended.yaml`). Linked at the publisher: Numbered Discourses, Stillness Flowing, Breathing Like a Buddha, Wings to Awakening, the Jātaka, Sutta Nipāta, Buddhadhamma, Uncommon Wisdom. File to be added: The Life of the Buddha, The Anatomy of Awakening, The Concise Buddhist Monastic Code, Dhamma Everywhere, Dhamma Reflections. The covers are generated; real covers need the publishers' permission.
+- The eight sample books were deleted.

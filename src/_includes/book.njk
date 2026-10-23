@@ -13,19 +13,22 @@ plain: true
 <div class="detail">
 <div class="detail-cover">{{ cover(title, author, fo.tone, "lg") }}</div>
 <div class="detail-info">
+{% if about %}<p class="about">{{ about }}</p>{% endif %}
 <dl>
 <dt>Folder</dt><dd>{{ fo.title }}</dd>
 <dt>Language</dt><dd>{{ language or "English" }}</dd>
-<dt>Formats</dt><dd>{% for f in formats %}{{ f.name }}{% if not loop.last %}, {% endif %}{% endfor %}</dd>
+<dt>Formats</dt><dd>{% if available %}{{ available }}{% else %}{% for f in formats %}{{ f.name }}{% if not loop.last %}, {% endif %}{% endfor %}{% endif %}</dd>
 {% if source %}<dt>Source</dt><dd>{% if source_url %}<a href="{{ source_url }}">{{ source }}</a>{% else %}{{ source }}{% endif %}</dd>{% endif %}
 {% if terms %}<dt>Terms</dt><dd>{{ terms }}</dd>{% endif %}
 </dl>
 <p class="buttons">
 {%- for f in formats %}
-<a class="btn{% if hosted %} local{% endif %}" href="{% if hosted %}{{ f.url | url }}{% else %}{{ f.url }}{% endif %}">Download {{ f.name }}</a>
+<a class="btn{% if hosted %} local{% endif %}" href="{% if hosted %}{{ f.url | url }}{% else %}{{ f.url }}{% endif %}">{{ f.label or ("Download " ~ f.name) }}</a>
 {%- endfor %}
 </p>
-{% if hosted %}
+{% if pending %}
+<p class="note-line">The file will be added here soon.{% if source_url %} Meanwhile, see <a href="{{ source_url }}">{{ source }}</a>.{% endif %}</p>
+{% elif hosted %}
 <p class="note-line">Hosted here with permission.{% if permission %} {{ permission }}{% endif %}</p>
 {% else %}
 <p class="note-line">This book is on the publisher's website. The button opens it there.</p>
