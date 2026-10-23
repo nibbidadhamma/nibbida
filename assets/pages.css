@@ -65,3 +65,9 @@
   .page.entries h2{font-size:24px}
   .footer-links a,.footer-links .soon{display:inline-flex;align-items:center;min-height:44px}
 }
+
+/* Meditation Map: list of places */
+.page ul.places{list-style:none;margin:0 0 20px;padding:0;columns:2;column-gap:36px;max-width:680px}
+.page ul.places li{break-inside:avoid;padding:6px 0;font-size:20px}
+.page ul.places span{display:block;font-size:16px;color:var(--secondary)}
+@media(max-width:700px){.page ul.places{columns:1}}
