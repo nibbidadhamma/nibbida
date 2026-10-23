@@ -6,3 +6,4 @@ Lists made from outside sources, to be used when the real book list is chosen. T
 - `dda-books.csv`: the same list with a PDF and an EPUB of the same name merged into one row.
 
 The folder "Upload folder - Add your favorite books!" is open for other people to add to, so check what is in it before using it.
+- `map-candidates.csv`: 82 Buddhist places found in Jayadhamma's Google reviews and saved places (2026-10-23), kept for later additions to the Meditation Map. Not used now: the map shows the 70 places of the old Google list only.

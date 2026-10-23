@@ -93,7 +93,7 @@ module.exports = function (eleventyConfig) {
   // The continents that have a place, in a fixed order.
   eleventyConfig.addFilter("placeContinents", (places) => {
     const order = ["Asia", "Europe", "North America", "South America", "Africa", "Oceania"];
-    const have = new Set(places.map((p) => p.data.continent));
+    const have = new Set(places.map((p) => p.data.continent).filter(Boolean));
     return order.filter((c) => have.has(c)).concat([...have].filter((c) => !order.includes(c)));
   });
   // The data the map page script needs, as JSON.

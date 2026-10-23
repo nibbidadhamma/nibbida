@@ -37,6 +37,11 @@ description: A map of meditation centers and monasteries from many Buddhist trad
 {%- endif %}{% endfor %}
 </optgroup>
 {%- endfor %}
+<optgroup label="Other places">
+{%- for p in collections.places %}{% if not p.data.continent %}
+<option value="{{ p.fileSlug }}">{{ p.data.name }}</option>
+{%- endif %}{% endfor %}
+</optgroup>
 </select>
 </label>
 </div>
