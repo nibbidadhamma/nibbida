@@ -176,3 +176,5 @@ The page text was copied unchanged, except for these points:
 
 - A book can show its real cover: set `cover_image: /assets/covers/NAME.webp` and `cover_credit:` in its file. The picture is used only when the file exists in `src/assets/covers/`; otherwise the generated cover is shown. Covers are shown unchanged, as small thumbnails (about 420 px high, WebP), with the credit on the book's page.
 - The 13 recommended books are already set up. Their thumbnails are a separate download (`dda-covers-thumbnails.zip`) and must be uploaded to `src/assets/covers/` by Jayadhamma (decision of 2026-10-23: all 13 as thumbnails, since they are free Dhamma publications). To remove one cover, delete its file.
+
+- Google Maps is shown in one place only: the button on the place card (the card you get by clicking a pin or a name in the list). The card says that the button leaves nibbida.com. The old "Open the map in Google Maps" section and the share images were removed from the page; the list shows plain names.

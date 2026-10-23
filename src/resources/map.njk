@@ -18,12 +18,6 @@ description: A map of meditation centers and monasteries from many Buddhist trad
 
 <p><em>May your practice be fruitful, wherever you go.</em></p>
 
-<h2 id="open-the-map">Open the map</h2>
-<p class="buttons"><a class="btn" href="{{ map.map_url }}">Open the map in Google Maps</a></p>
-<p>The map is a saved list in Google Maps. It opens in the Google Maps app or website.</p>
-<p>Images you can use to share the map online:
-{%- for i in map.share_images %} <a href="{{ i.url }}">{{ i.label }}</a>{% if not loop.last %} and{% endif %}{% endfor %}.</p>
-
 <h2 id="places">Places</h2>
 <div class="mapui" data-tiles="{{ map.tiles | dump }}">
 <div class="cont-bar" role="group" aria-label="Show places by continent" hidden>
@@ -55,7 +49,7 @@ description: A map of meditation centers and monasteries from many Buddhist trad
 <summary class="map-count"></summary>
 <ul class="places">
 {%- for p in collections.places %}
-<li data-cont="{{ p.data.continent }}" data-slug="{{ p.fileSlug }}"><a href="{{ p.data.google }}">{{ p.data.name }}</a> <span>{{ p.data.line }}{% if p.data.website %} · <a href="{{ p.data.website }}">Website ↗</a>{% endif %}</span></li>
+<li data-cont="{{ p.data.continent }}" data-slug="{{ p.fileSlug }}"><a class="pick" href="#{{ p.fileSlug }}">{{ p.data.name }}</a> <span>{{ p.data.line }}{% if p.data.website %} · <a href="{{ p.data.website }}">Website ↗</a>{% endif %}</span></li>
 {%- endfor %}
 </ul>
 </details>

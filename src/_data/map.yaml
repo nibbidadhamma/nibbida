@@ -15,10 +15,6 @@ tiles:
   attribution: "© OpenStreetMap contributors © CARTO"
   labels: false
   max_zoom: 18
-map_url: https://goo.gl/maps/vLWGQWL9VHfK5evE9
-share_images:
-  - {label: with name, url: "https://drive.google.com/file/d/1jEtR99kl3w877TS3-oHylojjMBS3Qh1g/view?usp=sharing"}
-  - {label: without name, url: "https://drive.google.com/file/d/1IMSBI0DjHNk0k2oj7TsDykmDAcIa840y/view?usp=sharing"}
 other_maps:
   - {name: "Monasteries and Meditation Centers in Sri Lanka", url: "https://dhammavinayapatipada.com/monasteries-in-sri-lanka/"}
   - {name: "Goenka Vipassana Centers Worldwide", url: "https://www.dhamma.org/en/maps"}
