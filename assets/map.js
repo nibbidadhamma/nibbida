@@ -33,7 +33,8 @@
   function render() {
     var p = shown[idx];
     if (!p) { card.innerHTML = ""; return; }
-    var h = (p.continent ? '<p class="tag">' + esc(p.continent) + '</p>' : '') + '<h3>' + esc(p.name) + '</h3>';
+    var tg = [p.continent].concat(p.traditions || []).filter(Boolean).join(" · ");
+    var h = (tg ? '<p class="tag">' + esc(tg) + '</p>' : '') + '<h3>' + esc(p.name) + '</h3>';
     if (p.line) h += '<p class="line">' + esc(p.line) + '</p>';
     if (p.text) h += '<p class="over">' + esc(p.text) + '</p>';
     if (p.website) h += '<p class="pop-btns"><a class="pop-btn" href="' + p.website + '">Visit the website ↗</a></p>';

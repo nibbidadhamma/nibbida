@@ -60,3 +60,28 @@
 .place-card .leave{margin:0 0 16px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
 .place-card .leave span{font-size:15px;color:var(--secondary)}
 .place-card .pop-btn.ext{border-style:dashed}
+
+/* Grid of small place cards (the list of all places) */
+.g-grid{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.g-grid li[hidden]{display:none}
+.g-card{display:flex;flex-direction:column;gap:6px;height:100%;border:1px solid var(--line);padding:16px 18px;text-decoration:none;color:var(--ink);background:var(--bg);min-height:44px}
+.g-card:hover{border-color:var(--accent)}
+.g-card:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.g-card b{font:400 22px/1.15 EB,Georgia,serif}
+.g-line{font-size:17px;color:var(--secondary)}
+.g-over{font-size:17px;line-height:1.35;display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden}
+.g-tag{font:11px Arial,sans-serif;letter-spacing:.17em;text-transform:uppercase;color:var(--accent)}
+@media(max-width:600px){.g-grid{grid-template-columns:1fr}}
+.page ul.places.g-grid{columns:auto;max-width:none;margin:12px 0 0;display:grid}
+.page ul.places.g-grid li{padding:0;font-size:inherit}
+.page ul.places.g-grid span{display:block}
+.page ul.places.g-grid .g-over{display:-webkit-box}
+.page ul.places.g-grid .g-tag{font-size:11px;color:var(--accent)}
+.page ul.places.g-grid .g-line{font-size:17px;color:var(--secondary)}
+.page ul.places.g-grid a.g-card,.page ul.places.g-grid a.g-card:hover{text-decoration:none;color:var(--ink);border-bottom:1px solid var(--line)}
+.page ul.places.g-grid a.g-card:hover{border-color:var(--accent)}
+.page ul.places.g-grid a.g-card *{text-decoration:none}
+.page ul.places.g-grid .g-tag{border:0;padding:0;background:none;align-self:flex-start;color:var(--accent)}
+.page ul.places.g-grid .g-line{color:var(--secondary)}
+.page ul.places.g-grid .g-over{color:var(--ink)}
+.page ul.places.g-grid b{font-weight:400}
