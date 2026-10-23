@@ -10,7 +10,8 @@
   var chips = [].slice.call(ctl.querySelectorAll(".chip"));
   var count = ctl.querySelector(".count");
   var none = document.querySelector(".none");
-  var folder = "all";
+  var pressed = ctl.querySelector('.chip[aria-pressed="true"]');
+  var folder = pressed ? pressed.getAttribute("data-folder") : "all";
   function norm(s) {
     return s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
   }
@@ -18,8 +19,12 @@
     var words = norm(input.value).split(/\s+/).filter(Boolean);
     var shown = 0;
     books.forEach(function (b) {
+      // A search looks through all books, also when "Recommended" is selected.
+      var inFolder =
+        folder === "all" ||
+        (folder === "recommended" ? words.length > 0 || b.getAttribute("data-rec") === "1" : b.getAttribute("data-folder") === folder);
       var ok =
-        (folder === "all" || b.getAttribute("data-folder") === folder) &&
+        inFolder &&
         words.every(function (w) {
           return b.getAttribute("data-search").indexOf(w) > -1;
         });

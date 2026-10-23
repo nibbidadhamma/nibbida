@@ -40,3 +40,4 @@
   .detail{flex-direction:column;padding:22px}
   .detail dl{grid-template-columns:90px 1fr}
 }
+.detail-info .about{font-size:20px;color:var(--secondary);margin:0 0 18px}
