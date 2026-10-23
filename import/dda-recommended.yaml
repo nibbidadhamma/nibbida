@@ -16,8 +16,14 @@ titles:
     hosting: "Link only, unless BPS / Pariyatti agree."
     cover: "Found (PDF page 1). Credit in the book: cover design Amy Cao, cover photograph Jerry Davis."
   - n: 2
-    title: "Aṅguttara Nikāya (two candidates in the archive; which one do you mean?)"
+    title: "Aṅguttara Nikāya"
+    decision: "Jayadhamma meant SuttaCentral's version, which is Bhikkhu Sujato's \"Numbered Discourses\" (first candidate below). Open question: earlier he asked not to use Sujato's translation for the start-page quotes; confirm that this does not also apply to the book list."
     candidates:
+      - title: "Numbered Discourses (Aṅguttara Nikāya), SuttaCentral"
+        author: "Bhikkhu Sujato (translation)"
+        publisher: "SuttaCentral. The EPUB in the archive does not state a publisher, date or license; SuttaCentral releases its translations as CC0 (verify on the edition page)."
+        drive_file: "Numbered Discourses - Bhikkhu Sujato.epub (also \"Angutarra Nikaya – Bhikkhu Sujato.epub\")"
+        cover: "Not checked."
       - title: "Handful of Leaves, Volume Four: an Anthology from the Aṅguttara Nikāya"
         author: "Ṭhānissaro Bhikkhu (translation)"
         publisher: "Metta Forest Monastery, © 2014, revised edition 2017"
@@ -52,7 +58,7 @@ titles:
     isbn: "verify"
     pages: "verify"
     drive_file: "Not in the archive."
-    cover: "Not obtained. Please save the cover from the Amaravati page, or I use a generated cover."
+    cover: "Found: https://cdn.amaravati.org/wp-content/uploads/2022/04/27/Breathing-Like-Buddha-Cover-1536x1536.jpg (square, 1536 px; a feather, title and author). Provided by Jayadhamma. Use only with Amaravati's agreement."
   - n: 5
     title: "The Wings to Awakening: An Anthology from the Pali Canon"
     author: "Ṭhānissaro Bhikkhu"
@@ -90,8 +96,9 @@ titles:
         free_source: "https://www.dhammatalks.org/books/HandfulOfLeaves/"
         drive_file: "Sutta Nipata - Thanissaro Bhikkhu.epub"
         cover: "Found (EPUB)."
-      - title: "Sutta Nipāta"
+      - title: "Sutta Nipāta (SuttaCentral edition; this is the one Jayadhamma meant)"
         author: "Laurence Khantipalo Mills (translation)"
+        cover_note: "Jayadhamma found a printed cover on Amazon (https://www.amazon.sg/Sutta-Nipata-Laurence-Khantipalo/dp/1329360206). I have not copied Amazon's picture; the SuttaCentral edition page is the better source."
         publisher: "Published by SuttaCentral, first edition 2015"
         isbn: "978-1-921842-17-7"
         pages: 355
