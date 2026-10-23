@@ -27,7 +27,7 @@
 .footer-links{display:flex;flex-wrap:wrap;gap:6px 26px}
 .footer-links .soon small{display:block;margin:0}
 @media(max-width:700px){
-  .page{margin:16px 12px;padding:32px 22px 28px}
+  .page{margin:16px 18px;padding:32px 22px 28px}
   .page h1{font-size:42px}
   .page .subtitle{font-size:22px}
   .page p,.page li{font-size:20px}
@@ -48,12 +48,13 @@
 .orn-end{margin:56px 0 6px}
 .orn-between{margin:8px 0 26px}
 
-/* Wallpaper on inner pages: the 16-band labyrinth, tiled so the pattern continues in every direction.
-   Each theme has its own very faint file (wallpaper-dark.svg, wallpaper-light.svg); the strength is the
-   fill-opacity inside those files. A plain background image is used because it works in every browser. */
+/* Wallpaper on inner pages: one fixed picture the size of the screen (labyrinths and compass emblems, composition C).
+   It does not repeat and does not move when the page scrolls. Each theme has its own very faint file
+   (wallpaper-dark.svg, wallpaper-light.svg); the strength is the fill-opacity inside those files. On a portrait
+   screen (phones) the tall version is used. A plain background image is used because it works in every browser. */
 .site.plain{position:relative;isolation:isolate}
-.site.plain::before{content:"";position:absolute;top:0;right:0;bottom:0;left:0;z-index:-1;pointer-events:none;background:var(--wall-img) 0 0/1000px 1000px repeat}
-@media(max-width:700px){.site.plain::before{background-size:700px 700px}}
+.site.plain::before{content:"";position:fixed;top:0;right:0;bottom:0;left:0;z-index:-1;pointer-events:none;background:var(--wall-img) center/cover no-repeat}
+@media(max-aspect-ratio:1/1){.site.plain::before{background-image:var(--wall-tall)}}
 
 /* The footer of inner pages sits on a solid band, so the wallpaper never shows behind text. */
 .site.plain .footer{background:var(--bg);border-top:1px solid var(--line)}
