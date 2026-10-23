@@ -1,0 +1,44 @@
+---
+layout: page.njk
+title: Meditation Map of the Dhamma
+eyebrow: Resources
+subtitle: Nice places around the world for practicing Buddhist meditation
+permalink: /resources/map/
+description: A map of meditation centers and monasteries from many Buddhist traditions.
+---
+<p><em>With the Meditation Map of the Dhamma it is now even easier to share gems and find new places for exploring the Buddha’s theory and practice.</em></p>
+
+<p>In the spirit of <em>one</em> Dhamma/Dharma, places from different traditions are included here. Some of the places give you an opportunity to practice meditation for an extensive period of time, perhaps even for years, on a donation basis. This is truly an amazing gift for those who want to go deeper in the Dhamma. It is also generosity and <em>dāna</em>-culture at its best. Please allow yourself to become a part of this generous spirit when you enter these communities, and try to find a way to give something back. Remember the preciousness of your stay, for yourself and for future meditators.</p>
+
+<p>Share the map as you like. If you want to contribute a new place, give an update, or even write a review of a place on the list, please <a href="mailto:nibbidadhamma@gmail.com">write to me</a>.</p>
+
+<p><em>May your practice be fruitful, wherever you go.</em></p>
+
+<h2 id="open-the-map">Open the map</h2>
+<p class="buttons"><a class="btn" href="{{ map.map_url }}">Open the map in Google Maps</a></p>
+<p>The map is a saved list in Google Maps. It opens in the Google Maps app or website.</p>
+<p>Images you can use to share the map online:
+{%- for i in map.share_images %} <a href="{{ i.url }}">{{ i.label }}</a>{% if not loop.last %} and{% endif %}{% endfor %}.</p>
+
+<h2 id="a-few-well-known-places">A few well-known places</h2>
+<ul class="places">
+{%- for p in map.highlights %}
+<li><a href="{{ p.url }}">{{ p.name }}</a> <span>{{ p.region }}</span></li>
+{%- endfor %}
+</ul>
+
+<h2 id="other-maps-and-lists">Other maps and lists</h2>
+<p>If you are interested in a particular group or school, you might want to look at some of these other, less inclusive maps and lists:</p>
+<ul>
+{%- for m in map.other_maps %}
+<li><a href="{{ m.url }}">{{ m.name }}</a></li>
+{%- endfor %}
+</ul>
+
+<h2 id="not-sure-where-to-go">Not sure where to go?</h2>
+<p>If you feel you need more information before contacting a place or planning a journey, first have a look at some of the guides in the <a href="{{ '/resources/archive/' | url }}">Dhamma-Dāna Archive</a>, like these:</p>
+<ul>
+{%- for g in map.guides %}
+<li><a href="{{ g.url }}">{{ g.name }}</a></li>
+{%- endfor %}
+</ul>

@@ -13,7 +13,7 @@ resources:
     ready: true
   - title: Meditation Map of the Dhamma
     url: /resources/map/
-    ready: false
+    ready: true
   - title: Pali Resource Guide
     url: /resources/pali/
     ready: true

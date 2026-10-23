@@ -137,3 +137,10 @@ The page text was copied unchanged, except for these points:
 
 - The site went from 4.5 MB to 1.7 MB. The two fonts are now WOFF2 files (about 150 KB each instead of 520–590 KB), and the pictures are WebP, at most 900 px wide.
 - The original pictures are kept in `design/original-images/` and the original TTF fonts in `design/original-fonts/`. To add a picture, save it as WebP (about 800 px wide, quality about 75) in `src/assets/images/`.
+
+## Meditation Map page
+
+- `/resources/map/` is built from `src/resources/map.njk` and the data file `src/_data/map.yaml`. The map itself is the saved Google Maps list (`map_url`). The page also lists the eleven "popular highlights" from the old page, other maps and lists, and guides from the archive.
+- Text changes from the old page (grammar only): "it's now even more easy" → "it is now even easier", "The places gives" → "give", "who wants" → "who want", "try find" → "try to find", "contribute with" → "contribute", and the contact address is nibbidadhamma@gmail.com instead of the old one.
+- The highlights have coordinates (lat/lng, taken from the Google Maps links) for a map on this site later. Na Uyana has none yet.
+- To add a place, add a line under `highlights:`.

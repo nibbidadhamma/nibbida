@@ -15,7 +15,9 @@ description: Free resources for Buddhist study and practice.
 
 A collection of more than 300 Buddhist books given freely as *Dhamma-dāna*, from modern teachers and scholars and from translations of the early texts. Each is one click from reading or downloading.
 
-## Meditation Map of the Dhamma (MMD) <small>coming soon</small>
+## Meditation Map of the Dhamma (MMD)
+
+[Open the map page]({{ '/resources/map/' | url }})
 
 A map of meditation centers and monasteries around the world, from many traditions, for those looking for a place to practice.
 

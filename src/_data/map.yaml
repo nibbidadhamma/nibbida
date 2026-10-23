@@ -1,0 +1,32 @@
+# Meditation Map of the Dhamma page. The map itself is a saved list in Google Maps.
+# The places below are the "popular highlights" from the old nibbida.com page.
+# lat/lng are for a map on this site later (not shown yet). Leave them empty if unknown.
+map_url: https://goo.gl/maps/vLWGQWL9VHfK5evE9
+share_images:
+  - {label: with name, url: "https://drive.google.com/file/d/1jEtR99kl3w877TS3-oHylojjMBS3Qh1g/view?usp=sharing"}
+  - {label: without name, url: "https://drive.google.com/file/d/1IMSBI0DjHNk0k2oj7TsDykmDAcIa840y/view?usp=sharing"}
+highlights:
+  - {name: "Shwe Oo Min Meditation Centre", region: Myanmar, url: "https://maps.app.goo.gl/Tqi3KVuVEYNyxWBWA", lat: 17.0006218, lng: 96.153482}
+  - {name: "Kopan Monastery", region: Nepal, url: "https://maps.app.goo.gl/YCHpnEaEJDHPW21s7", lat: 27.7426594, lng: 85.3649135}
+  - {name: "IMS Retreat Center", region: East USA, url: "https://maps.app.goo.gl/MTsRJRTPWkB8Kmyu7", lat: 42.4510747, lng: -72.1241713}
+  - {name: "Amaravati Buddhist Monastery", region: England, url: "https://maps.app.goo.gl/HA1U5wZnHdUzbudx8", lat: 51.7921944, lng: -0.521799}
+  - {name: "Plum Village", region: Southern France, url: "https://maps.app.goo.gl/3AzkyaT9wqhGc4a27", lat: 44.7451543, lng: 0.3419802}
+  - {name: "Panditarama Vipassana Meditation Center", region: Nepal, url: "https://maps.app.goo.gl/N1ZyU7K1B4L3xA2r6", lat: 27.4756662, lng: 83.2747174}
+  - {name: "Gaia House", region: England, url: "https://maps.app.goo.gl/rQjkXYEi3KidHdo9A", lat: 50.518594, lng: -3.666885}
+  - {name: "Tushita Meditation Centre", region: North India, url: "https://maps.app.goo.gl/ox3TAdQtXUWLif7T9", lat: 32.2435392, lng: 76.3256249}
+  - {name: "Pa-Auk Tawya Meditation Centre", region: Myanmar, url: "https://maps.app.goo.gl/zgz5ewfHVEgSNeeS6", lat: 21.9111929, lng: 96.3849161}
+  - {name: "Na Uyana Forest Monastery", region: Sri Lanka, url: "https://nauyana.org/", lat: , lng: }
+  - {name: "Insight Meditation Center", region: West USA, url: "https://maps.app.goo.gl/2YRauK65sU1UFoUU7", lat: 37.4872647, lng: -122.2395937}
+other_maps:
+  - {name: "Monasteries and Meditation Centers in Sri Lanka", url: "https://dhammavinayapatipada.com/monasteries-in-sri-lanka/"}
+  - {name: "Goenka Vipassana Centers Worldwide", url: "https://www.dhamma.org/en/maps"}
+  - {name: "Triratna Buddhist Centres Worldwide", url: "https://goo.gl/maps/oWymdhNSdJ5P6Vo16"}
+  - {name: "Insight Meditation Worldwide", url: "https://www.insightmeditation.org/world-wide-centres"}
+  - {name: "Maps of Ancient Buddhist Asia", url: "https://www.ancient-buddhist-texts.net/Maps/index.htm"}
+  - {name: "Forest Sangha Monasteries", url: "https://www.forestsangha.org/monasteries-overview"}
+guides:
+  - {name: "Meditation in South East Asia", url: "https://drive.google.com/file/d/1rbLGmXzlHpfbu_-7866_N9iSFar8gfUw/view?usp=drivesdk"}
+  - {name: "Wolf’s Guide to Dharma Retreats and Teachings", url: "https://docs.google.com/document/d/1cGTI8-M-XQQTSnMyqBRiskpFLMapc-FfO1S-2wxHYXw/edit?usp=drivesdk"}
+  - {name: "Myanmar Guide for Dhamma Seekers", url: "https://drive.google.com/file/d/1P6hLfk8ruXEjxbnaPQAaRh6ptjcINz5z/view?usp=drivesdk"}
+  - {name: "Teaching and Training in a Pa-Auk Forest Monastery", url: "https://drive.google.com/file/d/17NpeGzd-hYJNqoPS5oOntDiXbeDa9L_d/view?usp=drivesdk"}
+  - {name: "Sri Lanka Forest Monasteries and Meditation Centres", url: "https://drive.google.com/file/d/1PVJcaRVsxFp_aQAkjoraoQTUMx9ud72D/view?usp=drivesdk"}

@@ -4,7 +4,8 @@ projects:
     image: project-map.webp
     alt: "Old world map with the title Meditation Map of the Dhamma"
     url: /resources/map/
-    ready: false
+    ready: true
+    link: "Open the map page"
     tagline: "A map of places to practice Buddhist meditation."
     text: >-
       A map of meditation centers and monasteries around the world, from many traditions, for those looking for a place to practice.
