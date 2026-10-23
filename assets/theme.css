@@ -15,6 +15,7 @@
   --ld: inline;
   --ll: none;
   --wall-img: url('wallpaper-dark.svg');
+  --wall-tall: url('wallpaper-tall-dark.svg');
   --duo-dark: #1f1b17;
   --duo-light: #d9cbaa;
   --mat: #9c8f74;
@@ -32,6 +33,7 @@
     --ld: none;
     --ll: inline;
     --wall-img: url('wallpaper-light.svg');
+    --wall-tall: url('wallpaper-tall-light.svg');
     --duo-dark: #4a2d17;
     --duo-light: #f2e6cb;
     --mat: #E8DCC5;
@@ -49,6 +51,7 @@
   --ld: none;
   --ll: inline;
   --wall-img: url('wallpaper-light.svg');
+  --wall-tall: url('wallpaper-tall-light.svg');
   --duo-dark: #4a2d17;
   --duo-light: #f2e6cb;
   --mat: #E8DCC5;
