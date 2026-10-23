@@ -158,3 +158,9 @@ The page text was copied unchanged, except for these points:
 - The shelf starts on "Recommended"; a search always looks through all books. Folder buttons appear only for folders that have a book.
 - The first 13 entries are the recommended titles (data in `import/dda-recommended.yaml`). Linked at the publisher: Numbered Discourses, Stillness Flowing, Breathing Like a Buddha, Wings to Awakening, the Jātaka, Sutta Nipāta, Buddhadhamma, Uncommon Wisdom. File to be added: The Life of the Buddha, The Anatomy of Awakening, The Concise Buddhist Monastic Code, Dhamma Everywhere, Dhamma Reflections. The covers are generated; real covers need the publishers' permission.
 - The eight sample books were deleted.
+
+## Map: website buttons and English names
+
+- Each place in `map.yaml` can have `website` (its own site). The card on the map and the list then show "Visit the website ↗" next to "Open in Google Maps ↗". Panditarama Lumbini has none yet (its address, panditarama-lumbini.info, could not be confirmed).
+- Names on the map: OpenStreetMap's tiles write each country's names in its own language. For English only, use a tile style without labels (for example CARTO `light_nolabels` and `dark_nolabels`, free key from carto.com/basemaps/apikey), put the addresses and the key in `tiles:` in `map.yaml` and set `labels: false`. The page then writes English names of countries (`src/assets/countries-en.json`) and of the places itself.
+- With light and dark tile addresses (`url` and `dark_url`), the map follows the Light/Dark button.

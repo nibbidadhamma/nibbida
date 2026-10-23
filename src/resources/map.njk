@@ -39,7 +39,7 @@ description: A map of meditation centers and monasteries from many Buddhist trad
 <p class="map-count" aria-live="polite"></p>
 <ul class="places">
 {%- for p in map.highlights %}
-<li data-cont="{{ p.continent }}"><a href="{{ p.url }}">{{ p.name }}</a> <span>{{ p.region }}</span></li>
+<li data-cont="{{ p.continent }}"><a href="{{ p.url }}">{{ p.name }}</a> <span>{{ p.region }}{% if p.website and p.website != p.url %} · <a href="{{ p.website }}">Website ↗</a>{% endif %}</span></li>
 {%- endfor %}
 </ul>
 <script type="application/json" class="map-data">{{ map.highlights | dump | safe }}</script>

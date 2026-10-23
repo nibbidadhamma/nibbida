@@ -1,30 +1,36 @@
 # Meditation Map of the Dhamma page. The map itself is a saved list in Google Maps.
 # The places below are the "popular highlights" from the old nibbida.com page.
 # lat/lng are for a map on this site later (not shown yet). Leave them empty if unknown.
-# Map tiles. The default is OpenStreetMap's own server (no key). For a nicer look, a provider with a key
-# can be used instead: set "url" (and "dark_url" for a separate dark map) and the credit line "attribution".
+# Map tiles. The default is OpenStreetMap's own server (no key). Its labels are in the local language of each country.
+# For English only, use a map WITHOUT labels and set labels: false: the page then writes the names of countries and
+# places in English itself. Example with CARTO (free key from https://carto.com/basemaps/apikey, sent by email):
+#   url: "https://basemaps.cartocdn.com/rastertiles/light_nolabels/{z}/{x}/{y}.png?key=YOUR_KEY"
+#   dark_url: "https://basemaps.cartocdn.com/rastertiles/dark_nolabels/{z}/{x}/{y}.png?key=YOUR_KEY"
+#   attribution: "© OpenStreetMap contributors © CARTO"
+#   labels: false
 # Without "dark_url" the dark theme darkens the tiles with a filter.
 tiles:
   url: "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
   dark_url: ""
   attribution: "© OpenStreetMap contributors"
+  labels: true
   max_zoom: 18
 map_url: https://goo.gl/maps/vLWGQWL9VHfK5evE9
 share_images:
   - {label: with name, url: "https://drive.google.com/file/d/1jEtR99kl3w877TS3-oHylojjMBS3Qh1g/view?usp=sharing"}
   - {label: without name, url: "https://drive.google.com/file/d/1IMSBI0DjHNk0k2oj7TsDykmDAcIa840y/view?usp=sharing"}
 highlights:
-  - {continent: "Asia", name: "Shwe Oo Min Meditation Centre", region: Myanmar, url: "https://maps.app.goo.gl/Tqi3KVuVEYNyxWBWA", lat: 17.0006218, lng: 96.153482}
-  - {continent: "Asia", name: "Kopan Monastery", region: Nepal, url: "https://maps.app.goo.gl/YCHpnEaEJDHPW21s7", lat: 27.7426594, lng: 85.3649135}
-  - {continent: "North America", name: "IMS Retreat Center", region: East USA, url: "https://maps.app.goo.gl/MTsRJRTPWkB8Kmyu7", lat: 42.4510747, lng: -72.1241713}
-  - {continent: "Europe", name: "Amaravati Buddhist Monastery", region: England, url: "https://maps.app.goo.gl/HA1U5wZnHdUzbudx8", lat: 51.7921944, lng: -0.521799}
-  - {continent: "Europe", name: "Plum Village", region: Southern France, url: "https://maps.app.goo.gl/3AzkyaT9wqhGc4a27", lat: 44.7451543, lng: 0.3419802}
+  - {continent: "Asia", name: "Shwe Oo Min Meditation Centre", region: Myanmar, website: "https://ashintejaniya.org/retreat", url: "https://maps.app.goo.gl/Tqi3KVuVEYNyxWBWA", lat: 17.0006218, lng: 96.153482}
+  - {continent: "Asia", name: "Kopan Monastery", region: Nepal, website: "https://kopanmonastery.com", url: "https://maps.app.goo.gl/YCHpnEaEJDHPW21s7", lat: 27.7426594, lng: 85.3649135}
+  - {continent: "North America", name: "IMS Retreat Center", region: East USA, website: "https://www.dharma.org", url: "https://maps.app.goo.gl/MTsRJRTPWkB8Kmyu7", lat: 42.4510747, lng: -72.1241713}
+  - {continent: "Europe", name: "Amaravati Buddhist Monastery", region: England, website: "https://amaravati.org", url: "https://maps.app.goo.gl/HA1U5wZnHdUzbudx8", lat: 51.7921944, lng: -0.521799}
+  - {continent: "Europe", name: "Plum Village", region: Southern France, website: "https://plumvillage.org", url: "https://maps.app.goo.gl/3AzkyaT9wqhGc4a27", lat: 44.7451543, lng: 0.3419802}
   - {continent: "Asia", name: "Panditarama Vipassana Meditation Center", region: Nepal, url: "https://maps.app.goo.gl/N1ZyU7K1B4L3xA2r6", lat: 27.4756662, lng: 83.2747174}
-  - {continent: "Europe", name: "Gaia House", region: England, url: "https://maps.app.goo.gl/rQjkXYEi3KidHdo9A", lat: 50.518594, lng: -3.666885}
-  - {continent: "Asia", name: "Tushita Meditation Centre", region: North India, url: "https://maps.app.goo.gl/ox3TAdQtXUWLif7T9", lat: 32.2435392, lng: 76.3256249}
-  - {continent: "Asia", name: "Pa-Auk Tawya Meditation Centre", region: Myanmar, url: "https://maps.app.goo.gl/zgz5ewfHVEgSNeeS6", lat: 21.9111929, lng: 96.3849161}
-  - {continent: "Asia", name: "Na Uyana Forest Monastery", region: Sri Lanka, url: "https://nauyana.org/", lat: , lng: }
-  - {continent: "North America", name: "Insight Meditation Center", region: West USA, url: "https://maps.app.goo.gl/2YRauK65sU1UFoUU7", lat: 37.4872647, lng: -122.2395937}
+  - {continent: "Europe", name: "Gaia House", region: England, website: "https://gaiahouse.co.uk", url: "https://maps.app.goo.gl/rQjkXYEi3KidHdo9A", lat: 50.518594, lng: -3.666885}
+  - {continent: "Asia", name: "Tushita Meditation Centre", region: North India, website: "https://tushita.info", url: "https://maps.app.goo.gl/ox3TAdQtXUWLif7T9", lat: 32.2435392, lng: 76.3256249}
+  - {continent: "Asia", name: "Pa-Auk Tawya Meditation Centre", region: Myanmar, website: "https://www.paaukforestmonastery.org/at-pyin-oo-lwin", url: "https://maps.app.goo.gl/zgz5ewfHVEgSNeeS6", lat: 21.9111929, lng: 96.3849161}
+  - {continent: "Asia", name: "Na Uyana Forest Monastery", region: Sri Lanka, website: "https://nauyana.org", url: "https://nauyana.org/", lat: , lng: }
+  - {continent: "North America", name: "Insight Meditation Center", region: West USA, website: "https://www.insightmeditationcenter.org", url: "https://maps.app.goo.gl/2YRauK65sU1UFoUU7", lat: 37.4872647, lng: -122.2395937}
 other_maps:
   - {name: "Monasteries and Meditation Centers in Sri Lanka", url: "https://dhammavinayapatipada.com/monasteries-in-sri-lanka/"}
   - {name: "Goenka Vipassana Centers Worldwide", url: "https://www.dhamma.org/en/maps"}
