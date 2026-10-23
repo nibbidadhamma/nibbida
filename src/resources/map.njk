@@ -24,25 +24,42 @@ description: A map of meditation centers and monasteries from many Buddhist trad
 <p>Images you can use to share the map online:
 {%- for i in map.share_images %} <a href="{{ i.url }}">{{ i.label }}</a>{% if not loop.last %} and{% endif %}{% endfor %}.</p>
 
-<h2 id="a-few-well-known-places">A few well-known places</h2>
+<h2 id="places">Places</h2>
 <div class="mapui" data-tiles="{{ map.tiles | dump }}">
 <div class="cont-bar" role="group" aria-label="Show places by continent" hidden>
 <button type="button" class="cont-btn" data-cont="all" aria-pressed="true">All places</button>
-{%- for c in map.highlights | continents %}
+{%- for c in collections.places | placeContinents %}
 <button type="button" class="cont-btn" data-cont="{{ c }}" aria-pressed="false">{{ c }}</button>
 {%- endfor %}
 </div>
+<div class="place-jump" hidden>
+<label>Jump to a place
+<select>
+<option value="">Choose a place…</option>
+{%- for c in collections.places | placeContinents %}
+<optgroup label="{{ c }}">
+{%- for p in collections.places %}{% if p.data.continent == c %}
+<option value="{{ p.fileSlug }}">{{ p.data.name }}</option>
+{%- endif %}{% endfor %}
+</optgroup>
+{%- endfor %}
+</select>
+</label>
+</div>
 <div class="map-panel" hidden>
-<div class="map-start"><button type="button" class="map-show">Show the map</button><p>The map is drawn with OpenStreetMap. It loads only when you press the button.</p></div>
+<div class="map-start"><button type="button" class="map-show">Show the map</button><p>The map is drawn with OpenStreetMap and CARTO. It loads only when you press the button.</p></div>
 <div class="map-canvas" role="region" aria-label="Map of the places" hidden></div>
 </div>
-<p class="map-count" aria-live="polite"></p>
+<article class="place-card" aria-live="polite" hidden></article>
+<details class="all-list" open>
+<summary class="map-count"></summary>
 <ul class="places">
-{%- for p in map.highlights %}
-<li data-cont="{{ p.continent }}"><a href="{{ p.url }}">{{ p.name }}</a> <span>{{ p.region }}{% if p.website and p.website != p.url %} · <a href="{{ p.website }}">Website ↗</a>{% endif %}</span></li>
+{%- for p in collections.places %}
+<li data-cont="{{ p.data.continent }}" data-slug="{{ p.fileSlug }}"><a href="{{ p.data.google }}">{{ p.data.name }}</a> <span>{{ p.data.line }}{% if p.data.website %} · <a href="{{ p.data.website }}">Website ↗</a>{% endif %}</span></li>
 {%- endfor %}
 </ul>
-<script type="application/json" class="map-data">{{ map.highlights | dump | safe }}</script>
+</details>
+<script type="application/json" class="map-data">{{ collections.places | placesData | safe }}</script>
 </div>
 
 <h2 id="other-maps-and-lists">Other maps and lists</h2>

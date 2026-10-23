@@ -83,8 +83,27 @@ module.exports = function (eleventyConfig) {
   // Only the folders that hold at least one book (the archive shows no empty folder buttons).
   eleventyConfig.addFilter("usedFolders", (list, books) => list.filter((f) => books.some((b) => b.data.folder === f.slug)));
 
-  // The continents that have at least one place, in the order of first appearance.
-  eleventyConfig.addFilter("continents", (items) => [...new Set(items.map((i) => i.continent))]);
+  // Places of the Meditation Map: one file per place in src/map/places/. Highlights first, then by name.
+  eleventyConfig.addCollection("places", (api) =>
+    api.getFilteredByTag("place").sort((a, b) =>
+      (b.data.highlight ? 1 : 0) - (a.data.highlight ? 1 : 0) ||
+      String(a.data.name).localeCompare(String(b.data.name), "en", { sensitivity: "base" })
+    )
+  );
+  // The continents that have a place, in a fixed order.
+  eleventyConfig.addFilter("placeContinents", (places) => {
+    const order = ["Asia", "Europe", "North America", "South America", "Africa", "Oceania"];
+    const have = new Set(places.map((p) => p.data.continent));
+    return order.filter((c) => have.has(c)).concat([...have].filter((c) => !order.includes(c)));
+  });
+  // The data the map page script needs, as JSON.
+  eleventyConfig.addFilter("placesData", (places) =>
+    JSON.stringify(places.map((p) => ({
+      slug: p.fileSlug, name: p.data.name, continent: p.data.continent, line: p.data.line || "",
+      lat: p.data.lat ?? null, lng: p.data.lng ?? null, google: p.data.google || "", website: p.data.website || "",
+      highlight: !!p.data.highlight, text: String(p.rawInput || "").replace(/^---[\s\S]*?---/, "").trim()
+    })))
+  );
 
   eleventyConfig.amendLibrary("md", (md) => {
     md.core.ruler.push("nibbida_rules", (state) => {

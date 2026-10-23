@@ -159,6 +159,13 @@ The page text was copied unchanged, except for these points:
 - The first 13 entries are the recommended titles (data in `import/dda-recommended.yaml`). Linked at the publisher: Numbered Discourses, Stillness Flowing, Breathing Like a Buddha, Wings to Awakening, the Jātaka, Sutta Nipāta, Buddhadhamma, Uncommon Wisdom. File to be added: The Life of the Buddha, The Anatomy of Awakening, The Concise Buddhist Monastic Code, Dhamma Everywhere, Dhamma Reflections. The covers are generated; real covers need the publishers' permission.
 - The eight sample books were deleted.
 
+## Meditation Map: one file per place
+
+- Each place is a file in `src/map/places/` (87 so far). Fields: `name` (in English), `continent`, `line` (where it is, for example "Near London, England"), `lat` and `lng` (leave out if unknown: the place is listed but has no pin), `google` (link), `website` (optional), `highlight: true` (shown first). The text under the `---` is the short overview shown on the card, for example "The biggest and most accessible monastery in the Ajahn Chah tradition. Dana-based."
+- To add a place, copy a file, change the name and the fields, and commit. The map, the cards, the list, the dropdown and the continent buttons all follow the files. A link like `/resources/map/#amaravati-buddhist-monastery` opens that place.
+- Most places have only the location line so far. The overview sentences are for Jayadhamma to add. The 87 places come from the old page's highlights and from his Google reviews and saved places (Buddhist places only; no hotels or private places). A few names were translated to English (Golden Temple, Mahabodhi Temple, International Theravāda Buddhist Missionary University, Sirisampanno Buddhist Monastery, Wat Thai Norway).
+- On the page: a card shows one place at a time with Previous and Next (like the quotes on the start page). It follows the continent buttons, the "Jump to a place" menu and the pins; pins that are close together merge into numbered circles.
+
 ## Map: website buttons and English names
 
 - Each place in `map.yaml` can have `website` (its own site). The card on the map and the list then show "Visit the website ↗" next to "Open in Google Maps ↗". Panditarama Lumbini has none yet (its address, panditarama-lumbini.info, could not be confirmed).
