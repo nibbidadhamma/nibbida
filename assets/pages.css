@@ -52,7 +52,8 @@
    Each theme has its own very faint file (wallpaper-dark.svg, wallpaper-light.svg); the strength is the
    fill-opacity inside those files. A plain background image is used because it works in every browser. */
 .site.plain{position:relative;isolation:isolate}
-.site.plain::before{content:"";position:absolute;top:0;right:0;bottom:0;left:0;z-index:-1;pointer-events:none;background:var(--wall-img) 0 0/760px 760px repeat}
+.site.plain::before{content:"";position:absolute;top:0;right:0;bottom:0;left:0;z-index:-1;pointer-events:none;background:var(--wall-img) 0 0/1500px 1500px repeat}
+@media(max-width:700px){.site.plain::before{background-size:1000px 1000px}}
 
 /* The footer of inner pages sits on a solid band, so the wallpaper never shows behind text. */
 .site.plain .footer{background:var(--bg);border-top:1px solid var(--line)}
