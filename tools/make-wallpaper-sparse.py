@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Draws the wallpaper tiles (src/assets/wallpaper-light.svg and wallpaper-dark.svg).
 
-A sparse pattern: in a 2000 x 2000 tile there are three 16-band labyrinths (each turned a different way)
-and three compass emblems (design/SVG-labyrinths/nibbida-c3.svg), placed off the grid so the repetition
+A sparse pattern: in a 2000 x 2000 tile there are five 16-band labyrinths (each turned a different way)
+and four compass emblems (design/SVG-labyrinths/nibbida-c3.svg), placed off the grid so the repetition
 is hard to see. The CSS shows the tile at 1520 px (see pages.css), so the labyrinths keep their old size
-but are about three times further apart than before.
+but are about 60 % as many per screen as before.
 
 Usage: python3 tools/make-wallpaper-sparse.py
 
@@ -25,10 +25,11 @@ SIZE = 2000                    # tile size in drawing units
 LAB_R = 340                    # radius of a labyrinth (as in the old tile)
 EMB_SCALE = 0.34               # emblem: spikes reach about 158, rings about 112
 
-# (x, y, turn in degrees) of the labyrinths and (x, y) of the emblems, on a 2000 x 2000 tile that repeats
-LABYRINTHS = [(400, 380, 0), (1450, 900, 140), (700, 1550, 250)]
-EMBLEMS = [(1100, 200), (200, 1100), (1500, 1800)]
-STRENGTH = {"light": ("#3F2713", 0.025), "dark": ("#eee7da", 0.022)}
+# (x, y, turn in degrees) of the labyrinths and (x, y) of the emblems, on a 2000 x 2000 tile that repeats.
+# The positions were found by a random search for the widest spacing on the repeating tile.
+LABYRINTHS = [(689, 924, 0), (1973, 492, 70), (498, 1757, 140), (1757, 1465, 210), (1209, 272, 290)]
+EMBLEMS = [(1176, 1645), (1657, 38), (1302, 915), (249, 1234)]
+STRENGTH = {"light": ("#3F2713", 0.032), "dark": ("#eee7da", 0.027)}
 
 def mask_body():
     s = open(EMBLEM).read()
