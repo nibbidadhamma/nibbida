@@ -17,7 +17,7 @@ titles:
     cover: "Found (PDF page 1). Credit in the book: cover design Amy Cao, cover photograph Jerry Davis."
   - n: 2
     title: "Aṅguttara Nikāya"
-    decision: "Jayadhamma meant SuttaCentral's version, which is Bhikkhu Sujato's \"Numbered Discourses\" (first candidate below). Open question: earlier he asked not to use Sujato's translation for the start-page quotes; confirm that this does not also apply to the book list."
+    decision: "Decided: SuttaCentral's version, Bhikkhu Sujato's \"Numbered Discourses\" (first candidate below). The wish not to use Sujato applies only to the start-page quotes, not to the book list."
     candidates:
       - title: "Numbered Discourses (Aṅguttara Nikāya), SuttaCentral"
         author: "Bhikkhu Sujato (translation)"
@@ -55,8 +55,8 @@ titles:
     publisher: "Amaravati Publications, 2022"
     free_source: "https://amaravati.org/dhamma-books/breathing-like-a-buddha/"
     terms: "verify. Amaravati publishes for free distribution; the exact license of this book was not visible from here (amaravati.org blocks my automatic requests)."
-    isbn: "verify"
-    pages: "verify"
+    isbn: "verify (Jayadhamma will check on the Amaravati page)"
+    pages: "verify (Jayadhamma will check)"
     drive_file: "Not in the archive."
     cover: "Found: https://cdn.amaravati.org/wp-content/uploads/2022/04/27/Breathing-Like-Buddha-Cover-1536x1536.jpg (square, 1536 px; a feather, title and author). Provided by Jayadhamma. Use only with Amaravati's agreement."
   - n: 5
@@ -67,14 +67,15 @@ titles:
     drive_file: "Thanissaro Bhikkhu - Wings to Awakening.epub (an older copy: \"Copyright 2011 ... For free distribution. Otherwise, all rights reserved.\")"
     free_source: "https://www.dhammatalks.org/books/Wings/"
     terms: "Current edition: Creative Commons Attribution-NonCommercial 4.0."
-    hosting: "Allowed with credit, non-commercial. Replace the older Drive copy with the current edition."
+    hosting: "Allowed with credit, non-commercial. Decided: replace the older Drive copy with the current edition (revised 2021) from dhammatalks.org."
     cover: "Found (EPUB)."
   - n: 6
     title: "The Jātaka (Jātaka-aṭṭhakathā: The Birth Stories), revised and reconstructed by Ānandajoti Bhikkhu"
     author: "Translation edited by E. B. Cowell (1895–1907, several translators), revised and reconstructed by Ānandajoti Bhikkhu"
     publisher: "ancient-buddhist-texts.net; EPUB dated 2021-11-17 (the site lists version 3, August 2023)"
     free_source: "https://ancient-buddhist-texts.net/English-Texts/Jataka/index.htm"
-    terms: "verify. No license is stated in the EPUB metadata; check the front page of the site."
+    terms: "No license is stated in the EPUB metadata. Jayadhamma reports that Ānandajoti Bhikkhu has approved (2026-10); keep that message."
+    hosting: "Approved by the translator (per Jayadhamma)."
     drive_file: "Jataka, The Birth Stories - Anandajoti Bhikkhu.epub; The Jataka, All Volumes – Editor E.B. Cowell, Revised By Anandajoti Bhikkhu.epub"
     cover: "Found (EPUB): a relief carving. Picture credit not stated; verify."
   - n: 7
@@ -98,7 +99,7 @@ titles:
         cover: "Found (EPUB)."
       - title: "Sutta Nipāta (SuttaCentral edition; this is the one Jayadhamma meant)"
         author: "Laurence Khantipalo Mills (translation)"
-        cover_note: "Jayadhamma found a printed cover on Amazon (https://www.amazon.sg/Sutta-Nipata-Laurence-Khantipalo/dp/1329360206). I have not copied Amazon's picture; the SuttaCentral edition page is the better source."
+        cover_note: "Jayadhamma supplied the printed cover (a black swan, 1125 x 675 px, from the Amazon listing https://www.amazon.sg/Sutta-Nipata-Laurence-Khantipalo/dp/1329360206) and asked to use it. It is kept outside the repository until the artist or the license of the cover art is confirmed; the PDF in the archive names no cover artist."
         publisher: "Published by SuttaCentral, first edition 2015"
         isbn: "978-1-921842-17-7"
         pages: 355
@@ -133,7 +134,7 @@ titles:
     publisher: "Buddhadhamma Foundation, © 2021, Fourth Edition (EPUB updated 2022-11-04)"
     free_source: "https://buddhadhamma.github.io"
     terms: "\"Distribution and commercial rights are reserved by the Buddhadhamma Foundation. If you wish to distribute this book from your website, please send your request to the Buddhadhamma Foundation.\" (contact is on the copyright page)"
-    hosting: "Link only, unless the Foundation agrees."
+    hosting: "Link only, unless the Foundation agrees. Jayadhamma will write to the Foundation (draft prepared 2026-10-23)."
     drive_file: "P.A Payutto - Buddhadhamma.epub"
     note: "Not the 1995 SUNY Press translation by Grant Olson (ISBN 978-0-7914-2632-6), which is commercial."
     cover: "Found (EPUB)."
