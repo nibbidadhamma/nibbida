@@ -36,10 +36,9 @@
     var h = '<p class="tag">' + esc(p.continent) + '</p><h3>' + esc(p.name) + '</h3>';
     if (p.line) h += '<p class="line">' + esc(p.line) + '</p>';
     if (p.text) h += '<p class="over">' + esc(p.text) + '</p>';
-    h += '<p class="pop-btns">';
-    if (p.website) h += '<a class="pop-btn" href="' + p.website + '">Visit the website ↗</a>';
-    if (p.google) h += '<a class="pop-btn" href="' + p.google + '">Open in Google Maps ↗</a>';
-    h += '</p><div class="card-nav"><button type="button" class="pc-btn" data-d="-1">← Previous</button>' +
+    if (p.website) h += '<p class="pop-btns"><a class="pop-btn" href="' + p.website + '">Visit the website ↗</a></p>';
+    if (p.google) h += '<p class="leave"><a class="pop-btn ext" href="' + p.google + '" target="_blank" rel="noopener">Open in Google Maps ↗</a><span>This leaves nibbida.com and opens Google Maps in a new tab.</span></p>';
+    h += '<div class="card-nav"><button type="button" class="pc-btn" data-d="-1">← Previous</button>' +
          '<span class="pc-count">' + (idx + 1) + " / " + shown.length + '</span>' +
          '<button type="button" class="pc-btn" data-d="1">Next →</button></div>';
     card.innerHTML = h;
@@ -62,6 +61,12 @@
     if (slug) for (var i = 0; i < shown.length; i++) if (shown[i].slug === slug) idx = i;
     render();
     if (map && !slug) fitAll();
+  }
+
+  // After a click on a pin or in the list, make sure the card can be seen (on a phone it is below the map).
+  function showCard() {
+    var r = card.getBoundingClientRect();
+    if (r.top < 0 || r.bottom > window.innerHeight) card.scrollIntoView({ block: "nearest", behavior: "smooth" });
   }
 
   // ----- the map -----
@@ -152,6 +157,7 @@
       m.on("click", function () {
         var q = shown.indexOf(p);
         if (q < 0) { setShown("all", p.slug); } else { idx = q; render(); }
+        showCard();
       });
       markers[p.slug] = m;
       group.addLayer(m);
@@ -173,6 +179,13 @@
   jumpSel.addEventListener("change", function () {
     var p = bySlug(jumpSel.value);
     if (p) setShown(p.continent, p.slug);
+  });
+  ui.querySelector("ul.places").addEventListener("click", function (e) {
+    var a = e.target.closest("a.pick");
+    if (!a) return;
+    e.preventDefault();
+    var p = bySlug(a.getAttribute("href").slice(1));
+    if (p) { setShown(p.continent, p.slug); showCard(); }
   });
   ui.querySelector(".map-show").addEventListener("click", build);
 

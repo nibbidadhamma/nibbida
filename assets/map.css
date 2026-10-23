@@ -57,3 +57,6 @@
 .all-list>summary.map-count{margin:0}
 .map-canvas .cl div{width:34px;height:34px;border-radius:50%;background:var(--accent);color:var(--bg);display:flex;align-items:center;justify-content:center;font:15px Arial,sans-serif;border:2px solid var(--bg);box-shadow:0 0 0 1px var(--accent)}
 .map-canvas .marker-cluster,.map-canvas .marker-cluster div{background-clip:padding-box}
+.place-card .leave{margin:0 0 16px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.place-card .leave span{font-size:15px;color:var(--secondary)}
+.place-card .pop-btn.ext{border-style:dashed}
