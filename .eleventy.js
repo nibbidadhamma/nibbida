@@ -96,10 +96,12 @@ module.exports = function (eleventyConfig) {
     const have = new Set(places.map((p) => p.data.continent).filter(Boolean));
     return order.filter((c) => have.has(c)).concat([...have].filter((c) => !order.includes(c)));
   });
+  // The text of a place (the part under the front matter).
+  eleventyConfig.addFilter("placeText", (p) => String(p.rawInput || "").replace(/^---[\s\S]*?---/, "").trim());
   // The data the map page script needs, as JSON.
   eleventyConfig.addFilter("placesData", (places) =>
     JSON.stringify(places.map((p) => ({
-      slug: p.fileSlug, name: p.data.name, continent: p.data.continent, line: p.data.line || "",
+      slug: p.fileSlug, name: p.data.name, continent: p.data.continent, line: p.data.line || "", traditions: p.data.traditions || [],
       lat: p.data.lat ?? null, lng: p.data.lng ?? null, google: p.data.google || "", website: p.data.website || "",
       highlight: !!p.data.highlight, text: String(p.rawInput || "").replace(/^---[\s\S]*?---/, "").trim()
     })))

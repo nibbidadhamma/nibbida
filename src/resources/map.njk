@@ -52,9 +52,9 @@ description: A map of meditation centers and monasteries from many Buddhist trad
 <article class="place-card" aria-live="polite" hidden></article>
 <details class="all-list" open>
 <summary class="map-count"></summary>
-<ul class="places">
+<ul class="places g-grid">
 {%- for p in collections.places %}
-<li data-cont="{{ p.data.continent }}" data-slug="{{ p.fileSlug }}"><a class="pick" href="#{{ p.fileSlug }}">{{ p.data.name }}</a> <span>{{ p.data.line }}{% if p.data.website %} · <a href="{{ p.data.website }}">Website ↗</a>{% endif %}</span></li>
+<li data-cont="{{ p.data.continent }}" data-slug="{{ p.fileSlug }}"><a class="pick g-card" href="#{{ p.fileSlug }}">{% if p.data.traditions %}<span class="g-tag">{{ p.data.traditions | join(" · ") }}</span>{% endif %}<b>{{ p.data.name }}</b><span class="g-line">{{ p.data.line }}</span><span class="g-over">{{ p | placeText }}</span></a></li>
 {%- endfor %}
 </ul>
 </details>
