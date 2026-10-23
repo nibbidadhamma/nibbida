@@ -1,7 +1,7 @@
 # Launch checklist (internal notes; leave this file out of the fresh public repository)
 
 ## Before the real launch
-- [ ] **Fresh repository.** Make a clean copy with one first commit and no earlier history, leaving out the internal notes (`nibbida-handover.md`, `SURVEY.md`, `DECISIONS.md`, `EDITING.md`, `LAUNCH-CHECKLIST.md`, `previews/`, `import/`). Steps: rename the old repository to `nibbida-old` and make it private; create a new empty `nibbida`; turn on Pages; push the clean copy; delete `nibbida-old` when the new one works. Do the same for `dhammadana` later. The old Gmail address and the real name are in the old history.
+- [ ] **Fresh repository.** Make a clean copy with one first commit and no earlier history, leaving out the internal notes (`nibbida-handover.md`, `HANDOFF-archive.md`, `SURVEY.md`, `DECISIONS.md`, `EDITING.md`, `LAUNCH-CHECKLIST.md`, `previews/`, `import/`). Steps: rename the old repository to `nibbida-old` and make it private; create a new empty `nibbida`; turn on Pages; push the clean copy; delete `nibbida-old` when the new one works. Do the same for `dhammadana` later. The old Gmail address and the real name are in the old history.
 - [ ] **Automatic publishing** (GitHub Actions) so edits from a phone go live without help. Needs the Pages source set to Actions.
 - [ ] **Canonical address and share previews** (title, description and picture shown when a link is shared). Remove "noindex" when the site should be found by search engines. Point nibbida.com to the new site.
 - [ ] **Delete the 8 sample books** and add the real list.
