@@ -47,6 +47,7 @@ plain: true
 <h2>{{ it.title }}</h2>
 {% if it.author %}<p class="by">{{ it.author }}</p>{% endif %}
 {% if it.about %}<p>{{ it.about }}</p>{% endif %}
+{% if it.terms %}<p class="note-line">{{ it.terms }}</p>{% endif %}
 <p class="buttons">
 {%- for f in it.formats %}
 <a class="btn" href="{{ f.url }}">{{ f.label or ("Open " ~ f.name) }}</a>
