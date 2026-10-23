@@ -26,6 +26,9 @@
 <link rel="stylesheet" href="{{ '/assets/archive.css' | url }}">
 <link rel="stylesheet" href="{{ '/assets/start.css' | url }}">
 <link rel="stylesheet" href="{{ '/assets/show.css' | url }}">
+{%- for c in extra_css %}
+<link rel="stylesheet" href="{{ c | url }}">
+{%- endfor %}
 <script src="{{ '/assets/menu.js' | url }}" defer></script>
 <script src="{{ '/assets/theme.js' | url }}" defer></script>
 <script src="{{ '/assets/passages.js' | url }}" defer></script>
@@ -74,5 +77,8 @@
 <a href="#top">Back to the beginning ↑</a>
 </footer>
 </div>
+{%- for j in extra_js %}
+<script src="{{ j | url }}" defer></script>
+{%- endfor %}
 </body>
 </html>

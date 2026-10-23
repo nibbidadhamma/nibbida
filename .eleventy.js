@@ -77,6 +77,9 @@ module.exports = function (eleventyConfig) {
     return books.sort((a, b) => String(a.data.title).localeCompare(String(b.data.title), "en", { sensitivity: "base" }));
   });
 
+  // The continents that have at least one place, in the order of first appearance.
+  eleventyConfig.addFilter("continents", (items) => [...new Set(items.map((i) => i.continent))]);
+
   eleventyConfig.amendLibrary("md", (md) => {
     md.core.ruler.push("nibbida_rules", (state) => {
       const t = state.tokens;

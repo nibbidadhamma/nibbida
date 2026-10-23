@@ -23,6 +23,7 @@ In short: you may copy and share this material in any medium, as long as you giv
 - **The list of links on the Links page**, which comes largely from *Online Dhamma Resources*, compiled by Kusalacāra Bhikkhu for the Early Buddhist Obsidian Vault. The list and its descriptions belong to him.
 - **Other people’s books, tools and websites**, with their names, titles and the content they link to. A book kept on this site carries the terms recorded in its own entry.
 - **The design study** in `design/nibbida-website-chatgpt-sketch/`, which is kept for reference.
+- **Map.** The map on the Meditation Map page uses Leaflet (BSD 2-Clause License, in `src/assets/vendor/leaflet/`) and map tiles and data from OpenStreetMap, © OpenStreetMap contributors, available under the Open Database License.
 - **Software tools** used to build the site. They are not part of this repository and have their own licenses.
 
 ## On GitHub

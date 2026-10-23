@@ -4,6 +4,10 @@ title: Meditation Map of the Dhamma
 eyebrow: Resources
 subtitle: Nice places around the world for practicing Buddhist meditation
 permalink: /resources/map/
+extra_css:
+  - /assets/map.css
+extra_js:
+  - /assets/map.js
 description: A map of meditation centers and monasteries from many Buddhist traditions.
 ---
 <p><em>With the Meditation Map of the Dhamma it is now even easier to share gems and find new places for exploring the Buddha’s theory and practice.</em></p>
@@ -21,11 +25,25 @@ description: A map of meditation centers and monasteries from many Buddhist trad
 {%- for i in map.share_images %} <a href="{{ i.url }}">{{ i.label }}</a>{% if not loop.last %} and{% endif %}{% endfor %}.</p>
 
 <h2 id="a-few-well-known-places">A few well-known places</h2>
+<div class="mapui" data-tiles="{{ map.tiles | dump }}">
+<div class="cont-bar" role="group" aria-label="Show places by continent" hidden>
+<button type="button" class="cont-btn" data-cont="all" aria-pressed="true">All places</button>
+{%- for c in map.highlights | continents %}
+<button type="button" class="cont-btn" data-cont="{{ c }}" aria-pressed="false">{{ c }}</button>
+{%- endfor %}
+</div>
+<div class="map-panel" hidden>
+<div class="map-start"><button type="button" class="map-show">Show the map</button><p>The map is drawn with OpenStreetMap. It loads only when you press the button.</p></div>
+<div class="map-canvas" role="region" aria-label="Map of the places" hidden></div>
+</div>
+<p class="map-count" aria-live="polite"></p>
 <ul class="places">
 {%- for p in map.highlights %}
-<li><a href="{{ p.url }}">{{ p.name }}</a> <span>{{ p.region }}</span></li>
+<li data-cont="{{ p.continent }}"><a href="{{ p.url }}">{{ p.name }}</a> <span>{{ p.region }}</span></li>
 {%- endfor %}
 </ul>
+<script type="application/json" class="map-data">{{ map.highlights | dump | safe }}</script>
+</div>
 
 <h2 id="other-maps-and-lists">Other maps and lists</h2>
 <p>If you are interested in a particular group or school, you might want to look at some of these other, less inclusive maps and lists:</p>

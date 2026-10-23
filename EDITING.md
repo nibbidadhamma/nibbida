@@ -144,3 +144,9 @@ The page text was copied unchanged, except for these points:
 - Text changes from the old page (grammar only): "it's now even more easy" → "it is now even easier", "The places gives" → "give", "who wants" → "who want", "try find" → "try to find", "contribute with" → "contribute", and the contact address is nibbidadhamma@gmail.com instead of the old one.
 - The highlights have coordinates (lat/lng, taken from the Google Maps links) for a map on this site later. Na Uyana has none yet.
 - To add a place, add a line under `highlights:`.
+
+## Map on the Meditation Map page
+
+- Continent buttons and a real map (Leaflet with OpenStreetMap tiles). The map loads only when the visitor presses "Show the map"; the list of places works without JavaScript.
+- Every place in `src/_data/map.yaml` (under `highlights:`) needs a `continent`. A button appears for each continent that has a place. Places without `lat` and `lng` are listed but have no pin.
+- To change the map style or provider, edit `tiles:` in the same file (`url`, optional `dark_url`, and `attribution`). OpenStreetMap's own server is meant for light use; for more traffic use a provider with a key and set its credit line.
