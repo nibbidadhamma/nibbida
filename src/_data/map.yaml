@@ -1,7 +1,9 @@
 # Meditation Map of the Dhamma page. The map itself is a saved list in Google Maps.
 # The places below are the "popular highlights" from the old nibbida.com page.
 # lat/lng are for a map on this site later (not shown yet). Leave them empty if unknown.
-# Map tiles. The default is OpenStreetMap's own server (no key). Its labels are in the local language of each country.
+# Map tiles: CARTO "Positron" (light) and "Dark Matter" (dark) without labels. The key is a free CARTO basemaps key
+# (carto.com/basemaps/apikey); it is meant to be public. OpenStreetMap's own server is the fallback (set "url" to
+# https://tile.openstreetmap.org/{z}/{x}/{y}.png, "dark_url" to "" and "labels" to true), but its labels are in each country's language.
 # For English only, use a map WITHOUT labels and set labels: false: the page then writes the names of countries and
 # places in English itself. Example with CARTO (free key from https://carto.com/basemaps/apikey, sent by email):
 #   url: "https://basemaps.cartocdn.com/rastertiles/light_nolabels/{z}/{x}/{y}.png?key=YOUR_KEY"
@@ -10,10 +12,10 @@
 #   labels: false
 # Without "dark_url" the dark theme darkens the tiles with a filter.
 tiles:
-  url: "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
-  dark_url: ""
-  attribution: "© OpenStreetMap contributors"
-  labels: true
+  url: "https://basemaps.cartocdn.com/rastertiles/light_nolabels/{z}/{x}/{y}.png?key=cb1_4sg1_1_57bebc49714968a6d8304109"
+  dark_url: "https://basemaps.cartocdn.com/rastertiles/dark_nolabels/{z}/{x}/{y}.png?key=cb1_4sg1_1_57bebc49714968a6d8304109"
+  attribution: "© OpenStreetMap contributors © CARTO"
+  labels: false
   max_zoom: 18
 map_url: https://goo.gl/maps/vLWGQWL9VHfK5evE9
 share_images:
