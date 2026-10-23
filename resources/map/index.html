@@ -19,6 +19,7 @@
 <link rel="stylesheet" href="/nibbida/assets/archive.css">
 <link rel="stylesheet" href="/nibbida/assets/start.css">
 <link rel="stylesheet" href="/nibbida/assets/show.css">
+<link rel="stylesheet" href="/nibbida/assets/map.css">
 <script src="/nibbida/assets/menu.js" defer></script>
 <script src="/nibbida/assets/theme.js" defer></script>
 <script src="/nibbida/assets/passages.js" defer></script>
@@ -76,19 +77,33 @@
 <p>Images you can use to share the map online: <a href="https://drive.google.com/file/d/1jEtR99kl3w877TS3-oHylojjMBS3Qh1g/view?usp=sharing">with name</a> and <a href="https://drive.google.com/file/d/1IMSBI0DjHNk0k2oj7TsDykmDAcIa840y/view?usp=sharing">without name</a>.</p>
 
 <h2 id="a-few-well-known-places">A few well-known places</h2>
+<div class="mapui" data-tiles="{&quot;url&quot;:&quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,&quot;dark_url&quot;:&quot;&quot;,&quot;attribution&quot;:&quot;© OpenStreetMap contributors&quot;,&quot;max_zoom&quot;:18}">
+<div class="cont-bar" role="group" aria-label="Show places by continent" hidden>
+<button type="button" class="cont-btn" data-cont="all" aria-pressed="true">All places</button>
+<button type="button" class="cont-btn" data-cont="Asia" aria-pressed="false">Asia</button>
+<button type="button" class="cont-btn" data-cont="North America" aria-pressed="false">North America</button>
+<button type="button" class="cont-btn" data-cont="Europe" aria-pressed="false">Europe</button>
+</div>
+<div class="map-panel" hidden>
+<div class="map-start"><button type="button" class="map-show">Show the map</button><p>The map is drawn with OpenStreetMap. It loads only when you press the button.</p></div>
+<div class="map-canvas" role="region" aria-label="Map of the places" hidden></div>
+</div>
+<p class="map-count" aria-live="polite"></p>
 <ul class="places">
-<li><a href="https://maps.app.goo.gl/Tqi3KVuVEYNyxWBWA">Shwe Oo Min Meditation Centre</a> <span>Myanmar</span></li>
-<li><a href="https://maps.app.goo.gl/YCHpnEaEJDHPW21s7">Kopan Monastery</a> <span>Nepal</span></li>
-<li><a href="https://maps.app.goo.gl/MTsRJRTPWkB8Kmyu7">IMS Retreat Center</a> <span>East USA</span></li>
-<li><a href="https://maps.app.goo.gl/HA1U5wZnHdUzbudx8">Amaravati Buddhist Monastery</a> <span>England</span></li>
-<li><a href="https://maps.app.goo.gl/3AzkyaT9wqhGc4a27">Plum Village</a> <span>Southern France</span></li>
-<li><a href="https://maps.app.goo.gl/N1ZyU7K1B4L3xA2r6">Panditarama Vipassana Meditation Center</a> <span>Nepal</span></li>
-<li><a href="https://maps.app.goo.gl/rQjkXYEi3KidHdo9A">Gaia House</a> <span>England</span></li>
-<li><a href="https://maps.app.goo.gl/ox3TAdQtXUWLif7T9">Tushita Meditation Centre</a> <span>North India</span></li>
-<li><a href="https://maps.app.goo.gl/zgz5ewfHVEgSNeeS6">Pa-Auk Tawya Meditation Centre</a> <span>Myanmar</span></li>
-<li><a href="https://nauyana.org/">Na Uyana Forest Monastery</a> <span>Sri Lanka</span></li>
-<li><a href="https://maps.app.goo.gl/2YRauK65sU1UFoUU7">Insight Meditation Center</a> <span>West USA</span></li>
+<li data-cont="Asia"><a href="https://maps.app.goo.gl/Tqi3KVuVEYNyxWBWA">Shwe Oo Min Meditation Centre</a> <span>Myanmar</span></li>
+<li data-cont="Asia"><a href="https://maps.app.goo.gl/YCHpnEaEJDHPW21s7">Kopan Monastery</a> <span>Nepal</span></li>
+<li data-cont="North America"><a href="https://maps.app.goo.gl/MTsRJRTPWkB8Kmyu7">IMS Retreat Center</a> <span>East USA</span></li>
+<li data-cont="Europe"><a href="https://maps.app.goo.gl/HA1U5wZnHdUzbudx8">Amaravati Buddhist Monastery</a> <span>England</span></li>
+<li data-cont="Europe"><a href="https://maps.app.goo.gl/3AzkyaT9wqhGc4a27">Plum Village</a> <span>Southern France</span></li>
+<li data-cont="Asia"><a href="https://maps.app.goo.gl/N1ZyU7K1B4L3xA2r6">Panditarama Vipassana Meditation Center</a> <span>Nepal</span></li>
+<li data-cont="Europe"><a href="https://maps.app.goo.gl/rQjkXYEi3KidHdo9A">Gaia House</a> <span>England</span></li>
+<li data-cont="Asia"><a href="https://maps.app.goo.gl/ox3TAdQtXUWLif7T9">Tushita Meditation Centre</a> <span>North India</span></li>
+<li data-cont="Asia"><a href="https://maps.app.goo.gl/zgz5ewfHVEgSNeeS6">Pa-Auk Tawya Meditation Centre</a> <span>Myanmar</span></li>
+<li data-cont="Asia"><a href="https://nauyana.org/">Na Uyana Forest Monastery</a> <span>Sri Lanka</span></li>
+<li data-cont="North America"><a href="https://maps.app.goo.gl/2YRauK65sU1UFoUU7">Insight Meditation Center</a> <span>West USA</span></li>
 </ul>
+<script type="application/json" class="map-data">[{"continent":"Asia","name":"Shwe Oo Min Meditation Centre","region":"Myanmar","url":"https://maps.app.goo.gl/Tqi3KVuVEYNyxWBWA","lat":17.0006218,"lng":96.153482},{"continent":"Asia","name":"Kopan Monastery","region":"Nepal","url":"https://maps.app.goo.gl/YCHpnEaEJDHPW21s7","lat":27.7426594,"lng":85.3649135},{"continent":"North America","name":"IMS Retreat Center","region":"East USA","url":"https://maps.app.goo.gl/MTsRJRTPWkB8Kmyu7","lat":42.4510747,"lng":-72.1241713},{"continent":"Europe","name":"Amaravati Buddhist Monastery","region":"England","url":"https://maps.app.goo.gl/HA1U5wZnHdUzbudx8","lat":51.7921944,"lng":-0.521799},{"continent":"Europe","name":"Plum Village","region":"Southern France","url":"https://maps.app.goo.gl/3AzkyaT9wqhGc4a27","lat":44.7451543,"lng":0.3419802},{"continent":"Asia","name":"Panditarama Vipassana Meditation Center","region":"Nepal","url":"https://maps.app.goo.gl/N1ZyU7K1B4L3xA2r6","lat":27.4756662,"lng":83.2747174},{"continent":"Europe","name":"Gaia House","region":"England","url":"https://maps.app.goo.gl/rQjkXYEi3KidHdo9A","lat":50.518594,"lng":-3.666885},{"continent":"Asia","name":"Tushita Meditation Centre","region":"North India","url":"https://maps.app.goo.gl/ox3TAdQtXUWLif7T9","lat":32.2435392,"lng":76.3256249},{"continent":"Asia","name":"Pa-Auk Tawya Meditation Centre","region":"Myanmar","url":"https://maps.app.goo.gl/zgz5ewfHVEgSNeeS6","lat":21.9111929,"lng":96.3849161},{"continent":"Asia","name":"Na Uyana Forest Monastery","region":"Sri Lanka","url":"https://nauyana.org/","lat":null,"lng":null},{"continent":"North America","name":"Insight Meditation Center","region":"West USA","url":"https://maps.app.goo.gl/2YRauK65sU1UFoUU7","lat":37.4872647,"lng":-122.2395937}]</script>
+</div>
 
 <h2 id="other-maps-and-lists">Other maps and lists</h2>
 <p>If you are interested in a particular group or school, you might want to look at some of these other, less inclusive maps and lists:</p>
@@ -129,5 +144,6 @@
 <a href="#top">Back to the beginning ↑</a>
 </footer>
 </div>
+<script src="/nibbida/assets/map.js" defer></script>
 </body>
 </html>
