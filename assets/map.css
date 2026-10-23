@@ -33,3 +33,27 @@
 .map-canvas .leaflet-tooltip.pin-label::before{display:none}
 .map-canvas.hide-labels .pin-label{display:none}
 .map-canvas .ctry span{position:absolute;transform:translate(-50%,-50%);white-space:nowrap;font:13px/1 EB,Georgia,serif;letter-spacing:.06em;text-transform:uppercase;color:var(--secondary);opacity:.9;pointer-events:none}
+
+/* Place card (carousel), jump menu, clusters */
+.place-jump{margin:0 0 16px}
+.place-jump label{display:block;font:14px Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.place-jump select{display:block;margin-top:6px;width:100%;max-width:420px;min-height:44px;font:18px EB,Georgia,serif;color:var(--ink);background:var(--bg);border:1px solid var(--accent);padding:8px 10px}
+.place-jump[hidden],.place-card[hidden]{display:none}
+.place-card{border:1px solid var(--accent);padding:22px 24px;margin:0 0 18px;max-width:680px}
+.place-card h3{font:400 30px/1.1 EB,Georgia,serif;margin:0 0 6px;border:0;padding:0}
+.place-card .tag{font:11px Arial,sans-serif;letter-spacing:.17em;text-transform:uppercase;color:var(--accent);margin:0 0 10px}
+.place-card .line{font-size:19px;color:var(--secondary);margin:0 0 10px}
+.place-card .over{font-size:20px;margin:0 0 14px}
+.place-card .pop-btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 16px}
+.place-card .pop-btn{display:inline-block;border:1px solid var(--accent);padding:9px 14px;min-height:44px;font:16px/1.3 Arial,sans-serif;text-decoration:none}
+.place-card .pop-btn:hover{background:var(--accent);color:var(--bg)}
+.place-card .card-nav{display:flex;align-items:center;gap:14px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:14px}
+.place-card .pc-btn{font:17px EB,Georgia,serif;color:var(--accent);background:transparent;border:1px solid var(--accent);padding:8px 14px;min-height:44px;cursor:pointer}
+.place-card .pc-btn:hover{background:var(--accent);color:var(--bg)}
+.place-card .pc-count{font-size:16px;color:var(--secondary)}
+.pin.on{width:24px;height:24px;margin:-3px 0 0 -3px;background:var(--bg);border:4px solid var(--accent)}
+.all-list{margin:0 0 20px}
+.all-list>summary{cursor:pointer;font-size:18px;color:var(--accent);min-height:44px;display:flex;align-items:center}
+.all-list>summary.map-count{margin:0}
+.map-canvas .cl div{width:34px;height:34px;border-radius:50%;background:var(--accent);color:var(--bg);display:flex;align-items:center;justify-content:center;font:15px Arial,sans-serif;border:2px solid var(--bg);box-shadow:0 0 0 1px var(--accent)}
+.map-canvas .marker-cluster,.map-canvas .marker-cluster div{background-clip:padding-box}
