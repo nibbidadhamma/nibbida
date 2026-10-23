@@ -1,6 +1,24 @@
 {#- A generated book cover. Colors come from the book's folder; the title shrinks for long titles. -#}
-{%- macro cover(title, author, tone, size, imprint, image) -%}
-{%- if image %}
+{#- The picture for a collection: a row of book spines on a board, without titles. Colors follow the folder. -#}
+{%- macro spines() -%}
+<svg class="spines" viewBox="0 0 150 209" focusable="false">
+<rect x="6" y="176" width="138" height="9" rx="1.5" fill="#6b5a45"/><rect x="6" y="185" width="138" height="5" fill="#000" opacity=".3"/>
+{%- set books = [[12,15,104,0.18],[27.5,12,128,0],[41,14,96,0.1],[56,11,118,-0.12],[68.5,17,134,0.22],[87,13,92,0.05],[101,12,110,-0.08],[114,15,100,0.15]] %}
+{%- for b in books %}
+{%- if loop.index == 6 %}<g transform="rotate(9 {{ b[0] + b[1] }} 176)">{% endif %}
+<rect x="{{ b[0] }}" y="{{ 176 - b[2] }}" width="{{ b[1] }}" height="{{ b[2] }}" rx="1.5" style="fill:var(--cv)"/>
+{%- if b[3] > 0 %}<rect x="{{ b[0] }}" y="{{ 176 - b[2] }}" width="{{ b[1] }}" height="{{ b[2] }}" rx="1.5" fill="#000" opacity="{{ b[3] }}"/>{% elif b[3] < 0 %}<rect x="{{ b[0] }}" y="{{ 176 - b[2] }}" width="{{ b[1] }}" height="{{ b[2] }}" rx="1.5" fill="#fff" opacity="{{ -b[3] }}"/>{% endif %}
+<rect x="{{ b[0] }}" y="{{ 176 - b[2] + 9 }}" width="{{ b[1] }}" height="2" fill="#fff" opacity=".35"/><rect x="{{ b[0] }}" y="164" width="{{ b[1] }}" height="2" fill="#fff" opacity=".35"/>
+{%- if loop.index == 6 %}</g>{% endif %}
+{%- endfor %}
+</svg>
+{%- endmacro -%}
+{%- macro cover(title, author, tone, size, imprint, image, collection) -%}
+{%- if collection %}
+<div class="cv coll{% if size %} {{ size }}{% endif %}" style="--cv:{{ tone }}" aria-hidden="true">
+{{- spines() -}}
+</div>
+{%- elif image %}
 <div class="cv has-img{% if size %} {{ size }}{% endif %}" aria-hidden="true"><img class="cvi" src="{{ image | url }}" alt="" loading="lazy"></div>
 {%- else %}
 <div class="cv{% if size %} {{ size }}{% endif %}" style="--cv:{{ tone }};--fs:{{ title | coverSize }}" aria-hidden="true">

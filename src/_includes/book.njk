@@ -11,17 +11,20 @@ plain: true
 <p class="subtitle">{{ author }}</p>
 {{ "D3-B" | ornament("orn-d3b orn-title") | safe }}
 <div class="detail">
-<div class="detail-cover">{{ cover(title, author, fo.tone, "lg", "", cover_image | coverFile) }}</div>
+<div class="detail-cover">{{ cover(title, author, fo.tone, "lg", "", cover_image | coverFile, collection) }}</div>
 <div class="detail-info">
 {% if about %}<p class="about">{{ about }}</p>{% endif %}
 <dl>
 <dt>Folder</dt><dd>{{ fo.title }}</dd>
 <dt>Language</dt><dd>{{ language or "English" }}</dd>
-<dt>Formats</dt><dd>{% if available %}{{ available }}{% else %}{% for f in formats %}{{ f.name }}{% if not loop.last %}, {% endif %}{% endfor %}{% endif %}</dd>
+{% if collection %}<dt>Books</dt><dd>{{ items | length }}</dd>{% else %}<dt>Formats</dt><dd>{% if available %}{{ available }}{% else %}{% for f in formats %}{{ f.name }}{% if not loop.last %}, {% endif %}{% endfor %}{% endif %}</dd>{% endif %}
 {% if source %}<dt>Source</dt><dd>{% if source_url %}<a href="{{ source_url }}">{{ source }}</a>{% else %}{{ source }}{% endif %}</dd>{% endif %}
 {% if terms %}<dt>Terms</dt><dd>{{ terms }}</dd>{% endif %}
 {% if cover_credit and (cover_image | coverFile) %}<dt>Cover</dt><dd>{{ cover_credit }}</dd>{% endif %}
 </dl>
+{% if collection %}
+<p class="note-line">The books of this collection are listed below. Each button opens the file in the Dhamma-Dāna Drive archive.</p>
+{% else %}
 <p class="buttons">
 {%- for f in formats %}
 <a class="btn{% if hosted %} local{% endif %}" href="{% if hosted %}{{ f.url | url }}{% else %}{{ f.url }}{% endif %}">{{ f.label or ("Download " ~ f.name) }}</a>
@@ -34,8 +37,25 @@ plain: true
 {% else %}
 <p class="note-line">This book is on the publisher's website. The button opens it there.</p>
 {% endif %}
+{% endif %}
 </div>
 </div>
+{% if collection %}
+<ol class="items">
+{%- for it in items %}
+<li>
+<h2>{{ it.title }}</h2>
+{% if it.author %}<p class="by">{{ it.author }}</p>{% endif %}
+{% if it.about %}<p>{{ it.about }}</p>{% endif %}
+<p class="buttons">
+{%- for f in it.formats %}
+<a class="btn" href="{{ f.url }}">{{ f.label or ("Open " ~ f.name) }}</a>
+{%- endfor %}
+</p>
+</li>
+{%- endfor %}
+</ol>
+{% endif %}
 <p><a href="{{ '/resources/archive/' | url }}">← Back to the archive</a></p>
 {{ "O2" | ornament("orn-o2 orn-end") | safe }}
 </div>

@@ -57,6 +57,9 @@ module.exports = function (eleventyConfig) {
     String(s).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase()
   );
 
+  // The titles and authors of the books inside a collection, so the search box finds them.
+  eleventyConfig.addFilter("itemText", (items) => (items || []).map((i) => [i.title, i.author].filter(Boolean).join(" ")).join(" "));
+
   // All book cards, sorted by title. Prints a warning for cards with missing or unknown fields.
   eleventyConfig.addCollection("books", (api) => {
     const books = api.getFilteredByTag("book");
@@ -64,11 +67,14 @@ module.exports = function (eleventyConfig) {
     let samples = 0;
     books.forEach((b) => {
       const d = b.data;
-      const missing = ["title", "author", "folder", "formats"].filter((k) => !d[k] || (k === "formats" && !d.formats.length && !d.pending));
+      const missing = (d.collection ? ["title", "author", "folder", "items"] : ["title", "author", "folder", "formats"]).filter((k) => !d[k] || (k === "formats" && !d.formats.length && !d.pending) || (k === "items" && !d.items.length));
       if (missing.length) console.warn(`[archive] WARNING ${b.inputPath}: missing ${missing.join(", ")}`);
       if (d.folder && !known.includes(d.folder)) console.warn(`[archive] WARNING ${b.inputPath}: unknown folder "${d.folder}" (use one of: ${known.join(", ")})`);
       (d.formats || []).forEach((f) => {
         if (!f.name || !f.url) console.warn(`[archive] WARNING ${b.inputPath}: a format needs both name and url`);
+      });
+      (d.items || []).forEach((it) => {
+        if (!it.title || !(it.formats || []).length || it.formats.some((f) => !f.name || !f.url)) console.warn(`[archive] WARNING ${b.inputPath}: every book in a collection needs a title and formats with name and url`);
       });
       if (d.hosted && !d.permission) console.warn(`[archive] WARNING ${b.inputPath}: hosted book without a permission note`);
       if (d.sample) samples++;

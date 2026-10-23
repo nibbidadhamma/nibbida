@@ -18,9 +18,9 @@ plain: true
 <div class="shelf" id="shelf">
 {%- for b in collections.books %}
 {%- set fo = b.data.folder | folderInfo(archive.folders) %}
-<a class="bk" href="{{ b.url | url }}" aria-label="{{ b.data.title }}, by {{ b.data.author }}" data-folder="{{ b.data.folder }}" data-rec="{% if b.data.recommended %}1{% else %}0{% endif %}" data-search="{{ (b.data.title ~ ' ' ~ b.data.author) | plain }}">
-{{ cover(b.data.title, b.data.author, fo.tone, "", "", b.data.cover_image | coverFile) }}
-<span class="fm">{% if b.data.available %}{{ b.data.available }}{% else %}{% for f in b.data.formats %}{{ f.name }}{% if not loop.last %} · {% endif %}{% endfor %}{% endif %}{% if b.data.pending %} · file soon{% endif %}</span>
+<a class="bk" href="{{ b.url | url }}" aria-label="{{ b.data.title }}, by {{ b.data.author }}" data-folder="{{ b.data.folder }}" data-rec="{% if b.data.recommended %}1{% else %}0{% endif %}" data-search="{{ (b.data.title ~ ' ' ~ b.data.author ~ ' ' ~ (b.data.items | itemText)) | plain }}">
+{{ cover(b.data.title, b.data.author, fo.tone, "", "", b.data.cover_image | coverFile, b.data.collection) }}
+<span class="fm">{% if b.data.collection %}Collection · {{ b.data.items | length }} books{% elif b.data.available %}{{ b.data.available }}{% else %}{% for f in b.data.formats %}{{ f.name }}{% if not loop.last %} · {% endif %}{% endfor %}{% endif %}{% if b.data.pending %} · file soon{% endif %}</span>
 </a>
 {%- endfor %}
 </div>
