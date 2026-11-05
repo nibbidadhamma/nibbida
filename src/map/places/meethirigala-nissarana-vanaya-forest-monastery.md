@@ -4,6 +4,8 @@ continent: Asia
 line: Meetirigala, northeast of Colombo, Sri Lanka
 traditions:
 - Other Theravāda
+lat: 6.9974864
+lng: 80.1726241
 google: https://www.google.com/maps/search/?api=1&query=Meethirigala+Nissarana+Vanaya+Forest+Monastery
 website: https://www.nissarana.lk
 ---
