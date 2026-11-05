@@ -1,43 +1,39 @@
 #!/usr/bin/env python3
-"""Draws the wallpaper (src/assets/wallpaper-light.svg, wallpaper-dark.svg and the phone versions
+"""Draws the wallpaper (src/assets/wallpaper-light.svg, wallpaper-dark.svg and the portrait versions
 wallpaper-tall-light.svg, wallpaper-tall-dark.svg).
 
 The wallpaper is one fixed picture the size of the screen: it does not repeat and does not move when the
-page scrolls (see pages.css). Composition "C": one large labyrinth fills the right side, a smaller one sits
-at the bottom-left, and a compass emblem is at the top-left and at the bottom-right. The picture is drawn
-for a landscape screen (1440 x 900) and for a portrait screen (390 x 844); the CSS scales it to cover.
+page scrolls (see pages.css). It is the largest labyrinth (the 16-band one), scaled up so that its rings reach
+every corner of the screen. The heart of the labyrinth lies near the bottom-right corner, and the rings
+spread out from there across the whole screen. The picture is drawn for a landscape screen (1440 x 900) and
+for a portrait screen (390 x 844); the CSS scales it to cover whatever size the screen has.
 
 Usage: python3 tools/make-wallpaper-static.py
 
-The labyrinth comes from tools/make-wallpaper.py; the emblem is one plain shape made by tools/flatten-emblem.py.
+The labyrinth comes from tools/make-wallpaper.py.
 """
-import os, importlib.util
+import os, math, importlib.util
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 spec = importlib.util.spec_from_file_location("mw", os.path.join(ROOT, "tools", "make-wallpaper.py"))
 mw = importlib.util.module_from_spec(spec); spec.loader.exec_module(mw)
-SHAPE = open(os.path.join(ROOT, "design", "SVG-labyrinths", "nibbida-c3-shape.txt")).read()
-CENTER = (627, 521)      # centre of the emblem drawing
-HALF = 464               # distance from the centre to the tip of its long spikes
 STRENGTH = {"light": ("#3F2713", 0.032), "dark": ("#eee7da", 0.027)}
 
-# name: (width, height, labyrinths (x, y, radius, turn in degrees), emblems (x, y, half-length of the spikes))
+# name: (width, height, x and y of the heart of the labyrinth as a share of the width and height, turn in degrees)
 PICTURES = {
-    "wallpaper": (1440, 900, [(1390, 430, 310, 100), (90, 830, 200, 250)], [(120, 180, 120), (1250, 860, 120)]),
-    "wallpaper-tall": (390, 844, [(420, 420, 210, 100), (20, 820, 130, 250)], [(70, 130, 80), (300, 700, 80)]),
+    "wallpaper": (1440, 900, 0.93, 0.91, 0),
+    "wallpaper-tall": (390, 844, 0.93, 0.91, 0),
 }
 
 def picture(spec_, theme):
-    w, h, labs, embs = spec_
+    w, h, fx, fy, turn = spec_
     colour, op = STRENGTH[theme]
-    cx, cy = CENTER
-    labyrinths = "".join(mw.place("16", x, y, r, turn) for x, y, r, turn in labs).replace("currentColor", colour)
-    emblems = "".join(
-        f'<use href="#emblem" transform="translate({x} {y}) scale({half / HALF:.4f}) translate({-cx} {-cy})"/>'
-        for x, y, half in embs)
+    cx, cy = w * fx, h * fy
+    # radius: far enough that the outer ring passes beyond the farthest corner
+    r = 1.01 * max(math.hypot(cx - x, cy - y) for x in (0, w) for y in (0, h))
+    lab = mw.place("16", round(cx, 1), round(cy, 1), round(r, 1), turn).replace("currentColor", colour)
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">'
-            f'<g fill="{colour}" fill-opacity="{op}"><defs><path id="emblem" fill-rule="evenodd" d="{SHAPE}"/></defs>'
-            f'{labyrinths}{emblems}</g></svg>\n')
+            f'<g fill="{colour}" fill-opacity="{op}">{lab}</g></svg>\n')
 
 if __name__ == "__main__":
     for name, spec_ in PICTURES.items():

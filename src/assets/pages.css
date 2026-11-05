@@ -48,12 +48,12 @@
 .orn-end{margin:56px 0 6px}
 .orn-between{margin:8px 0 26px}
 
-/* Wallpaper on inner pages: one fixed picture the size of the screen (labyrinths and compass emblems, composition C).
+/* Wallpaper on inner pages: one fixed picture the size of the screen (the largest labyrinth, spreading from the bottom-right corner).
    It does not repeat and does not move when the page scrolls. Each theme has its own very faint file
    (wallpaper-dark.svg, wallpaper-light.svg); the strength is the fill-opacity inside those files. On a portrait
    screen (phones) the tall version is used. A plain background image is used because it works in every browser. */
 .site.plain{position:relative;isolation:isolate}
-.site.plain::before{content:"";position:fixed;top:0;right:0;bottom:0;left:0;z-index:-1;pointer-events:none;background:var(--wall-img) center/cover no-repeat}
+.site.plain::before{content:"";position:fixed;top:0;right:0;bottom:0;left:0;z-index:-1;pointer-events:none;background:var(--wall-img) right bottom/cover no-repeat}
 @media(max-aspect-ratio:1/1){.site.plain::before{background-image:var(--wall-tall)}}
 
 /* The footer of inner pages sits on a solid band, so the wallpaper never shows behind text. */
