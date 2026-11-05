@@ -159,7 +159,7 @@ Paliverse is an AI-powered platform for studying the complete Tipiṭaka togethe
 
 ### Sāsanārakkha: Notebook LM collections
 
-[Link](https://sasanarakkha.github.io/study-tools/notebook_lm.html)
+[Link](https://sasanarakkha.github.io/study-tools/7-notebook-lm/)
 
 Sāsanārakkha offers a curated set of Google Notebook LM projects that combine key Buddhist texts with integrated English translations and powerful search features. Each notebook lets you browse suttas or Vinaya passages, compare sections, jump between related teachings, and quickly look up specific terms or themes across the canon. Beyond text study, Notebook LM also allows you to generate summaries, create study notes, draft teaching outlines, and even produce podcast-style audio explanations of selected material. With these tools gathered in one place, the collection provides an easy, modern way to explore the source texts while also helping you create your own learning resources along the way.
 

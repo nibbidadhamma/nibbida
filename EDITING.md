@@ -185,3 +185,9 @@ The page text was copied unchanged, except for these points:
 - Each item has `title`, optional `author` and `about`, and `formats` (`name`, `url`, optional `label`). Items are shown in the order written: larger works first.
 - Example: `src/archive/books/anandajoti-bhikkhu-canon-texts.md`. The build warns if a collection has no items or an item has no title or format.
 - Items link to files in the Dhamma-Dāna Drive archive. Nothing is hosted on this site.
+
+## Link check, 5 November 2026
+
+- Checked every outbound link reachable from the built pages (166 links) with an automated fetch, then verified every failure by hand in a real browser, since several sites are known to block automated checks (see `LAUNCH-CHECKLIST.md`).
+- Fixed: the Sāsanārakkha NotebookLM link on the Pali Resource Guide (`src/resources/pali.md`, "Sāsanārakkha: Notebook LM collections") pointed to `https://sasanarakkha.github.io/study-tools/notebook_lm.html`, which now 404s. The site (now titled "SBS DhammaVinaya Learning Tools") moved the page to `https://sasanarakkha.github.io/study-tools/7-notebook-lm/`, confirmed working and listing the same kind of NotebookLM notebooks (Early Suttas, Vinaya, Pātimokkha, and others). Updated the link.
+- Flagged, not fixed: both Buddha-Vacana links on the Links page (`src/_data/links.yaml`, "La Parole du Bouddha" and "Buddha-Vacana") return 503 "Website unavailable" from OVHcloud, the host, not a transient error. No replacement address is known. Left in place since this may be a temporary hosting lapse rather than the site being gone for good; worth rechecking before the next link audit, and removing if still down.
