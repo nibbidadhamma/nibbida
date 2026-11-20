@@ -19,7 +19,7 @@ resources:
     ready: true
   - title: Myanmar Meditation Visa guide
     url: /resources/visa/
-    ready: false
+    ready: true
 
 footer:
   - title: Audio

@@ -20,7 +20,7 @@ intro: – African proverb
 <h3>{{ m.title }}</h3>
 <dl>
 {%- for l in m.lines %}
-<dt>{{ l.label }}</dt><dd>{{ l.value }}</dd>
+<dt>{{ l.label }}</dt><dd>{% if l.url %}<a href="{{ l.url }}">{{ l.value }}</a>{% else %}{{ l.value }}{% endif %}</dd>
 {%- endfor %}
 </dl>
 {%- if m.note %}<p class="note-line">{{ m.note }}</p>{% endif %}

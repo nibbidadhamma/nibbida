@@ -3,7 +3,24 @@
 intro: Donations are received with the help of my mother and my kappiya.
 thanks: Yours gratefully,
 signature: Jayadhamma Bhikkhu
-methods: []
+methods:
+  - title: Bank transfer
+    lines:
+      - {label: IBAN, value: "SE96 8000 0832 1237 3954 4629"}
+      - {label: SWIFT/BIC, value: "SWEDSESS"}
+      - {label: Bank, value: "Sölvesborg Mjällby Sparbank (Swedbank)"}
+      - {label: Account, value: "8321-2, 373 954 462-9"}
+      - {label: Owner, value: "Agneta Haraldsson"}
+      - {label: Bank address, value: "Södergatan 17, 294 31 Sölvesborg, Sweden"}
+  - title: Revolut
+    lines:
+      - {label: Link, value: "revolut.me/jxro", url: "https://revolut.me/jxro"}
+    note: Revolut is a trusted international banking service that allows secure donations using your card or bank account, often with lower fees than traditional banks.
+  - title: Swish
+    lines:
+      - {label: Name, value: "Agneta Haraldsson"}
+      - {label: Phone number, value: "0761981414"}
+    note: 'Skriv t.ex. "Jaya" i inforutan, så min mor vet anledningen till donationen.'
 # Example of one method (copy it under "methods:" and remove the leading "# "):
 # methods:
 #   - title: Bank transfer

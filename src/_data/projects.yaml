@@ -40,7 +40,7 @@ projects:
     image: project-visa.webp
     alt: "Row of golden Buddha statues in a temple hall"
     url: /resources/visa/
-    ready: false
+    ready: true
     tagline: "A short guide to the Myanmar meditation visa."
     text: >-
       A short guide to applying for the Myanmar meditation visa, which allows a long stay for practice, with notes for applicants in Bangkok.

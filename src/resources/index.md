@@ -27,7 +27,9 @@ A map of meditation centers and monasteries around the world, from many traditio
 
 A selection of the most useful online resources for learning Pali, the language of the early Buddhist texts: tools, dictionaries, courses and books.
 
-## How to make a Myanmar Meditation Visa <small>coming soon</small>
+## How to make a Myanmar Meditation Visa
+
+[Open the guide]({{ '/resources/visa/' | url }})
 
 A short guide to applying for the Myanmar meditation visa, which allows a long stay for practice, with notes for applicants in Bangkok.
 

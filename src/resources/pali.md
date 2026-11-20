@@ -65,7 +65,7 @@ This course by Ajahn Brahmali transforms Warder’s textbook into an accessible 
 
 ### John Kelly: Answer Key for Warder (2005)
 
-[Download PDF](https://audiobuddha.org/wp-content/uploads/2022/03/Answers.pdf)
+[Read online](https://accesstoinsight.org/lib/authors/kelly/warder-key/)
 
 John Kelly’s answer key provides worked solutions to the exercises in Warder’s book, offering literal translations and notes that clarify common grammatical difficulties. It is especially useful for self-study students.
 

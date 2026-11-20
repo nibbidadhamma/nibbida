@@ -4,6 +4,8 @@ continent: Asia
 line: Mount Erskine, George Town, Penang, Malaysia
 traditions:
 - Non-sectarian
+lat: 5.436908
+lng: 100.297098
 google: https://www.google.com/maps/search/?api=1&query=Penang+Bodhi+Heart+Sanctuary
 website: https://www.bodhihearts.net/
 ---
